@@ -124,7 +124,8 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		/* color: #3e3e3e; */
+		color: #fff;
 	}
 
 	i, em {
@@ -171,6 +172,7 @@ input, select, textarea {
 
 		h1 strong {
 			font-weight: 700;
+			color: #fff;
 		}
 
 	h2 {
@@ -202,6 +204,7 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
+		color: #fff;
 	}
 
 	header {
@@ -1635,6 +1638,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+			transform: scale(0.75);
 		}
 
 		.image.featured {

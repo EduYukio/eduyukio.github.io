@@ -1,3 +1,18 @@
+/* My Custom CSS */
+
+#highlights{
+	background: #22262a;
+	padding: 4em;
+}
+
+/* My Custom CSS */
+
+
+
+
+
+
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("fontawesome-all.min.css");
 
@@ -6,6 +21,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2017,7 +2033,6 @@ input, select, textarea {
 			color: #999;
 			text-shadow: -1px -1px 0px #181818;
 		}
-
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
 				color: #fff;
 			}

@@ -3,6 +3,18 @@
 #highlights{
 	background: #22262a;
 	padding: 4em;
+
+}
+
+#games{
+	background: #282828;
+	padding: 4em;
+	/* text-shadow: 3px 3px 3px #803; */
+}
+
+video {
+	width: 75%;
+	height: auto;
 }
 
 /* My Custom CSS */

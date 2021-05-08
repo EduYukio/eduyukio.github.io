@@ -1,15 +1,26 @@
 /* My Custom CSS */
 
-#highlights{
-	background: #22262a;
-	padding: 4em;
+#about{
+	background-color: rgb(36, 39, 41);
+}
 
+#highlights{
+	/* background: #22262a; */
+	background-color: rgb(29, 31, 32);
+	padding: 4em;
 }
 
 #games{
-	background: #282828;
+	background-color: rgb(36, 39, 41);
+	/* background: #282828; */
 	padding: 4em;
 	/* text-shadow: 3px 3px 3px #803; */
+}
+
+#contact{
+	/* background: #22262a; */
+	background-color: rgb(29, 31, 32);
+	padding: 4em;
 }
 
 video {
@@ -2126,7 +2137,8 @@ input, select, textarea {
 /* Copyright */
 
 	#copyright {
-		color: #666;
+		color: #999;
+		/* color: rgb(168, 160, 149); */
 		font-size: 1em;
 		line-height: 1em;
 		list-style: none;

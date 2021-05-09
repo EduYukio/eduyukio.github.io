@@ -20,6 +20,17 @@
 
 .box.style1:hover {
 	border: 5px solid #555;
+	top: -5px;
+}
+
+.box.style1 {
+	-moz-transition: top .2s ease-in-out;
+	-webkit-transition: top .2s ease-in-out;
+	-ms-transition: top .2s ease-in-out;
+	transition: top .2s ease-in-out;
+	display: block;
+	top: 0;
+	position: relative;
 }
 
 #contact{

@@ -1,5 +1,11 @@
 /* My Custom CSS */
 
+html.scrollDisabled {
+	position:fixed;
+	overflow-y: scroll;
+    width: 100%;
+}
+
 #about{
 	background-color: rgb(36, 39, 41);
 }

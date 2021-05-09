@@ -23,15 +23,24 @@ overlay.addEventListener('click', () => {
     })
 })
 
+var $html = $('html'),
+    scrollTop;
+
 function openModal(modal) {
     if (modal == null) return;
     modal.classList.add('active');
     overlay.classList.add('active');
+
+    scrollTop = $(window).scrollTop();
+    $html.addClass('scrollDisabled').css({ top: -1 * scrollTop });
 }
 
 function closeModal(modal) {
     if (modal == null) return;
     modal.classList.remove('active');
     overlay.classList.remove('active');
+
+    $html.removeClass('scrollDisabled');
+    $(window).scrollTop(scrollTop);
 }
 

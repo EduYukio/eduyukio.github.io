@@ -11,10 +11,27 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script defer src="assets/js/script.js"></script>
 	<script src="https://kit.fontawesome.com/30972455b7.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="is-preload">
+	<div class="modal" id="modal">
+		<div class="modal-header">
+			<div class="title">Example Modal</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam excepturi ipsa nobis optio, expedita
+			voluptatum at necessitatibus quibusdam tenetur sed cumque inventore in alias perferendis magni esse quae
+			voluptate officiis aliquid minima. Quo laborum cum optio quod, at asperiores totam voluptatem, maiores
+			minima voluptatum earum. Error doloribus fugiat vero, libero voluptatibus sit provident necessitatibus fugit
+			quam temporibus, minima aspernatur incidunt earum quas possimus nemo commodi. Odit ad deserunt, recusandae
+			amet suscipit hic praesentium voluptate tenetur ipsum, ullam, quia explicabo aliquam.
+		</div>
+	</div>
+	<div id="overlay"></div>
+
 
 	<!-- Nav -->
 	<nav id="nav">
@@ -45,7 +62,6 @@
 						college courses, game
 						jams and an internship at <a href="http://tappsgames.com/">Tapps Games</a>. Check out my
 						projects on the following sections!<br><br>Enjoy!</p>
-					<!-- <a href="#highlights" class="button large scrolly">Learn about what I do</a> -->
 				</div>
 			</div>
 		</div>
@@ -64,10 +80,6 @@
 			</video>
 			<br><br>
 			<br>
-
-			<!-- <footer>
-				<a href="#games" class="button large scrolly">See some of my recent work</a>
-			</footer> -->
 		</div>
 	</article>
 
@@ -79,28 +91,72 @@
 			</header>
 			<div class="row">
 				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="#" class="image featured"><img src="images/mechplay3.png" alt="" /></a>
-						<h3><a href="#">Mechanical Playground</a></h3>
+					<article data-modal-target="#modal" class="box style1 game-detail">
+						<img class="image featured" src="images/mechplay3.png" />
+						<h3>Mechanical Playground</h3>
 					</article>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="#" class="image featured"><img src="images/nothingMatters.png" alt="" /></a>
-						<h3><a href="#">Nothing Matters</a></h3>
+					<article data-modal-target="#modal" class="box style1 game-detail">
+						<img class="image featured" src="images/nothingMatters.png" />
+						<h3>Nothing Matters</h3>
 					</article>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="#" class="image featured"><img src="images/sinner.png" alt="" /></a>
-						<h3><a href="#">Sinner</a></h3>
+					<article data-modal-target="#modal" class="box style1 game-detail">
+						<img class="image featured" src="images/sinner.png" />
+						<h3>Sinner</h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article data-modal-target="#modal" class="box style1 game-detail">
+						<img class="image featured" src="images/mechplay3.png" />
+						<h3>Mechanical Playground</h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article data-modal-target="#modal" class="box style1 game-detail">
+						<img class="image featured" src="images/mechplay3.png" />
+						<h3>Mechanical Playground</h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article data-modal-target="#modal" class="box style1 game-detail">
+						<img class="image featured" src="images/mechplay3.png" />
+						<h3>Mechanical Playground</h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article data-modal-target="#modal" class="box style1 game-detail">
+						<img class="image featured" src="images/mechplay3.png" />
+						<h3>Mechanical Playground</h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article data-modal-target="#modal" class="box style1 game-detail">
+						<img class="image featured" src="images/mechplay3.png" />
+						<h3>Mechanical Playground</h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article data-modal-target="#modal" class="box style1 game-detail">
+						<img class="image featured" src="images/mechplay3.png" />
+						<h3>Mechanical Playground</h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article data-modal-target="#modal" class="box style1 game-detail">
+						<img class="image featured" src="images/mechplay3.png" />
+						<h3>Mechanical Playground</h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article data-modal-target="#modal" class="box style1 game-detail">
+						<img class="image featured" src="images/mechplay3.png" />
+						<h3>Mechanical Playground</h3>
 					</article>
 				</div>
 			</div>
-			<!-- <footer>
-				<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-				<a href="#contact" class="button large scrolly">Get in touch with me</a>
-			</footer> -->
 		</div>
 	</article>
 

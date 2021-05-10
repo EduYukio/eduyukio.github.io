@@ -76,12 +76,13 @@ video {
 	left: 50%;
 	transform:translate(-50%,-50%) scale(0);
 	transition: 200ms ease-in-out;
-	border: 1px solid black;
+	border: 5px solid #050505;
 	border-radius: 10px;
 	z-index: 10;
 	background-color: #222;
-	width: 500px;
-	max-width: 80%;
+	width: 70%;
+	height: 90%;
+	/* max-width: 80%; */
 }
 
 .modal.active {
@@ -92,7 +93,7 @@ video {
 	padding: 10px 15px;
 	justify-content: space-between;
 	align-items:center;
-	border-bottom: 1px solid black;
+	border-bottom: 3px solid #050505;
 }
 
 .modal-header .title{
@@ -133,7 +134,7 @@ video {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.65);
 	z-index: 9;
 	pointer-events: none;
 }

@@ -5,7 +5,7 @@ const overlay = document.getElementById('overlay');
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
         const modal = document.querySelector(button.dataset.modalTarget);
-        openModal(modal);
+        openModal(modal, button);
     })
 })
 
@@ -26,8 +26,9 @@ overlay.addEventListener('click', () => {
 var $html = $('html'),
     scrollTop;
 
-function openModal(modal) {
+function openModal(modal, article) {
     if (modal == null) return;
+    getData(modal, article);
     modal.classList.add('active');
     overlay.classList.add('active');
 
@@ -51,16 +52,27 @@ function closeModal(modal) {
 openModalButtons.forEach(button => {
     button.addEventListener('mouseenter', () => {
         var image = button.querySelector("img");
-        var gifName = button.querySelector(".animated").innerHTML;
-        image.src = gifName;
+        var gifName = button.querySelector(".animated");
+        if (gifName == null) return;
+        image.src = gifName.innerHTML;
     })
 })
 
 openModalButtons.forEach(button => {
     button.addEventListener('mouseleave', () => {
         var image = button.querySelector("img");
-        var staticName = button.querySelector(".static").innerHTML;
-        image.src = staticName;
+        var staticName = button.querySelector(".static");
+        if (staticName == null) return;
+        image.src = staticName.innerHTML;
     })
 })
 
+
+
+
+function getData(modal, article) {
+    var gameName = article.id;
+    $.getJSON('data.json', function (data) {
+        modal.querySelector(".title").innerHTML = data[gameName].name;
+    });
+}

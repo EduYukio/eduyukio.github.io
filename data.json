@@ -1,0 +1,32 @@
+{
+    "mechanical-playground": {
+        "name": "Mechanical Playground",
+        "genre": "Action/Platformer",
+        "tools": "Unity/C#",
+        "context": "University's Final Year Project",
+        "team": "Solo",
+        "source-link": "http://source-link.com/mechanical",
+        "play-link": "http://play-link.com/mechanical",
+        "video-link": "http://video-link.com/mechanical"
+    },
+    "nothing-matters": {
+        "name": "Nothing Matters",
+        "genre": "Puzzle/Platformer",
+        "tools": "Godot/GDScript",
+        "context": "Game Jam",
+        "team": "Group",
+        "source-link": "http://source-link.com/nothing",
+        "play-link": "http://play-link.com/nothing",
+        "video-link": "http://video-link.com/nothing"
+    },
+    "match-the-emoji": {
+        "name": "Match the Emoji",
+        "genre": "Puzzle",
+        "tools": "Internal Engine/Lua",
+        "context": "Professional",
+        "team": "Group",
+        "source-link": "http://source-link.com/emoji",
+        "play-link": "http://play-link.com/emoji",
+        "video-link": "http://video-link.com/emoji"
+    }
+}

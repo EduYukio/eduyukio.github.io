@@ -17,7 +17,7 @@ html.scrollDisabled {
 
 #games{
 	background-color: rgb(36, 39, 41);
-	padding: 4em 0em;
+	padding: 4em;
 }
 
 .box {
@@ -55,7 +55,6 @@ html.scrollDisabled {
 
 	.box.style1 img {
 		border-radius: 10px;
-
 	}
 
 	.image.featured {
@@ -1621,15 +1620,17 @@ input, select, textarea {
 
 				.row {
 					margin-top: -15px;
-					margin-left: -15px;
-					/* margin-left: -15px; */
-					margin-right: -35px;
+					margin-left: 0px;
+					margin-right: -0px;
 				}
 
 					.row > * {
-						padding: 15px 0 0 15px;
-						/* padding: 25px 5px 0; */
+						padding: 25px 5px;
 					}
+
+					#games .row > *{
+						padding: 1.5em 0 0 3em;
+					} 
 
 					.row.gtr-uniform {
 						margin-top: -15px;

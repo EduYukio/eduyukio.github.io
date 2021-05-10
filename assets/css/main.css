@@ -19,10 +19,6 @@ html.scrollDisabled {
 	background-color: rgb(36, 39, 41);
 	padding: 4em 0em;
 }
-.game-detail {
-	cursor: pointer;
-}
-
 
 .box {
 	background: #111;
@@ -30,6 +26,7 @@ html.scrollDisabled {
 }
 
 	.box.style1 {
+		cursor: pointer;
 		padding: 1em 1em 1em;
 		border: 5px solid #000;
 		border-radius: 20px;
@@ -41,6 +38,10 @@ html.scrollDisabled {
 		display: block;
 		top: 0;
 		position: relative;
+
+		/* max-width: 20%; */
+		/* margin-left: auto !important;
+		margin-right: auto !important; */
 	}
 
 	.box.style1 h3 {
@@ -54,6 +55,7 @@ html.scrollDisabled {
 
 	.box.style1 img {
 		border-radius: 10px;
+
 	}
 
 	.image.featured {
@@ -1620,8 +1622,8 @@ input, select, textarea {
 				.row {
 					margin-top: -15px;
 					margin-left: -15px;
-					/* margin-left: -15px;
-					margin-right: -15px; */
+					/* margin-left: -15px; */
+					margin-right: -35px;
 				}
 
 					.row > * {
@@ -2456,22 +2458,16 @@ input, select, textarea {
 
 				.box .image.featured {
 					position: relative;
-					left: 20px;
-					top: 20px;
-					margin: -50px 0 50px -40px;
-					width: auto;
+					/* left: 20px; */
+					/* top: 20px; */
+					/* margin: -50px 0 50px -40px; */
+					/* max-width: 100%; */
 				}
 
 				.box.style1 {
-					max-width: 32em;
-					margin-left: auto !important;
-					margin-right: auto !important;
-				}
-
-				.box.style2 {
-					max-width: 32em;
-					margin-left: auto !important;
-					margin-right: auto !important;
+					max-width: 90%;
+					/* margin-left: auto !important; */
+					/* margin-right: auto !important; */
 				}
 
 		/* Wrappers */

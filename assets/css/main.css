@@ -60,6 +60,10 @@ html.scrollDisabled {
 		width: 100%; */
 	}
 
+	.image.featured {
+		border: 2px solid #555;
+	}
+
 #contact{
 	background-color: rgb(29, 31, 32);
 	padding: 4em;

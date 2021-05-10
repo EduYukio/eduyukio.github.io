@@ -44,3 +44,23 @@ function closeModal(modal) {
     $(window).scrollTop(scrollTop);
 }
 
+
+
+
+
+openModalButtons.forEach(button => {
+    button.addEventListener('mouseenter', () => {
+        var image = button.querySelector("img");
+        var gifName = button.querySelector(".animated").innerHTML;
+        image.src = gifName;
+    })
+})
+
+openModalButtons.forEach(button => {
+    button.addEventListener('mouseleave', () => {
+        var image = button.querySelector("img");
+        var staticName = button.querySelector(".static").innerHTML;
+        image.src = staticName;
+    })
+})
+

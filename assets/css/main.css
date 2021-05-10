@@ -2129,7 +2129,7 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		z-index: 10000;
+		z-index: 8;
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;

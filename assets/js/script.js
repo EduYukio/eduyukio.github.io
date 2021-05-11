@@ -35,7 +35,7 @@ var $html = $('html'),
 
 function openModal(modal, article) {
     if (modal == null) return;
-    getData(modal, article);
+    updateModalInfo(modal, article);
     modal.classList.add('active');
     overlay.classList.add('active');
 
@@ -76,9 +76,7 @@ openModalButtons.forEach(button => {
 
 
 
-function getData(modal, article) {
+function updateModalInfo(modal, article) {
     var gameName = article.id;
-    $.getJSON('data.json', function (data) {
-        modal.querySelector(".title").innerHTML = data[gameName].name;
-    });
+    modal.querySelector(".title").innerHTML = jsonData[gameName].name;
 }

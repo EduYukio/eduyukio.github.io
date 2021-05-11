@@ -81,9 +81,12 @@ video {
     border-radius: 10px;
     z-index: 10;
     background-color: #222;
-    width: 70%;
+    width: 1000px;
+    height: 550px;
+    width: 75%;
     height: 90%;
-    /* max-width: 80%; */
+    max-width: 1000px;
+    max-height: 550px;
 }
 
 .modal.active {

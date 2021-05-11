@@ -138,8 +138,30 @@ video {
 .modal-img img {
     margin-top: 2%;
     margin-right: 52%;
+    margin-bottom: 2%;
     border: 3px solid #555;
     width: 40%;
+}
+
+.play-button {
+    position: absolute;
+    margin-left: 13%;
+    top: 60%;
+    width: 23%;
+}
+
+.source-button {
+    position: absolute;
+    margin-left: 13%;
+    top: 72%;
+    width: 23%;
+}
+
+.video-button {
+    position: absolute;
+    width: 23%;
+    margin-left: 13%;
+    top: 84%;
 }
 
 .vertical {
@@ -1872,7 +1894,7 @@ input, select, textarea {
         -webkit-appearance: none;
         position: relative;
         display: inline-block;
-        color: #fff !important;
+        color: #ddd !important;
         text-decoration: none;
         font-weight: 700;
         border: 0;
@@ -1882,7 +1904,7 @@ input, select, textarea {
         text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
         overflow: hidden;
         box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-        background-color: #43B3E0;
+        background-color: #555;
         padding: 1em 2.35em 1em 2.35em;
         font-size: 1.1em;
         max-width: 24em;
@@ -1893,7 +1915,7 @@ input, select, textarea {
         input[type="reset"]:hover,
         button:hover,
         .button:hover {
-            background-color: #43bff0;
+            background-color: rgb(68, 68, 68);
             color: #fff !important;
         }
 
@@ -1902,8 +1924,8 @@ input, select, textarea {
         input[type="reset"]:active,
         button:active,
         .button:active {
-            background-color: #3BA8D3;
-            top: 1px;
+            background-color: rgb(52, 52, 52);
+            /* top: 1px; */
         }
 
         input[type="button"].large,

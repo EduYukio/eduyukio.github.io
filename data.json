@@ -1,6 +1,8 @@
 {
     "mechanical-playground": {
         "name": "Mechanical Playground",
+        "static-name": "mechplay3.png",
+        "gif-name": "TrailerGif(Compressed).gif",
         "genre": "Action/Platformer",
         "tools": "Unity/C#",
         "context": "University's Final Year Project",
@@ -11,6 +13,8 @@
     },
     "nothing-matters": {
         "name": "Nothing Matters",
+        "static-name": "nothingMatters.png",
+        "gif-name": "FallenAngelGif.gif",
         "genre": "Puzzle/Platformer",
         "tools": "Godot/GDScript",
         "context": "Game Jam",

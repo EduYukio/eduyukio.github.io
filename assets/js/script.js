@@ -2,6 +2,13 @@ const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 
+var jsonData;
+
+fetch("./data.json")
+    .then(response => response.json())
+    .then(data => jsonData = data)
+
+
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
         const modal = document.querySelector(button.dataset.modalTarget);
@@ -52,21 +59,20 @@ function closeModal(modal) {
 openModalButtons.forEach(button => {
     button.addEventListener('mouseenter', () => {
         var image = button.querySelector("img");
-        var gifName = button.querySelector(".animated");
+        var gifName = jsonData[button.id]["gif-name"];
         if (gifName == null) return;
-        image.src = gifName.innerHTML;
+        image.src = "images/" + gifName;
     })
 })
 
 openModalButtons.forEach(button => {
     button.addEventListener('mouseleave', () => {
         var image = button.querySelector("img");
-        var staticName = button.querySelector(".static");
+        var staticName = jsonData[button.id]["static-name"];
         if (staticName == null) return;
-        image.src = staticName.innerHTML;
+        image.src = "images/" + staticName;
     })
 })
-
 
 
 

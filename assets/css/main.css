@@ -1131,8 +1131,12 @@ input, select, textarea {
 				}
 
 					.row > * {
-						padding: 25px 5px 0;
+						padding: 1em 5em 1em 4.5em;
 					}
+
+					#games .row > *{
+						padding: 1em 1em 1em 1em;
+					} 
 
 					.row.gtr-uniform {
 						margin-top: -25px;

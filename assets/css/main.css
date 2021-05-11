@@ -127,6 +127,26 @@ video {
     color: #ccc;
 }
 
+.modal-img {
+    display: block;
+    text-align: center;
+}
+
+.modal-img img {
+    margin-top: 2%;
+    margin-right: 52%;
+    border: 3px solid #555;
+    width: 40%;
+}
+
+.vertical {
+    border-left: 3px solid #050505;
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
 #overlay {
     position: fixed;
     opacity: 0;

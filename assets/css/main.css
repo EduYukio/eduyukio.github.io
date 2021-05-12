@@ -1,4 +1,7 @@
 /* My Custom CSS */
+#resume {
+    max-width: 9rem;
+}
 
 .embed-container {
     position: relative;

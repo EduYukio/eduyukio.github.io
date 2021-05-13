@@ -183,13 +183,6 @@ video {
   width: 23%;
 }
 
-.video-button {
-  position: absolute;
-  width: 23%;
-  margin-left: 13%;
-  top: 84%;
-}
-
 .vertical {
   border-left: 3px solid #050505;
   height: 70%;

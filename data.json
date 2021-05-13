@@ -2,7 +2,7 @@
   "mechanical-playground": {
     "name": "Mechanical Playground",
     "static-name": "mechplay3.png",
-    "gif-name": "TrailerGif(Compressed).gif",
+    "gif-name": "gifTest.gif",
     "genre": "Action/Platformer",
     "tools": "Unity/C#",
     "context": "University's Final Year Project",

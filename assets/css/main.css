@@ -3,6 +3,91 @@
 
 */
 /* My Custom CSS */
+
+.modal-left {
+  width: 50%;
+  height: 29rem;
+  text-align: center;
+}
+
+.modal-left img {
+  width: 75%;
+  max-width: 500px;
+  border: 3px solid #555;
+}
+
+#play-button {
+  margin-bottom: 0.5rem;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  /* transform: translate(-50%, -50%) scale(1); */
+  transition: 200ms ease-in-out;
+  border: 5px solid #050505;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #222;
+  width: 1000px;
+  height: 550px;
+  width: 75%;
+  height: 90%;
+  /* max-width: 1300px; */
+  max-height: 650px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #050505;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 52px;
+  padding: 0 0 0 0;
+  box-shadow: none;
+  color: #ccc !important;
+}
+
+.modal-body {
+  padding: 2rem 0;
+  color: #ccc;
+}
+
+.vertical {
+  border-left: 3px solid #050505;
+  height: 70%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
 #resume {
   max-width: 9rem;
 }
@@ -63,10 +148,6 @@ html.scrollDisabled {
   display: block;
   top: 0;
   position: relative;
-
-  /* max-width: 20%; */
-  /* margin-left: auto !important;
-        margin-right: auto !important; */
 }
 
 .box.style1 h3 {
@@ -94,101 +175,6 @@ html.scrollDisabled {
 video {
   width: 75%;
   height: auto;
-}
-
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* transform:translate(-50%,-50%) scale(0); */
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  border: 5px solid #050505;
-  border-radius: 10px;
-  z-index: 10;
-  background-color: #222;
-  width: 1000px;
-  height: 550px;
-  width: 75%;
-  height: 90%;
-  max-width: 1000px;
-  max-height: 550px;
-}
-
-.modal.active {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.modal-header {
-  padding: 10px 15px;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 3px solid #050505;
-}
-
-.modal-header .title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #ccc;
-  display: flex;
-  justify-content: center;
-}
-
-.modal-header .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 2em;
-  font-weight: bold;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45px;
-  height: 52px;
-  padding: 0 0 0 0;
-  box-shadow: none;
-  color: #ccc !important;
-}
-
-.modal-body {
-  padding: 10px 15px;
-  color: #ccc;
-}
-
-.modal-img {
-  display: block;
-  text-align: center;
-}
-
-.modal-img img {
-  margin-top: 2%;
-  margin-right: 52%;
-  margin-bottom: 2%;
-  border: 3px solid #555;
-  width: 40%;
-}
-
-.play-button {
-  position: absolute;
-  margin-left: 13%;
-  top: 60%;
-  width: 23%;
-}
-
-.source-button {
-  position: absolute;
-  margin-left: 13%;
-  top: 72%;
-  width: 23%;
-}
-
-.vertical {
-  border-left: 3px solid #050505;
-  height: 70%;
-  position: absolute;
-  top: 20%;
-  left: 50%;
 }
 
 #overlay {

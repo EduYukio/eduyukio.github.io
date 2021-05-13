@@ -25,6 +25,8 @@
   },
   "match-the-emoji": {
     "name": "Match the Emoji",
+    "static-name": "nothingMatters.png",
+    "gif-name": "FallenAngelGif.gif",
     "genre": "Puzzle",
     "tools": "Internal Engine/Lua",
     "context": "Professional",

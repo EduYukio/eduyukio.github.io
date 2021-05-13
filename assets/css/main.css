@@ -2036,7 +2036,7 @@ button,
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5),
     inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
   background-color: #555;
-  padding: 1em 2.35em 1em 2.35em;
+  padding: 0.75rem 2.35rem;
   font-size: 1.1em;
   max-width: 24em;
 }
@@ -2056,7 +2056,7 @@ input[type="reset"]:active,
 button:active,
 .button:active {
   background-color: rgb(52, 52, 52);
-  /* top: 1px; */
+  top: 1px;
 }
 
 input[type="button"].large,

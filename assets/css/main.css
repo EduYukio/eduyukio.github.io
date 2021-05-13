@@ -2583,8 +2583,9 @@ body > article {
   .button {
     text-align: center;
     font-size: 1.2em;
-    width: 100%;
-    padding: 1em 0 1em 0;
+    width: 50%;
+    padding: 0.75rem 0;
+    font-size: 1em;
   }
 
   input[type="button"].large,

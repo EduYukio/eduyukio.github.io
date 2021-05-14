@@ -36,6 +36,7 @@
   overflow: auto;
   padding: 0 1rem 0 1rem;
   left: 13%;
+  text-align: left;
 }
 
 .modal-right {
@@ -45,21 +46,43 @@
   height: 29rem;
   left: 50%;
   background: red;
-  /* text-align: center; */
+  text-align: center;
 }
 
-.modal-info {
+/* .modal-info {
   position: absolute;
-  height: 11.65rem;
-  /* background: green; */
+  height: 12rem;
+  background: green;
   top: 60%;
   width: 100%;
-  /* text-align: center; */
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   padding: 1rem 4rem;
+} */
+
+#role-music {
+  opacity: 50%;
+}
+
+.modal-roles {
+  position: absolute;
+  width: 30%;
+  top: 63%;
+  left: 13%;
+
+  background: green;
+  text-align: left;
 }
 
 .modal-available-text i {
-  margin: 0 0.5rem 0 0.5rem;
+  margin: 0.75rem 0.5rem 0 0.5rem;
+}
+
+.modal-year-text {
+  position: absolute;
+  top: 56%;
+  width: 100%;
 }
 
 .modal-left {

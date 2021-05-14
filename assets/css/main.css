@@ -30,7 +30,9 @@
   /* font: 14px; */
   width: 75%;
   max-width: 500px;
-  height: 47%;
+  /* max-height: 284.61px; */
+  /* height: 100%; */
+  height: 13.5rem;
   overflow: auto;
   padding: 0 1rem 0 1rem;
   left: 13%;
@@ -38,12 +40,22 @@
 
 .modal-right {
   position: absolute;
-  left: 50%;
-  top: 5.1rem;
-  /* background: red; */
+  top: 4.5rem;
   width: 50%;
   height: 29rem;
+  left: 50%;
+  background: red;
   /* text-align: center; */
+}
+
+.modal-info {
+  position: absolute;
+  height: 11.65rem;
+  /* background: green; */
+  top: 60%;
+  width: 100%;
+  /* text-align: center; */
+  padding: 1rem 4rem;
 }
 
 .modal-available-text i {
@@ -52,13 +64,31 @@
 
 .modal-left {
   position: absolute;
-  top: 5.1rem;
+  top: 4.5rem;
   width: 50%;
   height: 29rem;
   text-align: center;
+  background: blue;
 }
 
-.modal-left img {
+.modal-left .embed-container-modal {
+  position: relative;
+  padding-bottom: 56.25%;
+  max-width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.modal-left .embed-container-modal iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-left .modal-video {
+  margin-left: 3.8rem;
   width: 75%;
   max-width: 500px;
   border: 0.25rem solid #555;
@@ -68,12 +98,18 @@
   margin-bottom: 0.5rem;
 }
 
+.modal-square-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  /* transform: translate(-50%, -50%) scale(1); */
+  /* transform: translate(-50%, -50%) scale(0); */
+  transform: translate(-50%, -50%) scale(1);
   transition: 200ms ease-in-out;
   border: 5px solid #050505;
   border-radius: 10px;
@@ -83,7 +119,6 @@
   height: 550px;
   width: 75%;
   height: 90%;
-  /* max-width: 1300px; */
   max-height: 650px;
 }
 
@@ -140,7 +175,7 @@
   max-width: 9rem;
 }
 
-.embed-container {
+.embed-container-home {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -148,9 +183,9 @@
   max-width: 100%;
 }
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+.embed-container-home iframe,
+.embed-container-home object,
+.embed-container-home embed {
   position: absolute;
   top: 0;
   left: 0;

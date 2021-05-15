@@ -3,12 +3,41 @@
 
 */
 /* My Custom CSS */
+.contact-email {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 1680px) {
+  .contact-email {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contact-email {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .contact-email {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .contact-email {
+    font-size: 2rem;
+  }
+}
 
 .modal-tool {
   display: flex;
 }
+
 .tool {
-  width: 2rem;
+  width: 2.25rem;
+  margin: 0.25rem;
 }
 
 #scrollbar-style-1::-webkit-scrollbar-track {
@@ -57,7 +86,7 @@
 }
 
 #role-music {
-  opacity: 50%;
+  opacity: 30%;
 }
 
 .modal-roles {
@@ -134,8 +163,8 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%) scale(0); */
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0);
+  /* transform: translate(-50%, -50%) scale(1); */
   transition: 200ms ease-in-out;
   border: 5px solid #050505;
   border-radius: 10px;
@@ -1642,7 +1671,7 @@ footer > p {
 
   .row {
     margin-top: -25px;
-    margin-left: -25px;
+    /* margin-left: -25px; */
   }
 
   .row > * {
@@ -1886,7 +1915,7 @@ footer > p {
   .row {
     margin-top: -15px;
     margin-left: 0px;
-    margin-right: -0px;
+    margin-right: 0px;
   }
 
   .row > * {
@@ -1894,7 +1923,9 @@ footer > p {
   }
 
   #games .row > * {
-    padding: 1.5em 0 0 3em;
+    margin-top: 1.5rem;
+    margin-left: 3.3rem;
+    padding: 0 0 0 0;
   }
 
   .row.gtr-uniform {

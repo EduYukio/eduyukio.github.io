@@ -1423,6 +1423,9 @@ footer > p {
 
   .row {
     margin-top: -25px;
+  }
+
+  #games .row {
     margin-left: -75px;
     margin-right: -75px;
   }

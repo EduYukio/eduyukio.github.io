@@ -3,6 +3,44 @@
 
 */
 /* My Custom CSS */
+.contact-email {
+  position: absolute;
+  transform: translate(-50%);
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 1680px) {
+  .contact-email {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contact-email {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .contact-email {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .contact-email {
+    font-size: 2rem;
+  }
+}
+
+.modal-tool {
+  display: flex;
+}
+
+.tool {
+  width: 2.25rem;
+  margin: 0.25rem;
+}
 
 #scrollbar-style-1::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -30,35 +68,84 @@
   /* font: 14px; */
   width: 75%;
   max-width: 500px;
-  height: 47%;
+  /* max-height: 284.61px; */
+  /* height: 100%; */
+  height: 13.5rem;
   overflow: auto;
   padding: 0 1rem 0 1rem;
   left: 13%;
+  text-align: left;
 }
 
 .modal-right {
   position: absolute;
-  left: 50%;
-  top: 5.1rem;
-  /* background: red; */
+  top: 4.5rem;
   width: 50%;
   height: 29rem;
-  /* text-align: center; */
+  left: 50%;
+  /* background: red; */
+  text-align: center;
 }
 
+#role-music {
+  opacity: 30%;
+}
+
+.modal-roles {
+  position: absolute;
+  width: 30%;
+  top: 63%;
+  left: 13%;
+
+  /* background: green; */
+  text-align: left;
+}
+.modal-tools {
+  position: absolute;
+  width: 30%;
+  top: 63%;
+  left: 58%;
+
+  /* background: green; */
+  text-align: left;
+}
 .modal-available-text i {
-  margin: 0 0.5rem 0 0.5rem;
+  margin: 0.75rem 0.5rem 0 0.5rem;
+}
+
+.modal-year-text {
+  position: absolute;
+  top: 56%;
+  width: 100%;
 }
 
 .modal-left {
   position: absolute;
-  top: 5.1rem;
+  top: 4.5rem;
   width: 50%;
   height: 29rem;
   text-align: center;
+  /* background: blue; */
 }
 
-.modal-left img {
+.modal-left .embed-container-modal {
+  position: relative;
+  padding-bottom: 56.25%;
+  max-width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.modal-left .embed-container-modal iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-left .modal-video {
+  margin-left: 3.8rem;
   width: 75%;
   max-width: 500px;
   border: 0.25rem solid #555;
@@ -66,6 +153,12 @@
 
 #play-button {
   margin-bottom: 0.5rem;
+}
+
+.modal-square-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .modal {
@@ -83,7 +176,6 @@
   height: 550px;
   width: 75%;
   height: 90%;
-  /* max-width: 1300px; */
   max-height: 650px;
 }
 
@@ -140,7 +232,7 @@
   max-width: 9rem;
 }
 
-.embed-container {
+.embed-container-home {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -148,9 +240,9 @@
   max-width: 100%;
 }
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+.embed-container-home iframe,
+.embed-container-home object,
+.embed-container-home embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -1333,8 +1425,11 @@ footer > p {
 
   .row {
     margin-top: -25px;
-    margin-left: -75px;
-    margin-right: -75px;
+  }
+
+  #games .row {
+    margin-left: -65px;
+    margin-right: -65px;
   }
 
   .row > * {
@@ -1581,11 +1676,10 @@ footer > p {
 
   .row {
     margin-top: -25px;
-    margin-left: -25px;
   }
 
   .row > * {
-    padding: 1em 6em 2em 3em;
+    padding: 0 4em 0 4em;
   }
 
   .row.gtr-uniform {
@@ -1825,7 +1919,7 @@ footer > p {
   .row {
     margin-top: -15px;
     margin-left: 0px;
-    margin-right: -0px;
+    margin-right: 0px;
   }
 
   .row > * {
@@ -1833,7 +1927,9 @@ footer > p {
   }
 
   #games .row > * {
-    padding: 1.5em 0 0 3em;
+    margin-top: 1.5rem;
+    margin-left: 3.3rem;
+    padding: 0 0 0 0;
   }
 
   .row.gtr-uniform {
@@ -2428,7 +2524,7 @@ body > article {
   border-radius: 100%;
   width: 20em;
   height: 20em;
-  margin: 5em 0;
+  margin: 6.5em 0em 0em 2.3em;
 }
 
 #about .image img {
@@ -2531,7 +2627,7 @@ body > article {
   #about .image {
     width: 24em;
     height: 24em;
-    margin: 7em 0;
+    margin: 10em -2.25em 0;
   }
 }
 

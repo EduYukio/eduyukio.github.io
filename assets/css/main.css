@@ -4,6 +4,8 @@
 */
 /* My Custom CSS */
 .contact-email {
+  position: absolute;
+  transform: translate(-50%);
   font-size: 3rem;
 }
 
@@ -1426,8 +1428,8 @@ footer > p {
   }
 
   #games .row {
-    margin-left: -75px;
-    margin-right: -75px;
+    margin-left: -65px;
+    margin-right: -65px;
   }
 
   .row > * {
@@ -1674,11 +1676,10 @@ footer > p {
 
   .row {
     margin-top: -25px;
-    /* margin-left: -25px; */
   }
 
   .row > * {
-    padding: 1em 6em 2em 3em;
+    padding: 0 4em 0 4em;
   }
 
   .row.gtr-uniform {
@@ -2626,7 +2627,7 @@ body > article {
   #about .image {
     width: 24em;
     height: 24em;
-    margin: 7em 0;
+    margin: 10em -2.25em 0;
   }
 }
 

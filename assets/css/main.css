@@ -4,6 +4,13 @@
 */
 /* My Custom CSS */
 
+.modal-tool {
+  display: flex;
+}
+.tool {
+  width: 2rem;
+}
+
 #scrollbar-style-1::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -45,21 +52,9 @@
   width: 50%;
   height: 29rem;
   left: 50%;
-  background: red;
+  /* background: red; */
   text-align: center;
 }
-
-/* .modal-info {
-  position: absolute;
-  height: 12rem;
-  background: green;
-  top: 60%;
-  width: 100%;
-  text-align: left;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  padding: 1rem 4rem;
-} */
 
 #role-music {
   opacity: 50%;
@@ -71,10 +66,18 @@
   top: 63%;
   left: 13%;
 
-  background: green;
+  /* background: green; */
   text-align: left;
 }
+.modal-tools {
+  position: absolute;
+  width: 30%;
+  top: 63%;
+  left: 58%;
 
+  /* background: green; */
+  text-align: left;
+}
 .modal-available-text i {
   margin: 0.75rem 0.5rem 0 0.5rem;
 }
@@ -91,7 +94,7 @@
   width: 50%;
   height: 29rem;
   text-align: center;
-  background: blue;
+  /* background: blue; */
 }
 
 .modal-left .embed-container-modal {

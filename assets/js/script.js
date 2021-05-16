@@ -50,6 +50,10 @@ function openModal(modal, article) {
 function closeModal(modal) {
   if (modal == null) return;
   descriptionScrollReset();
+
+  // workaround to stop playing the video
+  modal.querySelector(".json-video").src = "";
+
   modal.classList.remove("active");
   overlay.classList.remove("active");
 

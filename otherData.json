@@ -1,0 +1,14 @@
+{
+  "roles": ["programming", "design", "art", "music"],
+  "tools": [
+    "unity",
+    "csharp",
+    "godot",
+    "love2d",
+    "lua",
+    "aseprite",
+    "gimp",
+    "lmms"
+  ],
+  "availables": ["web", "windows", "linux", "android"]
+}

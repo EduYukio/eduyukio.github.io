@@ -2,11 +2,16 @@ const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
 
-var jsonData;
+var gamesData;
+var otherData;
 
-fetch("./data.json")
+fetch("./gamesData.json")
   .then((response) => response.json())
-  .then((data) => (jsonData = data));
+  .then((data) => (gamesData = data));
+
+fetch("./otherData.json")
+  .then((response) => response.json())
+  .then((data) => (otherData = data));
 
 openModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -44,6 +49,7 @@ function openModal(modal, article) {
 
 function closeModal(modal) {
   if (modal == null) return;
+  descriptionScrollReset();
   modal.classList.remove("active");
   overlay.classList.remove("active");
 
@@ -54,7 +60,7 @@ function closeModal(modal) {
 openModalButtons.forEach((button) => {
   button.addEventListener("mouseenter", () => {
     var image = button.querySelector("img");
-    var gifName = jsonData[button.id]["gif-name"];
+    var gifName = gamesData[button.id]["gif-name"];
     if (gifName == null) return;
     image.src = "images/" + gifName;
   });
@@ -63,7 +69,7 @@ openModalButtons.forEach((button) => {
 openModalButtons.forEach((button) => {
   button.addEventListener("mouseleave", () => {
     var image = button.querySelector("img");
-    var staticName = jsonData[button.id]["static-name"];
+    var staticName = gamesData[button.id]["static-name"];
     if (staticName == null) return;
     image.src = "images/" + staticName;
   });
@@ -72,51 +78,113 @@ openModalButtons.forEach((button) => {
 function updateModalInfo(modal, gameName) {
   updateTitle(modal, gameName);
   updateVideo(modal, gameName);
-  updateAvailable(modal, gameName);
+  updatePlayButton(modal, gameName);
+  updateCodeButton(modal, gameName);
+  updateYearText(modal, gameName);
+  updateAvailables(modal, gameName);
+  updateRoles(modal, gameName);
+  updateTools(modal, gameName);
+  updateDescription(modal, gameName);
 }
 
 function updateTitle(modal, gameName) {
-  modal.querySelector(".title").innerHTML = jsonData[gameName].name;
+  modal.querySelector(".title").innerHTML = gamesData[gameName].name;
 }
 
 function updateVideo(modal, gameName) {
-  modal.querySelector(".json-video").src = jsonData[gameName]["video-link"];
+  modal.querySelector(".json-video").src = gamesData[gameName]["video-link"];
 }
 
-function updateAvailable(modal, gameName) {
-  var selected = modal.querySelector(".json-available-web");
-  if (jsonData[gameName]["available"].includes("web")) {
-    selected.className += " fab fa-html5 fa-lg";
-    selected.style.display = "unset";
-  } else {
-    selected.className = "json-available-web";
-    selected.style.display = "none";
-  }
+function updatePlayButton(modal, gameName) {
+  modal.querySelector("#play-button").href = gamesData[gameName]["play-link"];
+}
 
-  var selected = modal.querySelector(".json-available-windows");
-  if (jsonData[gameName]["available"].includes("windows")) {
-    selected.className += " fab fa-windows fa-lg";
-    selected.style.display = "unset";
-  } else {
-    selected.className = "json-available-windows";
-    selected.style.display = "none";
-  }
+function updateCodeButton(modal, gameName) {
+  modal.querySelector("#source-button").href =
+    gamesData[gameName]["source-link"];
+}
 
-  var selected = modal.querySelector(".json-available-linux");
-  if (jsonData[gameName]["available"].includes("linux")) {
-    selected.className += " fab fa-linux fa-lg";
-    selected.style.display = "unset";
-  } else {
-    selected.className = "json-available-linux";
-    selected.style.display = "none";
-  }
+function updateYearText(modal, gameName) {
+  modal.querySelector(".modal-year-text").innerHTML =
+    gamesData[gameName]["year"] + " - " + gamesData[gameName]["team"];
+}
 
-  var selected = modal.querySelector(".json-available-android");
-  if (jsonData[gameName]["available"].includes("android")) {
-    selected.className += " fab fa-android fa-lg";
-    selected.style.display = "unset";
-  } else {
-    selected.className = "json-available-android";
-    selected.style.display = "none";
+function updateAvailables(modal, gameName) {
+  otherData["availables"].forEach((platform) => {
+    var selected = modal.querySelector(".json-available-" + platform);
+    if (gamesData[gameName]["available"].includes(platform)) {
+      selected.className += " fab fa-lg fa-" + platform;
+      selected.style.display = "unset";
+    } else {
+      selected.className = "json-available-" + platform;
+      selected.style.display = "none";
+    }
+  });
+}
+
+function updateRoles(modal, gameName) {
+  otherData["roles"].forEach((role) => {
+    var selected = modal.querySelector("#role-" + role);
+    if (gamesData[gameName]["roles"].includes(role)) {
+      selected.style.opacity = "100%";
+    } else {
+      selected.style.opacity = "30%";
+    }
+  });
+}
+
+function updateTools(modal, gameName) {
+  otherData["tools"].forEach((tool) => {
+    var selected = modal.querySelector("#tool-" + tool);
+    if (gamesData[gameName]["tools"].includes(tool)) {
+      selected.style.display = "unset";
+    } else {
+      selected.style.display = "none";
+    }
+  });
+}
+
+function updateAchievements(modal, gameName, ul) {
+  var ach = gamesData[gameName]["achievements"];
+  var achLinks = gamesData[gameName]["achievements-links"];
+
+  if (ach.length == 0 || achLinks.length == 0) return;
+
+  for (let i = 0; i < ach.length; i++) {
+    var descriptionText = ach[i];
+    var linkURL = achLinks[i];
+
+    var link = document.createElement("a");
+    link.href = linkURL;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.innerHTML = descriptionText;
+
+    var line = document.createElement("li");
+    line.appendChild(link);
+    ul.appendChild(line);
   }
+}
+
+function updateDescription(modal, gameName) {
+  var ul = modal.querySelector(".description");
+  cleanList(ul);
+
+  updateAchievements(modal, gameName, ul);
+
+  gamesData[gameName]["description"].forEach((descLine) => {
+    var newLine = document.createElement("li");
+    newLine.innerHTML = descLine;
+    ul.appendChild(newLine);
+  });
+}
+
+function cleanList(node) {
+  while (node.firstChild) {
+    node.removeChild(node.lastChild);
+  }
+}
+
+function descriptionScrollReset() {
+  document.querySelector(".modal-description").scrollTo(0, 0);
 }

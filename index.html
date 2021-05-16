@@ -13,6 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script defer src="assets/js/script.js"></script>
     <script
@@ -51,7 +52,7 @@
           </div>
           <br />
           <a
-            href="https://eduyukio.itch.io/mechanical-playground"
+            href=""
             id="play-button"
             class="button"
             target="_blank"
@@ -60,7 +61,7 @@
           >
           <br />
           <a
-            href="https://github.com/EduYukio/MechanicalPlayground"
+            href=""
             id="source-button"
             class="button"
             target="_blank"
@@ -71,28 +72,9 @@
         <div class="modal-right">
           <div class="modal-square-title">Description:</div>
           <div class="modal-description" id="scrollbar-style-1">
-            <ul>
-              <li>
-                <a
-                  href="https://ldjam.com/events/ludum-dare/45/nothing-matters"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >🏆 Top 7 Innovation (among 1800+ games)</a
-                >
-              </li>
-              <li>Final year university project</li>
-              <li>
-                Focused on the player's expression through the choice of
-                mechanics
-              </li>
-              <li>More than 20 mechanics implemented</li>
-              <li>
-                Mechanics are managed using finite state machines, implemented
-                using the State Pattern
-              </li>
-            </ul>
+            <ul class="description"></ul>
           </div>
-          <div class="modal-year-text">2021 - Solo</div>
+          <div class="modal-year-text"></div>
           <div class="modal-roles">
             <div style="text-align: center">Roles:</div>
             <div id="role-programming">💻 Programming</div>
@@ -104,27 +86,51 @@
             <div style="text-align: center">Tools:</div>
             <img
               class="tool"
+              id="tool-unity"
               src="images/unity.png"
-              alt="Unity Engine"
-              title="Unity Engine"
+              title="Unity (Engine)"
             />
             <img
               class="tool"
-              src="images/lmms.png"
-              alt="Unity Engine"
-              title="Unity Engine"
-            />
-            <img
-              class="tool"
+              id="tool-csharp"
               src="images/csharp.png"
-              alt="Unity Engine"
-              title="Unity Engine"
+              title="C# (Programming Language)"
             />
             <img
               class="tool"
-              src="images/unity.png"
-              alt="Unity Engine"
-              title="Unity Engine"
+              id="tool-godot"
+              src="images/godot.png"
+              title="Godot Engine"
+            />
+            <img
+              class="tool"
+              id="tool-love2d"
+              src="images/love2d.png"
+              title="Love2D (Framework)"
+            />
+            <img
+              class="tool"
+              id="tool-lua"
+              src="images/lua.png"
+              title="Lua (Programming Language)"
+            />
+            <img
+              class="tool"
+              id="tool-aseprite"
+              src="images/aseprite.png"
+              title="Aseprite (Pixel Art)"
+            />
+            <img
+              class="tool"
+              id="tool-gimp"
+              src="images/gimp.png"
+              title="GIMP (Vector Art)"
+            />
+            <img
+              class="tool"
+              id="tool-lmms"
+              src="images/lmms.png"
+              title="LMMS (Music)"
             />
           </div>
         </div>

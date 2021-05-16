@@ -77,6 +77,7 @@ function updateModalInfo(modal, gameName) {
   updateCodeButton(modal, gameName);
   updateYearText(modal, gameName);
   updateAllRoles(modal, gameName);
+  updateAllTools(modal, gameName);
 }
 
 function updateTitle(modal, gameName) {
@@ -137,5 +138,25 @@ function updateRole(modal, gameName, role) {
     selected.style.opacity = "100%";
   } else {
     selected.style.opacity = "30%";
+  }
+}
+
+function updateAllTools(modal, gameName) {
+  updateTool(modal, gameName, "unity");
+  updateTool(modal, gameName, "csharp");
+  updateTool(modal, gameName, "godot");
+  updateTool(modal, gameName, "love2d");
+  updateTool(modal, gameName, "lua");
+  updateTool(modal, gameName, "aseprite");
+  updateTool(modal, gameName, "gimp");
+  updateTool(modal, gameName, "lmms");
+}
+
+function updateTool(modal, gameName, tool) {
+  var selected = modal.querySelector("#tool-" + tool);
+  if (jsonData[gameName]["tools"].includes(tool)) {
+    selected.style.display = "unset";
+  } else {
+    selected.style.display = "none";
   }
 }

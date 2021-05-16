@@ -49,6 +49,7 @@ function openModal(modal, article) {
 
 function closeModal(modal) {
   if (modal == null) return;
+  descriptionScrollReset();
   modal.classList.remove("active");
   overlay.classList.remove("active");
 
@@ -83,6 +84,7 @@ function updateModalInfo(modal, gameName) {
   updateAvailables(modal, gameName);
   updateRoles(modal, gameName);
   updateTools(modal, gameName);
+  updateDescription(modal, gameName);
 }
 
 function updateTitle(modal, gameName) {
@@ -140,4 +142,49 @@ function updateTools(modal, gameName) {
       selected.style.display = "none";
     }
   });
+}
+
+function updateAchievements(modal, gameName, ul) {
+  var ach = gamesData[gameName]["achievements"];
+  var achLinks = gamesData[gameName]["achievements-links"];
+
+  if (ach.length == 0 || achLinks.length == 0) return;
+
+  for (let i = 0; i < ach.length; i++) {
+    var descriptionText = ach[i];
+    var linkURL = achLinks[i];
+
+    var link = document.createElement("a");
+    link.href = linkURL;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.innerHTML = descriptionText;
+
+    var line = document.createElement("li");
+    line.appendChild(link);
+    ul.appendChild(line);
+  }
+}
+
+function updateDescription(modal, gameName) {
+  var ul = modal.querySelector(".description");
+  cleanList(ul);
+
+  updateAchievements(modal, gameName, ul);
+
+  gamesData[gameName]["description"].forEach((descLine) => {
+    var newLine = document.createElement("li");
+    newLine.innerHTML = descLine;
+    ul.appendChild(newLine);
+  });
+}
+
+function cleanList(node) {
+  while (node.firstChild) {
+    node.removeChild(node.lastChild);
+  }
+}
+
+function descriptionScrollReset() {
+  document.querySelector(".modal-description").scrollTo(0, 0);
 }

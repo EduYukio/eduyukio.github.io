@@ -11,15 +11,16 @@
     "source-link": "https://github.com/EduYukio/MechanicalPlayground",
     "play-link": "https://eduyukio.itch.io/mechanical-playground",
     "video-link": "https://www.youtube.com/embed//R6j-3RpI9kY",
-    "achievements": [
-      "🏆 Top 7 Innovation (among 1800+ games)",
+    "achievements": ["🏆 Top 7 Innovation (among 1800+ games)"],
+    "achievements-links": [
       "https://ldjam.com/events/ludum-dare/45/nothing-matters"
     ],
     "description": [
       "Final year university project",
       "Focused on the player's expression through the choice of mechanics",
       "More than 20 mechanics implemented",
-      "Mechanics are managed using finite state machines, implemented using the State Pattern"
+      "Mechanics are managed using finite state machines, implemented using the State Pattern",
+      "LUUUUUL"
     ]
   },
   "nothing-matters": {
@@ -34,10 +35,8 @@
     "source-link": "https://github.com/EduYukio/TowerOfMadness",
     "play-link": "https://eduyukio.itch.io/tower-of-madness",
     "video-link": "https://www.youtube.com/embed//jG_fMDOB4NQ",
-    "achievements": [
-      "🏆 Top 56 Innovation (among 2500+ games)",
-      "https://ldjam.com/events/ludum-dare/42/$109072"
-    ],
+    "achievements": ["🏆 Top 56 Innovation (among 2500+ games)"],
+    "achievements-links": ["https://ldjam.com/events/ludum-dare/42/$109072"],
     "description": ["GAME2", "GAME2 X", "GAME2 Y", "GAME2 Z", "GAME2 KK"]
   },
   "match-the-emoji": {
@@ -52,10 +51,9 @@
     "source-link": "https://gitlab.com/uspgamedev/ld45",
     "play-link": "https://uspgamedev.itch.io/nothing-matters",
     "video-link": "https://www.youtube.com/embed//gUhtpqVKp3A",
-    "achievements": [
-      "🏆 500k+ Downloads",
+    "achievements": ["🏆 500k+ Downloads", "🏆 Top 7 Lul"],
+    "achievements-links": [
       "https://play.google.com/store/apps/details?id=br.com.tapps.matchtheemoji",
-      "🏆 Top 7 Lul",
       "https://ldjam.com/events/ludum-dare/42/$109072"
     ],
     "description": ["GAME3", "GAME3 X"]

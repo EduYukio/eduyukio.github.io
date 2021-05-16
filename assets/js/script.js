@@ -2,11 +2,16 @@ const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
 
-var jsonData;
+var gamesData;
+var otherData;
 
-fetch("./data.json")
+fetch("./gamesData.json")
   .then((response) => response.json())
-  .then((data) => (jsonData = data));
+  .then((data) => (gamesData = data));
+
+fetch("./otherData.json")
+  .then((response) => response.json())
+  .then((data) => (otherData = data));
 
 openModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -54,7 +59,7 @@ function closeModal(modal) {
 openModalButtons.forEach((button) => {
   button.addEventListener("mouseenter", () => {
     var image = button.querySelector("img");
-    var gifName = jsonData[button.id]["gif-name"];
+    var gifName = gamesData[button.id]["gif-name"];
     if (gifName == null) return;
     image.src = "images/" + gifName;
   });
@@ -63,7 +68,7 @@ openModalButtons.forEach((button) => {
 openModalButtons.forEach((button) => {
   button.addEventListener("mouseleave", () => {
     var image = button.querySelector("img");
-    var staticName = jsonData[button.id]["static-name"];
+    var staticName = gamesData[button.id]["static-name"];
     if (staticName == null) return;
     image.src = "images/" + staticName;
   });
@@ -72,91 +77,67 @@ openModalButtons.forEach((button) => {
 function updateModalInfo(modal, gameName) {
   updateTitle(modal, gameName);
   updateVideo(modal, gameName);
-  updateAllAvailables(modal, gameName);
   updatePlayButton(modal, gameName);
   updateCodeButton(modal, gameName);
   updateYearText(modal, gameName);
-  updateAllRoles(modal, gameName);
-  updateAllTools(modal, gameName);
+  updateAvailables(modal, gameName);
+  updateRoles(modal, gameName);
+  updateTools(modal, gameName);
 }
 
 function updateTitle(modal, gameName) {
-  modal.querySelector(".title").innerHTML = jsonData[gameName].name;
+  modal.querySelector(".title").innerHTML = gamesData[gameName].name;
 }
 
 function updateVideo(modal, gameName) {
-  modal.querySelector(".json-video").src = jsonData[gameName]["video-link"];
-}
-
-function updateAllAvailables(modal, gameName) {
-  updateAvailable(modal, gameName, "web");
-  updateAvailable(modal, gameName, "windows");
-  updateAvailable(modal, gameName, "linux");
-  updateAvailable(modal, gameName, "android");
-}
-
-function updateAvailable(modal, gameName, platform) {
-  var selected = modal.querySelector(".json-available-" + platform);
-  if (jsonData[gameName]["available"].includes(platform)) {
-    selected.className += " fab fa-lg fa-" + platform;
-    selected.style.display = "unset";
-  } else {
-    selected.className = "json-available-" + platform;
-    selected.style.display = "none";
-  }
+  modal.querySelector(".json-video").src = gamesData[gameName]["video-link"];
 }
 
 function updatePlayButton(modal, gameName) {
-  modal.querySelector("#play-button").href = jsonData[gameName]["play-link"];
+  modal.querySelector("#play-button").href = gamesData[gameName]["play-link"];
 }
 
 function updateCodeButton(modal, gameName) {
   modal.querySelector("#source-button").href =
-    jsonData[gameName]["source-link"];
+    gamesData[gameName]["source-link"];
 }
 
 function updateYearText(modal, gameName) {
   modal.querySelector(".modal-year-text").innerHTML =
-    jsonData[gameName]["year"] + " - " + jsonData[gameName]["team"];
+    gamesData[gameName]["year"] + " - " + gamesData[gameName]["team"];
+}
+
+function updateAvailables(modal, gameName) {
+  otherData["availables"].forEach((platform) => {
+    var selected = modal.querySelector(".json-available-" + platform);
+    if (gamesData[gameName]["available"].includes(platform)) {
+      selected.className += " fab fa-lg fa-" + platform;
+      selected.style.display = "unset";
+    } else {
+      selected.className = "json-available-" + platform;
+      selected.style.display = "none";
+    }
+  });
 }
 
 function updateRoles(modal, gameName) {
-  modal.querySelector(".modal-roles").innerHTML =
-    jsonData[gameName]["year"] + " - " + jsonData[gameName]["team"];
+  otherData["roles"].forEach((role) => {
+    var selected = modal.querySelector("#role-" + role);
+    if (gamesData[gameName]["roles"].includes(role)) {
+      selected.style.opacity = "100%";
+    } else {
+      selected.style.opacity = "30%";
+    }
+  });
 }
 
-function updateAllRoles(modal, gameName) {
-  updateRole(modal, gameName, "programming");
-  updateRole(modal, gameName, "design");
-  updateRole(modal, gameName, "art");
-  updateRole(modal, gameName, "music");
-}
-
-function updateRole(modal, gameName, role) {
-  var selected = modal.querySelector("#role-" + role);
-  if (jsonData[gameName]["roles"].includes(role)) {
-    selected.style.opacity = "100%";
-  } else {
-    selected.style.opacity = "30%";
-  }
-}
-
-function updateAllTools(modal, gameName) {
-  updateTool(modal, gameName, "unity");
-  updateTool(modal, gameName, "csharp");
-  updateTool(modal, gameName, "godot");
-  updateTool(modal, gameName, "love2d");
-  updateTool(modal, gameName, "lua");
-  updateTool(modal, gameName, "aseprite");
-  updateTool(modal, gameName, "gimp");
-  updateTool(modal, gameName, "lmms");
-}
-
-function updateTool(modal, gameName, tool) {
-  var selected = modal.querySelector("#tool-" + tool);
-  if (jsonData[gameName]["tools"].includes(tool)) {
-    selected.style.display = "unset";
-  } else {
-    selected.style.display = "none";
-  }
+function updateTools(modal, gameName) {
+  otherData["tools"].forEach((tool) => {
+    var selected = modal.querySelector("#tool-" + tool);
+    if (gamesData[gameName]["tools"].includes(tool)) {
+      selected.style.display = "unset";
+    } else {
+      selected.style.display = "none";
+    }
+  });
 }

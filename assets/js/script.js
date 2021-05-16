@@ -34,7 +34,7 @@ var $html = $("html"),
 
 function openModal(modal, article) {
   if (modal == null) return;
-  updateModalInfo(modal, article);
+  updateModalInfo(modal, article.id);
   modal.classList.add("active");
   overlay.classList.add("active");
 
@@ -69,7 +69,54 @@ openModalButtons.forEach((button) => {
   });
 });
 
-function updateModalInfo(modal, article) {
-  var gameName = article.id;
+function updateModalInfo(modal, gameName) {
+  updateTitle(modal, gameName);
+  updateVideo(modal, gameName);
+  updateAvailable(modal, gameName);
+}
+
+function updateTitle(modal, gameName) {
   modal.querySelector(".title").innerHTML = jsonData[gameName].name;
+}
+
+function updateVideo(modal, gameName) {
+  modal.querySelector(".json-video").src = jsonData[gameName]["video-link"];
+}
+
+function updateAvailable(modal, gameName) {
+  var selected = modal.querySelector(".json-available-web");
+  if (jsonData[gameName]["available"].includes("web")) {
+    selected.className += " fab fa-html5 fa-lg";
+    selected.style.display = "unset";
+  } else {
+    selected.className = "json-available-web";
+    selected.style.display = "none";
+  }
+
+  var selected = modal.querySelector(".json-available-windows");
+  if (jsonData[gameName]["available"].includes("windows")) {
+    selected.className += " fab fa-windows fa-lg";
+    selected.style.display = "unset";
+  } else {
+    selected.className = "json-available-windows";
+    selected.style.display = "none";
+  }
+
+  var selected = modal.querySelector(".json-available-linux");
+  if (jsonData[gameName]["available"].includes("linux")) {
+    selected.className += " fab fa-linux fa-lg";
+    selected.style.display = "unset";
+  } else {
+    selected.className = "json-available-linux";
+    selected.style.display = "none";
+  }
+
+  var selected = modal.querySelector(".json-available-android");
+  if (jsonData[gameName]["available"].includes("android")) {
+    selected.className += " fab fa-android fa-lg";
+    selected.style.display = "unset";
+  } else {
+    selected.className = "json-available-android";
+    selected.style.display = "none";
+  }
 }

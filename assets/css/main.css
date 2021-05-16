@@ -110,7 +110,8 @@
   text-align: left;
 }
 .modal-available-text i {
-  margin: 0.75rem 0.5rem 0 0.5rem;
+  display: unset;
+  margin: 0rem 0.2rem 0rem 0.2rem;
 }
 
 .modal-year-text {

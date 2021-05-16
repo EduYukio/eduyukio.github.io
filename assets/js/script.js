@@ -76,6 +76,7 @@ function updateModalInfo(modal, gameName) {
   updatePlayButton(modal, gameName);
   updateCodeButton(modal, gameName);
   updateYearText(modal, gameName);
+  updateAllRoles(modal, gameName);
 }
 
 function updateTitle(modal, gameName) {
@@ -116,4 +117,25 @@ function updateCodeButton(modal, gameName) {
 function updateYearText(modal, gameName) {
   modal.querySelector(".modal-year-text").innerHTML =
     jsonData[gameName]["year"] + " - " + jsonData[gameName]["team"];
+}
+
+function updateRoles(modal, gameName) {
+  modal.querySelector(".modal-roles").innerHTML =
+    jsonData[gameName]["year"] + " - " + jsonData[gameName]["team"];
+}
+
+function updateAllRoles(modal, gameName) {
+  updateRole(modal, gameName, "programming");
+  updateRole(modal, gameName, "design");
+  updateRole(modal, gameName, "art");
+  updateRole(modal, gameName, "music");
+}
+
+function updateRole(modal, gameName, role) {
+  var selected = modal.querySelector("#role-" + role);
+  if (jsonData[gameName]["roles"].includes(role)) {
+    selected.style.opacity = "100%";
+  } else {
+    selected.style.opacity = "30%";
+  }
 }

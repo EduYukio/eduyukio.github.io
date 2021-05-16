@@ -73,6 +73,9 @@ function updateModalInfo(modal, gameName) {
   updateTitle(modal, gameName);
   updateVideo(modal, gameName);
   updateAllAvailables(modal, gameName);
+  updatePlayButton(modal, gameName);
+  updateCodeButton(modal, gameName);
+  updateYearText(modal, gameName);
 }
 
 function updateTitle(modal, gameName) {
@@ -91,9 +94,6 @@ function updateAllAvailables(modal, gameName) {
 }
 
 function updateAvailable(modal, gameName, platform) {
-  console.log(platform);
-  console.log(".json-available-" + platform);
-
   var selected = modal.querySelector(".json-available-" + platform);
   if (jsonData[gameName]["available"].includes(platform)) {
     selected.className += " fab fa-lg fa-" + platform;
@@ -102,4 +102,18 @@ function updateAvailable(modal, gameName, platform) {
     selected.className = "json-available-" + platform;
     selected.style.display = "none";
   }
+}
+
+function updatePlayButton(modal, gameName) {
+  modal.querySelector("#play-button").href = jsonData[gameName]["play-link"];
+}
+
+function updateCodeButton(modal, gameName) {
+  modal.querySelector("#source-button").href =
+    jsonData[gameName]["source-link"];
+}
+
+function updateYearText(modal, gameName) {
+  modal.querySelector(".modal-year-text").innerHTML =
+    jsonData[gameName]["year"] + " - " + jsonData[gameName]["team"];
 }

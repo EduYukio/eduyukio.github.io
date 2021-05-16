@@ -72,7 +72,7 @@ openModalButtons.forEach((button) => {
 function updateModalInfo(modal, gameName) {
   updateTitle(modal, gameName);
   updateVideo(modal, gameName);
-  updateAvailable(modal, gameName);
+  updateAllAvailables(modal, gameName);
 }
 
 function updateTitle(modal, gameName) {
@@ -83,40 +83,23 @@ function updateVideo(modal, gameName) {
   modal.querySelector(".json-video").src = jsonData[gameName]["video-link"];
 }
 
-function updateAvailable(modal, gameName) {
-  var selected = modal.querySelector(".json-available-web");
-  if (jsonData[gameName]["available"].includes("web")) {
-    selected.className += " fab fa-html5 fa-lg";
-    selected.style.display = "unset";
-  } else {
-    selected.className = "json-available-web";
-    selected.style.display = "none";
-  }
+function updateAllAvailables(modal, gameName) {
+  updateAvailable(modal, gameName, "web");
+  updateAvailable(modal, gameName, "windows");
+  updateAvailable(modal, gameName, "linux");
+  updateAvailable(modal, gameName, "android");
+}
 
-  var selected = modal.querySelector(".json-available-windows");
-  if (jsonData[gameName]["available"].includes("windows")) {
-    selected.className += " fab fa-windows fa-lg";
-    selected.style.display = "unset";
-  } else {
-    selected.className = "json-available-windows";
-    selected.style.display = "none";
-  }
+function updateAvailable(modal, gameName, platform) {
+  console.log(platform);
+  console.log(".json-available-" + platform);
 
-  var selected = modal.querySelector(".json-available-linux");
-  if (jsonData[gameName]["available"].includes("linux")) {
-    selected.className += " fab fa-linux fa-lg";
+  var selected = modal.querySelector(".json-available-" + platform);
+  if (jsonData[gameName]["available"].includes(platform)) {
+    selected.className += " fab fa-lg fa-" + platform;
     selected.style.display = "unset";
   } else {
-    selected.className = "json-available-linux";
-    selected.style.display = "none";
-  }
-
-  var selected = modal.querySelector(".json-available-android");
-  if (jsonData[gameName]["available"].includes("android")) {
-    selected.className += " fab fa-android fa-lg";
-    selected.style.display = "unset";
-  } else {
-    selected.className = "json-available-android";
+    selected.className = "json-available-" + platform;
     selected.style.display = "none";
   }
 }

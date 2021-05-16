@@ -42,7 +42,7 @@
 
 #scrollbar-style-1::-webkit-scrollbar {
   width: 0.75rem;
-  background-color: transparent;
+  background-color: #222;
 }
 
 #scrollbar-style-1::-webkit-scrollbar-thumb {

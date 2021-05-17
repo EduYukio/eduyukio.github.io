@@ -13,7 +13,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script defer src="assets/js/script.js"></script>
     <script
@@ -45,7 +44,7 @@
           </div>
           <div class="modal-available-text">
             Available on:
-            <i class="json-available-web" title="Web (Browser)"> </i>
+            <i class="json-available-html5" title="Web (Browser)"> </i>
             <i class="json-available-windows" title="Windows"> </i>
             <i class="json-available-linux" title="Linux"> </i>
             <i class="json-available-android" title="Android"> </i>
@@ -54,7 +53,7 @@
           <a
             href=""
             id="play-button"
-            class="button"
+            class="button modal-button"
             target="_blank"
             rel="noopener noreferrer"
             >Play!</a
@@ -63,14 +62,16 @@
           <a
             href=""
             id="source-button"
-            class="button"
+            class="button modal-button"
             target="_blank"
             rel="noopener noreferrer"
             >Code</a
           >
         </div>
         <div class="modal-right">
-          <div class="modal-square-title">Description:</div>
+          <div class="modal-square-title" id="description-title">
+            Description:
+          </div>
           <div class="modal-description" id="scrollbar-style-1">
             <ul class="description"></ul>
           </div>

@@ -2872,7 +2872,347 @@ body > article {
   }
 }
 
-@media screen and (min-width: 1024px) {
+/*
+
+*--MOBILE SCREENS--*
+
+*/
+@media screen and (max-width: 849px) {
+  .contact-email {
+    font-size: 1.5rem;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  .modal {
+    overflow: auto;
+  }
+
+  .modal-header .title {
+    font-size: 1rem;
+  }
+
+  .modal-header .close-button {
+    font-size: 1.5rem;
+    width: 30px;
+    height: 45px;
+  }
+
+  .modal-right {
+    left: 0;
+    width: 100%;
+    top: 75%;
+  }
+
+  .modal-left {
+    left: 0;
+    width: 100%;
+  }
+
+  #description-title {
+    padding-top: 10rem;
+  }
+
+  .modal-description {
+    height: 15rem;
+    font-size: 1.1rem;
+  }
+
+  .modal-year-text {
+    padding-top: 8rem;
+    font-size: 1.1rem;
+    top: 69%;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 5rem;
+  }
+
+  .modal-roles {
+    padding-top: 8rem;
+    top: 82%;
+    width: 30%;
+    left: 35%;
+    font-size: 1.1rem;
+  }
+
+  .modal-tools {
+    padding-top: 8rem;
+    top: 116%;
+    width: 50%;
+    left: 25%;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .tool {
+    width: 3rem;
+  }
+
+  .modal-available-text {
+    font-size: 1.1rem;
+  }
+
+  .modal-button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact-email {
+    font-size: 1.5rem;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  .modal {
+    overflow: auto;
+  }
+
+  .modal-header .title {
+    font-size: 1rem;
+  }
+
+  .modal-header .close-button {
+    font-size: 1.5rem;
+    width: 30px;
+    height: 45px;
+  }
+
+  .modal-right {
+    left: 0;
+    width: 100%;
+    top: 75%;
+  }
+
+  .modal-left {
+    left: 0;
+    width: 100%;
+  }
+
+  #description-title {
+    padding-top: 6.5rem;
+  }
+
+  .modal-description {
+    height: 15rem;
+    font-size: 1.1rem;
+  }
+
+  .modal-year-text {
+    padding-top: 4.5rem;
+    font-size: 1.1rem;
+    top: 69%;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 3.2rem;
+  }
+
+  .modal-roles {
+    padding-top: 4.5rem;
+    top: 82%;
+    width: 50%;
+    left: 25%;
+    font-size: 1.1rem;
+  }
+
+  .modal-tools {
+    padding-top: 4.5rem;
+    top: 116%;
+    width: 50%;
+    left: 25%;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .tool {
+    width: 3rem;
+  }
+
+  .modal-available-text {
+    font-size: 1.1rem;
+  }
+
+  .modal-button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact-email {
+    font-size: 1.5rem;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  .modal {
+    overflow: auto;
+  }
+
+  .modal-header .title {
+    font-size: 1rem;
+  }
+
+  .modal-header .close-button {
+    font-size: 1.5rem;
+    width: 30px;
+    height: 45px;
+  }
+
+  .modal-right {
+    left: 0;
+    width: 100%;
+    top: 75%;
+  }
+
+  .modal-left {
+    left: 0;
+    width: 100%;
+  }
+
+  #description-title {
+    padding-top: 2rem;
+  }
+  .modal-description {
+    height: 15rem;
+    font-size: 1.1rem;
+  }
+
+  .modal-year-text {
+    padding-top: 0rem;
+    font-size: 1.1rem;
+    top: 69%;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 2rem;
+  }
+
+  .modal-roles {
+    padding-top: 0rem;
+    top: 82%;
+    width: 50%;
+    left: 25%;
+    font-size: 1.1rem;
+  }
+
+  .modal-tools {
+    padding-top: 0rem;
+    top: 116%;
+    width: 50%;
+    left: 25%;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .tool {
+    width: 3rem;
+  }
+
+  .modal-available-text {
+    font-size: 1.1rem;
+  }
+
+  .modal-button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-email {
+    font-size: 1.5rem;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  .modal {
+    overflow: auto;
+  }
+
+  .modal-header .title {
+    font-size: 1rem;
+  }
+
+  .modal-header .close-button {
+    font-size: 1.5rem;
+    width: 30px;
+    height: 45px;
+  }
+
+  .modal-right {
+    left: 0;
+    width: 100%;
+    top: 75%;
+  }
+
+  .modal-left {
+    left: 0;
+    width: 100%;
+  }
+
+  .modal-description {
+    height: 15rem;
+    font-size: 0.9rem;
+  }
+
+  .modal-year-text {
+    padding-top: 0rem;
+    font-size: 1rem;
+    top: 61%;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 2rem;
+  }
+
+  .modal-roles {
+    padding-top: 0rem;
+    top: 74%;
+    width: 50%;
+    left: 25%;
+    font-size: 1rem;
+  }
+
+  .modal-tools {
+    padding-top: 0rem;
+    top: 108%;
+    width: 50%;
+    left: 25%;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .tool {
+    width: 3rem;
+  }
+
+  .modal-available-text {
+    font-size: 1rem;
+  }
+
+  #description-title {
+    padding-top: 0rem;
+  }
+}
+
+/*
+
+
+
+
+
+*/
+
+@media screen and (min-width: 850px) {
   .tool {
     width: 2rem;
   }

@@ -171,7 +171,8 @@
   box-shadow: 0 0 4pt 4pt #000;
   border-radius: 10px;
   z-index: 10;
-  background-color: #222;
+  /* background-color: #222; */
+  background-color: #1b1b1b;
   width: 1000px;
   height: 550px;
   width: 75%;
@@ -2372,7 +2373,7 @@ ul.actions li:first-child {
 /* Nav */
 
 #nav {
-  background-color: #282828;
+  background-color: rgb(30, 33, 34);
   text-align: center;
   position: fixed;
   left: 0;
@@ -2382,6 +2383,7 @@ ul.actions li:first-child {
   cursor: default;
   height: 3.5em;
   line-height: 3.5em;
+  box-shadow: 0 0 3pt 2pt #111;
 }
 
 #nav ul {

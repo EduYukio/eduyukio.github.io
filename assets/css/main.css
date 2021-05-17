@@ -55,7 +55,7 @@
 .modal-description {
   position: absolute;
   border: 0.25rem solid #555;
-  border-radius: 0.25rem;
+  /* border-radius: 0.25rem; */
   /* font: 14px; */
   width: 75%;
   max-width: 500px;
@@ -66,6 +66,8 @@
   padding: 0 1rem 0 1rem;
   left: 13%;
   text-align: left;
+  font-size: 1.2rem;
+  /* padding-left: 0.75em; */
 }
 
 .modal-right {
@@ -80,22 +82,24 @@
 
 .modal-roles {
   position: absolute;
-  width: 30%;
-  top: 63%;
+  width: 42%;
+  top: 66%;
   left: 13%;
 
   /* background: green; */
   text-align: left;
+  font-size: 1.2rem;
 }
 
 .modal-tools {
   position: absolute;
   width: 24%;
-  top: 63%;
+  top: 66%;
   left: 64%;
 
   /* background: green; */
-  text-align: left;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .tool {
@@ -103,6 +107,10 @@
   margin: 0.25rem;
 }
 
+.modal-available-text {
+  font-size: 1.1rem;
+  margin-top: 0.6rem;
+}
 .modal-available-text i {
   display: unset;
   margin: 0rem 0.2rem 0rem 0.2rem;
@@ -111,6 +119,7 @@
 .modal-year-text {
   position: absolute;
   top: 56%;
+  font-size: 1.1rem;
   width: 100%;
 }
 
@@ -2319,11 +2328,11 @@ ul.social li a.fa-linkedin-in {
 }
 
 ul.social li a.fa-github {
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(49, 49, 49);
 }
 
 ul.social li a.fa-gitlab {
-  background-color: #d1540c;
+  background-color: #c5520f;
 }
 
 ul.social li a:hover {
@@ -2860,5 +2869,241 @@ body > article {
 
   #copyright li:first-child {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tool {
+    width: 2rem;
+  }
+
+  .modal-description {
+    height: 10.2rem;
+    font-size: 0.9rem;
+  }
+
+  .modal-year-text {
+    top: 45%;
+    font-size: 1rem;
+  }
+
+  .modal-roles {
+    top: 55%;
+    font-size: 1rem;
+  }
+
+  .modal-tools {
+    top: 55%;
+    font-size: 1rem;
+  }
+
+  .modal-available-text {
+    font-size: 1rem;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .tool {
+    width: 2.5rem;
+  }
+
+  .modal-description {
+    height: 12.7rem;
+    font-size: 0.95rem;
+  }
+
+  .modal-year-text {
+    top: 54%;
+    font-size: 1rem;
+  }
+
+  .modal-roles {
+    top: 65%;
+    font-size: 1.1rem;
+  }
+
+  .modal-tools {
+    top: 65%;
+    font-size: 1.1rem;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 3.75rem;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .tool {
+    width: 3rem;
+  }
+
+  .modal-description {
+    height: 13.5rem;
+    font-size: 0.95rem;
+  }
+
+  .modal-year-text {
+    top: 57%;
+    font-size: 1rem;
+  }
+
+  .modal-roles {
+    top: 66%;
+    font-size: 1.1rem;
+  }
+
+  .modal-tools {
+    top: 66%;
+    font-size: 1.1rem;
+  }
+
+  .modal-available-text {
+    font-size: 1rem;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 3.9rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tool {
+    width: 3rem;
+  }
+
+  .modal-description {
+    height: 14.3rem;
+    font-size: 1rem;
+  }
+
+  .modal-year-text {
+    top: 59%;
+    font-size: 1rem;
+  }
+
+  .modal-roles {
+    top: 69%;
+    font-size: 1.1rem;
+  }
+
+  .modal-tools {
+    top: 69%;
+    font-size: 1.1rem;
+  }
+
+  .modal-available-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .tool {
+    width: 3rem;
+  }
+
+  .modal-description {
+    height: 15.1rem;
+    font-size: 1rem;
+  }
+
+  .modal-year-text {
+    top: 63%;
+    font-size: 1rem;
+  }
+
+  .modal-roles {
+    top: 73%;
+    font-size: 1.1rem;
+  }
+
+  .modal-tools {
+    top: 73%;
+    font-size: 1.1rem;
+  }
+
+  .modal-available-text {
+    font-size: 1rem;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 4.4rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .tool {
+    width: 3rem;
+  }
+
+  .modal-description {
+    height: 15.9rem;
+    font-size: 1rem;
+  }
+
+  .modal-year-text {
+    top: 65%;
+    font-size: 1rem;
+  }
+
+  .modal-roles {
+    top: 75%;
+    font-size: 1.1rem;
+  }
+
+  .modal-tools {
+    top: 75%;
+    font-size: 1.1rem;
+  }
+
+  .modal-available-text {
+    font-size: 1rem;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 4.6rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .tool {
+    width: 3.25rem;
+  }
+
+  .modal-description {
+    height: 17.8rem;
+    font-size: 1.1rem;
+  }
+
+  .modal-year-text {
+    top: 72%;
+    font-size: 1.1rem;
+  }
+
+  .modal-roles {
+    top: 82%;
+    font-size: 1.2rem;
+    width: 30%;
+  }
+
+  .modal-tools {
+    top: 82%;
+    left: 59%;
+    font-size: 1.2rem;
+  }
+
+  .modal-available-text {
+    font-size: 1.1rem;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 6.5rem;
+  }
+
+  #copyright {
+    font-size: 1.2em;
   }
 }

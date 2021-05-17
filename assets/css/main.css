@@ -167,7 +167,8 @@
   display: none;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 5px solid #050505;
+  /* border: 5px solid #050505; */
+  box-shadow: 0 0 4pt 4pt #000;
   border-radius: 10px;
   z-index: 10;
   background-color: #222;
@@ -249,6 +250,7 @@
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  box-shadow: 0pt 0pt 12pt 10pt #111;
 }
 
 .embed-container-home iframe,
@@ -288,7 +290,8 @@ html.scrollDisabled {
 
 .box.style1 {
   padding: 1em 1em 1em 1em;
-  border: 0.35rem solid #000;
+  /* border: 0.2rem solid #000; */
+  box-shadow: 0 0 3pt 2pt #000;
   border-radius: 20px;
 
   -moz-transition: top 0.2s ease-in-out;
@@ -304,8 +307,8 @@ html.scrollDisabled {
   border-radius: 10px;
   display: block;
   width: 100%;
-  border: 0.25rem solid #333;
   /* box-shadow: 0 0 3pt 2pt #333; */
+  border: 0.25rem solid #333;
   margin: 0 0 0.8em 0;
 }
 
@@ -320,7 +323,8 @@ html.scrollDisabled {
 }
 
 .game-detail:hover .box.style1 {
-  border-color: #555;
+  box-shadow: 0 0 3pt 2pt #666;
+  /* border-color: #555; */
   top: -7px;
 }
 
@@ -2442,13 +2446,14 @@ body > article {
 }
 
 #about .image {
-  border-radius: 100%;
+  /* border-radius: 100%; */
   width: 20em;
   height: 20em;
   margin: 6.5em 0em 0em 2.3em;
 }
 
 #about .image img {
+  box-shadow: 0 0 8pt 10pt #1d1d1d;
   border-radius: 100%;
 }
 

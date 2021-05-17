@@ -2809,7 +2809,7 @@ body > article {
   }
 
   #description-title {
-    padding-top: 10rem;
+    padding-top: 12rem;
   }
 
   .modal-description {
@@ -2818,7 +2818,7 @@ body > article {
   }
 
   .modal-year-text {
-    padding-top: 8rem;
+    padding-top: 10rem;
     font-size: 1.1rem;
     top: 69%;
   }
@@ -2828,7 +2828,7 @@ body > article {
   }
 
   .modal-roles {
-    padding-top: 8rem;
+    padding-top: 10rem;
     top: 82%;
     width: 28%;
     left: 36%;
@@ -2836,7 +2836,7 @@ body > article {
   }
 
   .modal-tools {
-    padding-top: 8rem;
+    padding-top: 10rem;
     top: 116%;
     width: 28%;
     left: 36%;
@@ -2859,11 +2859,11 @@ body > article {
 
 @media screen and (max-width: 700px) {
   #description-title {
-    padding-top: 6.5rem;
+    padding-top: 10rem;
   }
 
   .modal-year-text {
-    padding-top: 4.5rem;
+    padding-top: 8rem;
     font-size: 1.1rem;
     top: 69%;
   }
@@ -2873,7 +2873,7 @@ body > article {
   }
 
   .modal-roles {
-    padding-top: 4.5rem;
+    padding-top: 8rem;
     top: 82%;
     width: 34%;
     left: 33%;
@@ -2881,7 +2881,7 @@ body > article {
   }
 
   .modal-tools {
-    padding-top: 4.5rem;
+    padding-top: 8rem;
     top: 116%;
     width: 34%;
     left: 33%;
@@ -2904,11 +2904,11 @@ body > article {
 
 @media screen and (max-width: 550px) {
   #description-title {
-    padding-top: 2rem;
+    padding-top: 5rem;
   }
 
   .modal-year-text {
-    padding-top: 0rem;
+    padding-top: 3rem;
     font-size: 1.1rem;
     top: 69%;
   }
@@ -2918,7 +2918,7 @@ body > article {
   }
 
   .modal-roles {
-    padding-top: 0rem;
+    padding-top: 3rem;
     top: 82%;
     width: 42%;
     left: 28%;
@@ -2926,7 +2926,7 @@ body > article {
   }
 
   .modal-tools {
-    padding-top: 0rem;
+    padding-top: 3rem;
     top: 116%;
     width: 42%;
     left: 28%;
@@ -2948,13 +2948,17 @@ body > article {
 }
 
 @media screen and (max-width: 450px) {
+  #description-title {
+    padding-top: 4rem;
+  }
+
   .modal-description {
     height: 15rem;
     font-size: 0.9rem;
   }
 
   .modal-year-text {
-    padding-top: 0rem;
+    padding-top: 4rem;
     font-size: 1rem;
     top: 61%;
   }
@@ -2964,7 +2968,7 @@ body > article {
   }
 
   .modal-roles {
-    padding-top: 0rem;
+    padding-top: 4rem;
     top: 74%;
     width: 50%;
     left: 25%;
@@ -2972,7 +2976,7 @@ body > article {
   }
 
   .modal-tools {
-    padding-top: 0rem;
+    padding-top: 4rem;
     top: 108%;
     width: 50%;
     left: 25%;
@@ -2986,10 +2990,6 @@ body > article {
 
   .modal-available-text {
     font-size: 1rem;
-  }
-
-  #description-title {
-    padding-top: 0rem;
   }
 }
 

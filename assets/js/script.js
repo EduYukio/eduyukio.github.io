@@ -104,8 +104,15 @@ function updatePlayButton(modal, gameName) {
 }
 
 function updateCodeButton(modal, gameName) {
-  modal.querySelector("#source-button").href =
-    gamesData[gameName]["source-link"];
+  var sourceLink = gamesData[gameName]["source-link"];
+  if (sourceLink == "") {
+    document.getElementById("source-button").classList.add("no-source");
+  } else {
+    document.getElementById("source-button").classList.remove("no-source");
+
+    modal.querySelector("#source-button").href =
+      gamesData[gameName]["source-link"];
+  }
 }
 
 function updateYearText(modal, gameName) {

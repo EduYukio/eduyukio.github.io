@@ -2133,6 +2133,19 @@ button.large,
   letter-spacing: -0.025em;
 }
 
+/* my code */
+
+input[type="button"].no-source,
+input[type="submit"].no-source,
+input[type="reset"].no-source,
+button.no-source,
+.button.no-source {
+  opacity: 40%;
+  pointer-events: none;
+}
+
+/* my code */
+
 input[type="button"].alt,
 input[type="submit"].alt,
 input[type="reset"].alt,

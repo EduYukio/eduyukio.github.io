@@ -66,7 +66,7 @@ openModalButtons.forEach((button) => {
     var image = button.querySelector("img");
     var gifName = gamesData[button.id]["gif-name"];
     if (gifName == null) return;
-    image.src = "images/" + gifName;
+    image.src = "images/gifs/" + gifName;
   });
 });
 
@@ -75,7 +75,7 @@ openModalButtons.forEach((button) => {
     var image = button.querySelector("img");
     var staticName = gamesData[button.id]["static-name"];
     if (staticName == null) return;
-    image.src = "images/" + staticName;
+    image.src = "images/screenshots/" + staticName;
   });
 });
 
@@ -148,7 +148,7 @@ function updateTools(modal, gameName) {
   });
 }
 
-function updateAchievements(modal, gameName, ul) {
+function updateAchievements(gameName, ul) {
   var ach = gamesData[gameName]["achievements"];
   var achLinks = gamesData[gameName]["achievements-links"];
 
@@ -174,7 +174,7 @@ function updateDescription(modal, gameName) {
   var ul = modal.querySelector(".description");
   cleanList(ul);
 
-  updateAchievements(modal, gameName, ul);
+  updateAchievements(gameName, ul);
 
   gamesData[gameName]["description"].forEach((descLine) => {
     var newLine = document.createElement("li");

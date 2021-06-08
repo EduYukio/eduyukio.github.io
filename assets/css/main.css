@@ -168,7 +168,8 @@
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   /* border: 5px solid #050505; */
-  box-shadow: 0 0 4pt 4pt #000;
+  border: 3px solid #000;
+  box-shadow: 0 0 4pt 4pt #333;
   border-radius: 10px;
   z-index: 10;
   /* background-color: #222; */

@@ -72,7 +72,7 @@
     "description": ["GAME2", "GAME2 X", "GAME2 Y", "GAME2 Z", "GAME2 KK"]
   },
   "cutting-edge": {
-    "name": "Cutting Edge",
+    "name": "Cutting Edge: Screensaver",
     "static-name": "cutting-edge.png",
     "gif-name": "cutting-edge.gif",
     "tools": ["godot"],

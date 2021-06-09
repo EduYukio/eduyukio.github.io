@@ -10,5 +10,5 @@
     "gimp",
     "lmms"
   ],
-  "availables": ["html5", "windows", "linux", "android"]
+  "availables": ["html5", "windows", "linux", "android", "apple"]
 }

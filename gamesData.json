@@ -14,11 +14,11 @@
     "achievements": [],
     "achievements-links": [],
     "description": [
-      "Final year university project",
-      "Focused on the player's expression through the choice of mechanics",
-      "More than 20 mechanics implemented",
-      "Mechanics are managed using finite state machines, implemented using the State Pattern",
-      "LUUUUUL"
+      "University project (final year undergraduate thesis).",
+      "Made alone in 6 months (1 to design, 5 to implement). Art and music are third party.",
+      "It's an Action-platformer focused on the player's expression through the choice of game mechanics.",
+      "More than 20 mechanics implemented.",
+      "Mechanics are managed using finite state machines, implemented using the State Pattern."
     ]
   },
   "match-the-emoji": {
@@ -26,18 +26,22 @@
     "static-name": "match-the-emoji.png",
     "gif-name": "match-the-emoji.gif",
     "tools": ["lua"],
-    "available": ["android"],
+    "available": ["android", "apple"],
     "year": "2017",
     "team": "Group",
     "roles": ["programming"],
     "source-link": "",
     "play-link": "https://play.google.com/store/apps/details?id=br.com.tapps.matchtheemoji",
     "video-link": "https://www.youtube.com/embed/WljKQbAX3z4",
-    "achievements": ["🏆 500k+ Downloads", "🏆 Top 7 Lul"],
+    "achievements": ["🏆 500.000+ Downloads at the Play Store"],
     "achievements-links": [
       "https://play.google.com/store/apps/details?id=br.com.tapps.matchtheemoji"
     ],
-    "description": ["GAME3", "GAME3 X"]
+    "description": [
+      "Professional project (internship at Tapps Games).",
+      "It's a Puzzle game where you combine emojis to create new ones.",
+      "I implemented the following: shop screen; settings screen; main screen except the emojis tab; all the popups; energy system; animations of emojis merging and screens switching."
+    ]
   },
   "nothing-matters": {
     "name": "Nothing Matters",
@@ -51,16 +55,25 @@
     "source-link": "https://gitlab.com/uspgamedev/ld45",
     "play-link": "https://uspgamedev.itch.io/nothing-matters",
     "video-link": "https://www.youtube.com/embed//EXtON5s2OD0",
-    "achievements": ["🏆 Top 56 Innovation (among 2500+ games)"],
-    "achievements-links": [],
-    "description": ["GAME2", "GAME2 X", "GAME2 Y", "GAME2 Z", "GAME2 KK"]
+    "achievements": [
+      "🏆 Top 7 Innovation, 63 Theme, 111 Audio, 149 Overall (among 1800+ games)"
+    ],
+    "achievements-links": [
+      "https://ldjam.com/events/ludum-dare/45/nothing-matters"
+    ],
+    "description": [
+      "Game Jam project.",
+      "Made in a group of 8 people, in 72hrs, for the Ludum Dare 45 Game Jam, in which the theme was \"Start with nothing\".",
+      "It's a Puzzle-platformer where you start with the item named \"nothing\" and can put it into things, sending them to the nothing realm. You can even use the nothing in yourself!!",
+      "I implemented the following: player movement; picking, droping and using items; two items (boots and shield); LOTS of bugfixing (probably around 70)."
+    ]
   },
   "wedding-salon-dash": {
     "name": "Wedding Salon Dash",
     "static-name": "wedding-salon-dash.png",
     "gif-name": "wedding-salon-dash.gif",
     "tools": ["lua"],
-    "available": ["android"],
+    "available": ["android", "apple"],
     "year": "2017",
     "team": "Group",
     "roles": ["programming"],

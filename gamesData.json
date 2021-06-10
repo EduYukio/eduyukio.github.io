@@ -167,9 +167,15 @@
     "source-link": "https://gitlab.com/uspgamedev/mechamorphosis",
     "play-link": "https://uspgamedev.itch.io/mechamorphosis",
     "video-link": "https://www.youtube.com/embed//VH7sgC3W37k",
-    "achievements": [],
-    "achievements-links": [],
-    "description": ["GAME2", "GAME2 X", "GAME2 Y", "GAME2 Z", "GAME2 KK"]
+    "achievements": ["Game Jam project."],
+    "achievements-links": [
+      "https://ldjam.com/events/ludum-dare/43/mechamorphosis"
+    ],
+    "description": [
+      "Made in a group of 10 people, in 72hrs, for the Ludum Dare 43 Game Jam, in which the theme was \"Sacrifices must be made\".",
+      "It's an Action-shooter game inspired by Binding of Isaac, where you need to defeat all the enemies in the current room to advance to the next one. Each room contains an item that can be good or bad, and you must acquire it to unlock the doors. You must sacrifice one of your items before getting the new one.",
+      "I implemented the following: projectiles; enemy behaviors; weapons (shotgun, machine gun, flamethrower, blindness pistol); post-launch rework of all the maps, items and enemies."
+    ]
   },
   "protect-the-walnut": {
     "name": "Protect the Walnut",
@@ -183,9 +189,15 @@
     "source-link": "https://github.com/EduYukio/ProtectTheWalnut",
     "play-link": "https://eduyukio.itch.io/protect-the-walnut",
     "video-link": "https://www.youtube.com/embed//yVTOLs3bKac",
-    "achievements": [],
-    "achievements-links": [],
-    "description": ["GAME2", "GAME2 X", "GAME2 Y", "GAME2 Z", "GAME2 KK"]
+    "achievements": ["Game Jam project."],
+    "achievements-links": [
+      "https://ldjam.com/events/ludum-dare/46/protect-the-walnut"
+    ],
+    "description": [
+      "Made everything alone, from scratch, in 48hrs, for the Ludum Dare 46 Game Jam, in which the theme was \"Keep it alive\".",
+      "It's a Platformer game where you need to utilize and protect a walnut in order to overcome the challenges. You can also throw the walnut and bring it back by using a magnet.",
+      "My first time making vector art and participating in a game jam alone."
+    ]
   },
   "tower-of-madness": {
     "name": "Tower of Madness",
@@ -199,9 +211,16 @@
     "source-link": "https://github.com/EduYukio/TowerOfMadness",
     "play-link": "https://eduyukio.itch.io/tower-of-madness",
     "video-link": "https://www.youtube.com/embed//iv-QbhyBUBE",
-    "achievements": [],
-    "achievements-links": [],
-    "description": ["GAME2", "GAME2 X", "GAME2 Y", "GAME2 Z", "GAME2 KK"]
+    "achievements": ["🏆 Top 184 Humor (among 800 games)"],
+    "achievements-links": [
+      "https://ldjam.com/events/ludum-dare/47/tower-of-madness"
+    ],
+    "description": [
+      "Game Jam project.",
+      "Made everything alone, from scratch, in 48hrs, for the Ludum Dare 47 Game Jam, in which the theme was \"Stuck in a loop\".",
+      "It's a challenging Platformer game inspired by \"I Wanna be the Guy\", where you need to perform precise movements to avoid the spikes!",
+      "It features 30 levels and a dialogue system in which a somewhat humorous narrative is told."
+    ]
   },
   "minimal-td": {
     "name": "Minimal TD",

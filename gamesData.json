@@ -33,14 +33,14 @@
     "source-link": "",
     "play-link": "https://play.google.com/store/apps/details?id=br.com.tapps.matchtheemoji",
     "video-link": "https://www.youtube.com/embed/WljKQbAX3z4",
-    "achievements": ["🏆 500.000+ Downloads at the Play Store"],
+    "achievements": ["🏆 500.000+ Downloads on Play Store"],
     "achievements-links": [
       "https://play.google.com/store/apps/details?id=br.com.tapps.matchtheemoji"
     ],
     "description": [
       "Professional project (internship at Tapps Games).",
       "It's a Puzzle game where you combine emojis to create new ones.",
-      "I implemented the following: shop screen; settings screen; main screen except the emojis tab; all the popups; energy system; animations of emojis merging and screens switching."
+      "I implemented the following: main screen interface; settings and shop screens; energy and hints systems; all the popups; animations of emojis merging and screens switching."
     ]
   },
   "nothing-matters": {
@@ -65,7 +65,7 @@
       "Game Jam project.",
       "Made in a group of 8 people, in 72hrs, for the Ludum Dare 45 Game Jam, in which the theme was \"Start with nothing\".",
       "It's a Puzzle-platformer where you start with the item named \"nothing\" and can put it into things, sending them to the nothing realm. You can even use the nothing in yourself!!",
-      "I implemented the following: player movement; picking, droping and using items; two items (boots and shield); LOTS of bugfixing (probably around 70)."
+      "I implemented the following: player movement; picking, droping and using items; two items: boots and shield; LOTS of bugfixes (around 70)."
     ]
   },
   "wedding-salon-dash": {
@@ -80,9 +80,15 @@
     "source-link": "",
     "play-link": "https://play.google.com/store/apps/details?id=br.com.tapps.weddingsalondash",
     "video-link": "https://www.youtube.com/embed//5-jiFiDYdUU",
-    "achievements": ["🏆 Top 56 Innovation (among 2500+ games)"],
-    "achievements-links": [],
-    "description": ["GAME2", "GAME2 X", "GAME2 Y", "GAME2 Z", "GAME2 KK"]
+    "achievements": ["🏆 500.000+ Downloads on Play Store"],
+    "achievements-links": [
+      "https://play.google.com/store/apps/details?id=br.com.tapps.weddingsalondash"
+    ],
+    "description": [
+      "Professional project (internship at Tapps Games).",
+      "It's a Simulation game where you manage a wedding salon and have to serve your customers in the most optimal way!",
+      "I implemented the following: main screen interface; settings and shop menus; slide and pulse minigames; sewing machine; client feedback balloon."
+    ]
   },
   "cutting-edge": {
     "name": "Cutting Edge: Screensaver",
@@ -97,8 +103,14 @@
     "play-link": "https://uspgamedev.itch.io/cutting-edge-screensaver",
     "video-link": "https://www.youtube.com/embed//Y7YH6nZWoiI",
     "achievements": ["🏆 Top 56 Innovation (among 2500+ games)"],
-    "achievements-links": [],
-    "description": ["GAME2", "GAME2 X", "GAME2 Y", "GAME2 Z", "GAME2 KK"]
+    "achievements-links": ["https://ldjam.com/events/ludum-dare/42/$109072"],
+    "description": [
+      "Game Jam project.",
+      "Made in a group of 11 people, in 72hrs, for the Ludum Dare 42 Game Jam, in which the theme was \"Running out of space\".",
+      "It's an Action game where the walls are constantly shrinking, so you have to cut the edges of the screen to avoid getting crushed!",
+      "Obs: The actual game window is constantly being resized.",
+      "I implemented the following: player's movement, dash and attack; enemy movement, stun and death; block obstacle; some levels."
+    ]
   },
   "sinner": {
     "name": "Sinner",
@@ -112,9 +124,13 @@
     "source-link": "https://gitlab.com/uspgamedev/sinner",
     "play-link": "https://uspgamedev.itch.io/sinner",
     "video-link": "https://www.youtube.com/embed//VkgdgFhyKrE",
-    "achievements": [],
-    "achievements-links": [],
-    "description": ["GAME2", "GAME2 X", "GAME2 Y", "GAME2 Z", "GAME2 KK"]
+    "achievements": ["Game Jam project."],
+    "achievements-links": ["https://ldjam.com/events/ludum-dare/44/sinner"],
+    "description": [
+      "Made in a group of 11 people, in 72hrs, for the Ludum Dare 44 Game Jam, in which the theme was \"Your life is currency\".",
+      "It's an Action hack-and-slash game where you are stuck in an arena with waves of demons coming your way! To defend yourself, you can slash them with melee attacks or use powerful skill that cost a chunk of your life!",
+      "I implemented the following: enemy behaviors; skeleton projectile; player invulnerability; waves and tutorial; persistent highscore system."
+    ]
   },
   "fallen-angel": {
     "name": "Fallen Angel",
@@ -128,9 +144,16 @@
     "source-link": "https://github.com/EduYukio/FallenAngel",
     "play-link": "https://eduyukio.itch.io/fallen-angel",
     "video-link": "https://www.youtube.com/embed//iVpNhAZfevg",
-    "achievements": [],
-    "achievements-links": [],
-    "description": ["GAME2", "GAME2 X", "GAME2 Y", "GAME2 Z", "GAME2 KK"]
+    "achievements": ["🏆 Top 282 Fun (among 1100+ games)"],
+    "achievements-links": [
+      "https://ldjam.com/events/ludum-dare/48/fallen-angel"
+    ],
+    "description": [
+      "Game Jam project.",
+      "Made everything alone, from scratch, in 48hrs, for the Ludum Dare 48 Game Jam, in which the theme was \"Deeper and deeper\".",
+      "It's an Action-Shooter game inspired by Downwell, where you control the Fallen Angel who has been banished from heaven and now wants to go Deeper and Deeper into the depths of hell, eliminating everything in his path!",
+      "My first time making music and pixel art."
+    ]
   },
   "mechamorphosis": {
     "name": "Mechamorphosis",

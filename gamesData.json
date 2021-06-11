@@ -33,7 +33,7 @@
     "source-link": "",
     "play-link": "https://play.google.com/store/apps/details?id=br.com.tapps.matchtheemoji",
     "video-link": "https://www.youtube.com/embed/WljKQbAX3z4",
-    "achievements": ["🏆 500.000+ Downloads on Play Store"],
+    "achievements": ["🏆 500.000+ Downloads on Play Store."],
     "achievements-links": [
       "https://play.google.com/store/apps/details?id=br.com.tapps.matchtheemoji"
     ],
@@ -56,7 +56,7 @@
     "play-link": "https://uspgamedev.itch.io/nothing-matters",
     "video-link": "https://www.youtube.com/embed//EXtON5s2OD0",
     "achievements": [
-      "🏆 Top 7 Innovation, 63 Theme, 111 Audio, 149 Overall (among 1800+ games)"
+      "🏆 Top 7 Innovation, 63 Theme, 111 Audio, 149 Overall (among 1800+ games)."
     ],
     "achievements-links": [
       "https://ldjam.com/events/ludum-dare/45/nothing-matters"
@@ -80,7 +80,7 @@
     "source-link": "",
     "play-link": "https://play.google.com/store/apps/details?id=br.com.tapps.weddingsalondash",
     "video-link": "https://www.youtube.com/embed//5-jiFiDYdUU",
-    "achievements": ["🏆 500.000+ Downloads on Play Store"],
+    "achievements": ["🏆 500.000+ Downloads on Play Store."],
     "achievements-links": [
       "https://play.google.com/store/apps/details?id=br.com.tapps.weddingsalondash"
     ],
@@ -102,7 +102,7 @@
     "source-link": "https://gitlab.com/uspgamedev/cuttingedge-screensaver",
     "play-link": "https://uspgamedev.itch.io/cutting-edge-screensaver",
     "video-link": "https://www.youtube.com/embed//Y7YH6nZWoiI",
-    "achievements": ["🏆 Top 56 Innovation (among 2500+ games)"],
+    "achievements": ["🏆 Top 56 Innovation (among 2500+ games)."],
     "achievements-links": ["https://ldjam.com/events/ludum-dare/42/$109072"],
     "description": [
       "Game Jam project.",
@@ -144,9 +144,10 @@
     "source-link": "https://github.com/EduYukio/FallenAngel",
     "play-link": "https://eduyukio.itch.io/fallen-angel",
     "video-link": "https://www.youtube.com/embed//iVpNhAZfevg",
-    "achievements": ["🏆 Top 282 Fun (among 1100+ games)"],
+    "achievements": ["🏆 Top 282 Fun (among 1100+ games).", "Timelapse video."],
     "achievements-links": [
-      "https://ldjam.com/events/ludum-dare/48/fallen-angel"
+      "https://ldjam.com/events/ludum-dare/48/fallen-angel",
+      "https://youtu.be/gUhtpqVKp3A"
     ],
     "description": [
       "Game Jam project.",
@@ -211,7 +212,7 @@
     "source-link": "https://github.com/EduYukio/TowerOfMadness",
     "play-link": "https://eduyukio.itch.io/tower-of-madness",
     "video-link": "https://www.youtube.com/embed//iv-QbhyBUBE",
-    "achievements": ["🏆 Top 184 Humor (among 800 games)"],
+    "achievements": ["🏆 Top 184 Humor (among 800 games)."],
     "achievements-links": [
       "https://ldjam.com/events/ludum-dare/47/tower-of-madness"
     ],

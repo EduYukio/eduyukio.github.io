@@ -50,6 +50,34 @@
       "Animations of emojis merging and screens switching."
     ]
   },
+  "wedding-salon-dash": {
+    "name": "Wedding Salon Dash",
+    "static-name": "wedding-salon-dash.png",
+    "gif-name": "wedding-salon-dash.gif",
+    "tools": ["lua"],
+    "available": ["android", "apple"],
+    "year": "2017",
+    "team": "Group",
+    "roles": ["programming"],
+    "source-link": "",
+    "play-link": "https://play.google.com/store/apps/details?id=br.com.tapps.weddingsalondash",
+    "video-link": "https://www.youtube.com/embed//5-jiFiDYdUU",
+    "achievements": ["🏆 500.000+ Downloads on Play Store."],
+    "achievements-links": [
+      "https://play.google.com/store/apps/details?id=br.com.tapps.weddingsalondash"
+    ],
+    "description": [
+      "Professional project (internship at Tapps Games).",
+      "It's a Simulation game where you manage a wedding salon and have to serve your customers in the most optimal way!"
+    ],
+    "implemented": [
+      "Main screen interface.",
+      "Settings and shop menus.",
+      "Slide and pulse minigames.",
+      "Sewing machine.",
+      "Client feedback balloon."
+    ]
+  },
   "nothing-matters": {
     "name": "Nothing Matters",
     "static-name": "nothing-matters.png",
@@ -78,34 +106,6 @@
       "Picking, droping and using items.",
       "Two items: boots and shield.",
       "LOTS of bugfixes (around 70)."
-    ]
-  },
-  "wedding-salon-dash": {
-    "name": "Wedding Salon Dash",
-    "static-name": "wedding-salon-dash.png",
-    "gif-name": "wedding-salon-dash.gif",
-    "tools": ["lua"],
-    "available": ["android", "apple"],
-    "year": "2017",
-    "team": "Group",
-    "roles": ["programming"],
-    "source-link": "",
-    "play-link": "https://play.google.com/store/apps/details?id=br.com.tapps.weddingsalondash",
-    "video-link": "https://www.youtube.com/embed//5-jiFiDYdUU",
-    "achievements": ["🏆 500.000+ Downloads on Play Store."],
-    "achievements-links": [
-      "https://play.google.com/store/apps/details?id=br.com.tapps.weddingsalondash"
-    ],
-    "description": [
-      "Professional project (internship at Tapps Games).",
-      "It's a Simulation game where you manage a wedding salon and have to serve your customers in the most optimal way!"
-    ],
-    "implemented": [
-      "Main screen interface.",
-      "Settings and shop menus.",
-      "Slide and pulse minigames.",
-      "Sewing machine.",
-      "Client feedback balloon."
     ]
   },
   "cutting-edge": {
@@ -281,6 +281,28 @@
     ],
     "implemented": []
   },
+  "dentinho-virtual": {
+    "name": "Dentinho Virtual",
+    "static-name": "dentinho-virtual.png",
+    "gif-name": "dentinho-virtual.gif",
+    "tools": ["unity"],
+    "available": ["android"],
+    "year": "2020",
+    "team": "Group",
+    "roles": ["programming", "design"],
+    "source-link": "https://github.com/gi-armani/Dente-virtual",
+    "play-link": "https://play.google.com/store/apps/details?id=com.LigadeOdontopediatriaeOdontohebiatria.Dentevirtual",
+    "video-link": "https://www.youtube.com/embed//Uvv3qUpzSDc",
+    "achievements": [],
+    "achievements-links": [],
+    "description": [
+      "University project.",
+      "Made in a group of 8 people, in 3 months. Most of the development was done using Mob Programming.",
+      "It's a casual Virtual-pet game where you take care of a cute little tooth through actions such as brushing, feeding, giving medicine, playing and dressing!",
+      "It was done in conjunction with the School of Dentistry from the University of São Paulo, so that children could learn oral health care in a playful way."
+    ],
+    "implemented": []
+  },
   "ring-of-steel": {
     "name": "Ring of Steel",
     "static-name": "ring-of-steel.png",
@@ -308,28 +330,6 @@
       "Some bosses.",
       "Menus."
     ]
-  },
-  "dentinho-virtual": {
-    "name": "Dentinho Virtual",
-    "static-name": "dentinho-virtual.png",
-    "gif-name": "dentinho-virtual.gif",
-    "tools": ["unity"],
-    "available": ["android"],
-    "year": "2020",
-    "team": "Group",
-    "roles": ["programming", "design"],
-    "source-link": "https://github.com/gi-armani/Dente-virtual",
-    "play-link": "https://play.google.com/store/apps/details?id=com.LigadeOdontopediatriaeOdontohebiatria.Dentevirtual",
-    "video-link": "https://www.youtube.com/embed//Uvv3qUpzSDc",
-    "achievements": [],
-    "achievements-links": [],
-    "description": [
-      "University project.",
-      "Made in a group of 8 people, in 3 months. Most of the development was done using Mob Programming.",
-      "It's a casual Virtual-pet game where you take care of a cute little tooth through actions such as brushing, feeding, giving medicine, playing and dressing!",
-      "It was done in conjunction with the School of Dentistry from the University of São Paulo, so that children could learn oral health care in a playful way."
-    ],
-    "implemented": []
   },
   "keeping-it-up": {
     "name": "Keeping it Up",

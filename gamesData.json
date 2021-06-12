@@ -19,7 +19,8 @@
       "It's an Action-platformer focused on the player's expression through the choice of game mechanics.",
       "More than 20 mechanics implemented.",
       "Mechanics are managed using finite state machines, implemented using the State Pattern."
-    ]
+    ],
+    "implemented": []
   },
   "match-the-emoji": {
     "name": "Match the Emoji",
@@ -39,8 +40,14 @@
     ],
     "description": [
       "Professional project (internship at Tapps Games).",
-      "It's a Puzzle game where you combine emojis to create new ones.",
-      "I implemented the following: main screen interface; settings and shop screens; energy and hints systems; all the popups; animations of emojis merging and screens switching."
+      "It's a Puzzle game where you combine emojis to create new ones."
+    ],
+    "implemented": [
+      "Main screen interface.",
+      "Settings and shop screens.",
+      "Energy and hints systems.",
+      "All the popups.",
+      "Animations of emojis merging and screens switching."
     ]
   },
   "nothing-matters": {
@@ -64,8 +71,13 @@
     "description": [
       "Game Jam project.",
       "Made in a group of 8 people, in 72hrs, for the Ludum Dare 45 Game Jam, in which the theme was \"Start with nothing\".",
-      "It's a Puzzle-platformer where you start with the item named \"nothing\" and can put it into things, sending them to the nothing realm. You can even use the nothing in yourself!!",
-      "I implemented the following: player movement; picking, droping and using items; two items: boots and shield; LOTS of bugfixes (around 70)."
+      "It's a Puzzle-platformer where you start with the item named \"nothing\" and can put it into things, sending them to the nothing realm. You can even use the nothing in yourself!!"
+    ],
+    "implemented": [
+      "Player movement.",
+      "Picking, droping and using items.",
+      "Two items: boots and shield.",
+      "LOTS of bugfixes (around 70)."
     ]
   },
   "wedding-salon-dash": {
@@ -86,8 +98,14 @@
     ],
     "description": [
       "Professional project (internship at Tapps Games).",
-      "It's a Simulation game where you manage a wedding salon and have to serve your customers in the most optimal way!",
-      "I implemented the following: main screen interface; settings and shop menus; slide and pulse minigames; sewing machine; client feedback balloon."
+      "It's a Simulation game where you manage a wedding salon and have to serve your customers in the most optimal way!"
+    ],
+    "implemented": [
+      "Main screen interface.",
+      "Settings and shop menus.",
+      "Slide and pulse minigames.",
+      "Sewing machine.",
+      "Client feedback balloon."
     ]
   },
   "cutting-edge": {
@@ -108,8 +126,13 @@
       "Game Jam project.",
       "Made in a group of 11 people, in 72hrs, for the Ludum Dare 42 Game Jam, in which the theme was \"Running out of space\".",
       "It's an Action game where the walls are constantly shrinking, so you have to cut the edges of the screen to avoid getting crushed!",
-      "Obs: The actual game window is constantly being resized.",
-      "I implemented the following: player's movement, dash and attack; enemy movement, stun and death; block obstacle; some levels."
+      "Obs: The actual game window is constantly being resized."
+    ],
+    "implemented": [
+      "Player movement, dash and attack.",
+      "Enemy movement, stun and death.",
+      "Block obstacle.",
+      "Some levels."
     ]
   },
   "sinner": {
@@ -128,8 +151,14 @@
     "achievements-links": ["https://ldjam.com/events/ludum-dare/44/sinner"],
     "description": [
       "Made in a group of 11 people, in 72hrs, for the Ludum Dare 44 Game Jam, in which the theme was \"Your life is currency\".",
-      "It's an Action hack-and-slash game where you are stuck in an arena with waves of demons coming your way! To defend yourself, you can slash them with melee attacks or use powerful skill that cost a chunk of your life!",
-      "I implemented the following: enemy behaviors; skeleton projectile; player invulnerability; waves and tutorial; persistent highscore system."
+      "It's an Action hack-and-slash game where you are stuck in an arena with waves of demons coming your way! To defend yourself, you can slash them with melee attacks or use powerful skill that cost a chunk of your life!"
+    ],
+    "implemented": [
+      "Enemy behaviors.",
+      "Skeleton projectile.",
+      "Persistent highscore system.",
+      "Waves and tutorial.",
+      "Player invulnerability."
     ]
   },
   "fallen-angel": {
@@ -154,7 +183,8 @@
       "Made everything alone, from scratch, in 48hrs, for the Ludum Dare 48 Game Jam, in which the theme was \"Deeper and deeper\".",
       "It's an Action-Shooter game inspired by Downwell, where you control the Fallen Angel who has been banished from heaven and now wants to go Deeper and Deeper into the depths of hell, eliminating everything in his path!",
       "My first time making music and pixel art."
-    ]
+    ],
+    "implemented": []
   },
   "mechamorphosis": {
     "name": "Mechamorphosis",
@@ -174,8 +204,13 @@
     ],
     "description": [
       "Made in a group of 10 people, in 72hrs, for the Ludum Dare 43 Game Jam, in which the theme was \"Sacrifices must be made\".",
-      "It's an Action-shooter game inspired by Binding of Isaac, where you need to defeat all the enemies in the current room to advance to the next one. Each room contains an item that can be good or bad, and you must acquire it to unlock the doors. You must sacrifice one of your items before getting the new one.",
-      "I implemented the following: projectiles; enemy behaviors; weapons (shotgun, machine gun, flamethrower, blindness pistol); post-launch rework of all the maps, items and enemies."
+      "It's an Action-shooter game inspired by Binding of Isaac, where you need to defeat all the enemies in the current room to advance to the next one. Each room contains an item that can be good or bad, and you must acquire it to unlock the doors. You must sacrifice one of your items before getting the new one."
+    ],
+    "implemented": [
+      "Weapons (Shotgun, Machine Gun, Flamethrower, Blindness Pistol).",
+      "Projectiles.",
+      "Enemy behaviors.",
+      "Post-launch rework of all the maps, items and enemies."
     ]
   },
   "protect-the-walnut": {
@@ -198,7 +233,8 @@
       "Made everything alone, from scratch, in 48hrs, for the Ludum Dare 46 Game Jam, in which the theme was \"Keep it alive\".",
       "It's a Platformer game where you need to utilize and protect a walnut in order to overcome the challenges. You can also throw the walnut and bring it back by using a magnet.",
       "My first time making vector art and participating alone in a game jam."
-    ]
+    ],
+    "implemented": []
   },
   "tower-of-madness": {
     "name": "Tower of Madness",
@@ -221,7 +257,8 @@
       "Made everything alone, from scratch, in 48hrs, for the Ludum Dare 47 Game Jam, in which the theme was \"Stuck in a loop\".",
       "It's a challenging Platformer game inspired by \"I Wanna be the Guy\", where you need to perform precise movements to avoid the spikes!",
       "It features 30 levels and a dialogue system in which a somewhat humorous narrative is told."
-    ]
+    ],
+    "implemented": []
   },
   "minimal-td": {
     "name": "Minimal TD",
@@ -241,7 +278,8 @@
       "University project.",
       "Made alone, in 1 month. The art assets are third party.",
       "It's a Tower-defense game in which monsters spawn in waves and advance towards your castle via three paths. Use your arsenal of 7 towers and 4 upgrades to protect the castle!"
-    ]
+    ],
+    "implemented": []
   },
   "ring-of-steel": {
     "name": "Ring of Steel",
@@ -261,8 +299,14 @@
       "University project.",
       "Made in a group of 5 people, in 1 month. The art and music are third party.",
       "It's an Action-shooter game where you are stuck in an arena with enemies spawning from the walls. You can defend yourself using weapons that you unlock after each level.",
-      "It features 5 levels, each with its unique theme, its obstacles and its boss fights.",
-      "I implemented the following: player actions; enemy AI; menus; all the obstacles; some bosses."
+      "It features 5 levels, each with its unique theme, its obstacles and its boss fights."
+    ],
+    "implemented": [
+      "Player actions.",
+      "Enemy AI.",
+      "All the obstacles.",
+      "Some bosses.",
+      "Menus."
     ]
   },
   "dentinho-virtual": {
@@ -284,7 +328,8 @@
       "Made in a group of 8 people, in 3 months. Most of the development was done using Mob Programming.",
       "It's a casual Virtual-pet game where you take care of a cute little tooth through actions such as brushing, feeding, giving medicine, playing and dressing!",
       "It was done in conjunction with the School of Dentistry from the University of São Paulo, so that children could learn oral health care in a playful way."
-    ]
+    ],
+    "implemented": []
   },
   "keeping-it-up": {
     "name": "Keeping it Up",
@@ -302,8 +347,13 @@
     "achievements-links": ["https://globalgamejam.org/2020/games/keeping-it-8"],
     "description": [
       "Made in a group of 5 people, in 48hrs, for the Global Game Jam 2020, in which the theme was \"Repair\".",
-      "It's an Action game where evil aliens are attacking your city, so you need to defeat them and repair the damaged buildings.",
-      "I implemented the following: player actions; enemy AI; all the building buffs; monster spawners."
+      "It's an Action game where evil aliens are attacking your city, so you need to defeat them and repair the damaged buildings."
+    ],
+    "implemented": [
+      "Player actions.",
+      "Enemy AI.",
+      "All the building buffs.",
+      "Monster spawners."
     ]
   },
   "mothers-home": {
@@ -322,8 +372,14 @@
     "achievements-links": ["https://globalgamejam.org/2019/games/mothers-home"],
     "description": [
       "Made in a group of 5 people, in 48hrs, for the Global Game Jam 2019, in which the theme was \"What home means to you\".",
-      "It's a Top-Down Puzzle game where you control a kid inside a big make-believe maze! You have to find the right items for your adventure without leaving the mother's side for too long.",
-      "I implemented the following: player movement; picking and using items; HUD; menus; cry cooldown."
+      "It's a Top-Down Puzzle game where you control a kid inside a big make-believe maze! You have to find the right items for your adventure without leaving the mother's side for too long."
+    ],
+    "implemented": [
+      "Player movement.",
+      "Picking and using items.",
+      "HUD.",
+      "Menus.",
+      "Cry cooldown."
     ]
   }
 }

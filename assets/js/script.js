@@ -177,6 +177,25 @@ function updateAchievements(gameName, ul) {
   }
 }
 
+function updateImplemented(gameName, ul) {
+  var implemented = gamesData[gameName]["implemented"];
+  if (implemented.length == 0) return;
+
+  var implementedLine = document.createElement("li");
+  implementedLine.innerHTML = "I implemented the following:";
+
+  var subList = document.createElement("ul");
+
+  gamesData[gameName]["implemented"].forEach((line) => {
+    var newLine = document.createElement("li");
+    newLine.innerHTML = line;
+    subList.appendChild(newLine);
+  });
+
+  implementedLine.appendChild(subList);
+  ul.appendChild(implementedLine);
+}
+
 function updateDescription(modal, gameName) {
   var ul = modal.querySelector(".description");
   cleanList(ul);
@@ -188,6 +207,8 @@ function updateDescription(modal, gameName) {
     newLine.innerHTML = descLine;
     ul.appendChild(newLine);
   });
+
+  updateImplemented(gameName, ul);
 }
 
 function cleanList(node) {

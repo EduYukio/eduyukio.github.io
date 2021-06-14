@@ -297,7 +297,8 @@
     "achievements-links": [],
     "description": [
       "University project.",
-      "Made in a group of 8 people, in 3 months. Most of the development was done using Mob Programming.",
+      "Made in a group of 8 people, in 3 months.",
+      "I led the team and taught the tool to most members. Most of the development was done using Mob Programming.",
       "It's a casual Virtual-pet game where you take care of a cute little tooth through actions such as brushing, feeding, giving medicine, playing and dressing!",
       "It was done in conjunction with the School of Dentistry from the University of São Paulo, so that children could learn oral health care in a playful way."
     ],
@@ -325,7 +326,7 @@
     ],
     "implemented": [
       "Player actions.",
-      "Enemy AI.",
+      "Enemy behavior.",
       "All the obstacles.",
       "Some bosses.",
       "Menus."
@@ -351,7 +352,7 @@
     ],
     "implemented": [
       "Player actions.",
-      "Enemy AI.",
+      "Enemy behavior.",
       "All the building buffs.",
       "Monster spawners."
     ]

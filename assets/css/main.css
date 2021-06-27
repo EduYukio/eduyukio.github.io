@@ -285,6 +285,14 @@ html.scrollDisabled {
   padding: 4em;
 }
 
+#games h1 {
+  margin-bottom: 0.5em;
+}
+
+#games h4 {
+  font-size: 20px;
+}
+
 .box {
   background: #111;
   text-align: center;

@@ -5,11 +5,11 @@ const overlay = document.getElementById("overlay");
 var gamesData;
 var otherData;
 
-fetch("./gamesData.json")
+fetch("./data/gamesData.json")
   .then((response) => response.json())
   .then((data) => (gamesData = data));
 
-fetch("./otherData.json")
+fetch("./data/otherData.json")
   .then((response) => response.json())
   .then((data) => (otherData = data));
 

@@ -280,6 +280,14 @@ html.scrollDisabled {
   padding: 4em;
 }
 
+#showreel h1 {
+  margin-bottom: 0.5em;
+}
+
+#showreel h4 {
+  font-size: 20px;
+}
+
 #games {
   background-color: rgb(36, 39, 41);
   padding: 4em;

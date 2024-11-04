@@ -6,528 +6,322 @@
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-  <head>
-    <title>Eduardo Yukio | Game Programmer Portfolio</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <script defer src="assets/js/script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/30972455b7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  </head>
 
-  <body class="is-preload" id="scrollbar-style-1">
-    <!-- POPUP (Modal) -->
-    <div class="modal" id="modal">
-      <div class="modal-header">
-        <div class="title">Sinner</div>
-        <button data-close-button class="close-button">&times;</button>
+<head>
+  <title>Eduardo Yukio | Game Programmer Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script defer src="assets/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/30972455b7.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body class="is-preload" id="scrollbar-style-1">
+  <!-- POPUP (Modal) -->
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Sinner</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-left">
+        <div class="modal-square-title">Gameplay</div>
+        <div class="modal-video">
+          <div class="embed-container-modal">
+            <iframe src="https://www.youtube.com/embed//R6j-3RpI9kY" frameborder="0" allowfullscreen
+              class="json-video"></iframe>
+          </div>
+        </div>
+        <div class="modal-available-text">
+          Available on:
+          <i class="json-available-html5" title="Web (Browser)"> </i>
+          <i class="json-available-windows" title="Windows"> </i>
+          <i class="json-available-linux" title="Linux"> </i>
+          <i class="json-available-android" title="Android"> </i>
+          <i class="json-available-apple" title="Apple"> </i>
+        </div>
+        <br />
+        <a href="" id="play-button" class="button modal-button" target="_blank" rel="noopener noreferrer">Play!</a>
+        <br />
+        <a href="" id="source-button" class="button modal-button" target="_blank" rel="noopener noreferrer">Code</a>
       </div>
-      <div class="modal-body">
-        <div class="modal-left">
-          <div class="modal-square-title">Gameplay</div>
-          <div class="modal-video">
-            <div class="embed-container-modal">
-              <iframe
-                src="https://www.youtube.com/embed//R6j-3RpI9kY"
-                frameborder="0"
-                allowfullscreen
-                class="json-video"
-              ></iframe>
-            </div>
-          </div>
-          <div class="modal-available-text">
-            Available on:
-            <i class="json-available-html5" title="Web (Browser)"> </i>
-            <i class="json-available-windows" title="Windows"> </i>
-            <i class="json-available-linux" title="Linux"> </i>
-            <i class="json-available-android" title="Android"> </i>
-            <i class="json-available-apple" title="Apple"> </i>
-          </div>
-          <br />
-          <a
-            href=""
-            id="play-button"
-            class="button modal-button"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Play!</a
-          >
-          <br />
-          <a
-            href=""
-            id="source-button"
-            class="button modal-button"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Code</a
-          >
+      <div class="modal-right">
+        <div class="modal-square-title" id="description-title">
+          Description
         </div>
-        <div class="modal-right">
-          <div class="modal-square-title" id="description-title">
-            Description
-          </div>
-          <div class="modal-description" id="scrollbar-style-1">
-            <ul class="description"></ul>
-          </div>
-          <div class="modal-year-text"></div>
-          <div class="modal-roles">
-            <div style="margin-left: 5ch">Roles</div>
-            <div id="role-programming">💻 Programming</div>
-            <div id="role-design">📐 Design</div>
-            <div id="role-art">🎨 Art</div>
-            <div id="role-music">🎵 Music</div>
-          </div>
-          <div class="modal-tools">
-            <div style="text-align: center">Tools</div>
-            <img
-              class="tool"
-              id="tool-unity"
-              src="images/tools/unity.png"
-              title="Unity (Engine)"
-            />
-            <img
-              class="tool"
-              id="tool-csharp"
-              src="images/tools/csharp.png"
-              title="C# (Programming Language)"
-            />
-            <img
-              class="tool"
-              id="tool-godot"
-              src="images/tools/godot.png"
-              title="Godot Engine"
-            />
-            <img
-              class="tool"
-              id="tool-love2d"
-              src="images/tools/love2d.png"
-              title="Love2D (Framework)"
-            />
-            <img
-              class="tool"
-              id="tool-lua"
-              src="images/tools/lua.png"
-              title="Lua (Programming Language)"
-            />
-            <img
-              class="tool"
-              id="tool-aseprite"
-              src="images/tools/aseprite.png"
-              title="Aseprite (Pixel Art)"
-            />
-            <img
-              class="tool"
-              id="tool-gimp"
-              src="images/tools/gimp.png"
-              title="GIMP (Vector Art)"
-            />
-            <img
-              class="tool"
-              id="tool-lmms"
-              src="images/tools/lmms.png"
-              title="LMMS (Music)"
-            />
-          </div>
+        <div class="modal-description" id="scrollbar-style-1">
+          <ul class="description"></ul>
         </div>
-        <div class="vertical"></div>
+        <div class="modal-year-text"></div>
+        <div class="modal-roles">
+          <div style="margin-left: 5ch">Roles</div>
+          <div id="role-programming">💻 Programming</div>
+          <div id="role-design">📐 Design</div>
+          <div id="role-art">🎨 Art</div>
+          <div id="role-music">🎵 Music</div>
+        </div>
+        <div class="modal-tools">
+          <div style="text-align: center">Tools</div>
+          <img class="tool" id="tool-unity" src="images/tools/unity.png" title="Unity (Engine)" />
+          <img class="tool" id="tool-csharp" src="images/tools/csharp.png" title="C# (Programming Language)" />
+          <img class="tool" id="tool-godot" src="images/tools/godot.png" title="Godot Engine" />
+          <img class="tool" id="tool-love2d" src="images/tools/love2d.png" title="Love2D (Framework)" />
+          <img class="tool" id="tool-lua" src="images/tools/lua.png" title="Lua (Programming Language)" />
+          <img class="tool" id="tool-aseprite" src="images/tools/aseprite.png" title="Aseprite (Pixel Art)" />
+          <img class="tool" id="tool-gimp" src="images/tools/gimp.png" title="GIMP (Vector Art)" />
+          <img class="tool" id="tool-lmms" src="images/tools/lmms.png" title="LMMS (Music)" />
+        </div>
+      </div>
+      <div class="vertical"></div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <ul class="container">
+      <li><a href="#about">About</a></li>
+      <li><a href="#showreel">Showreel</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home -->
+  <article id="about" class="wrapper style4">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-5-large col-12-medium">
+          <span class="image fit"><img src="images/perfil.png" alt="" /></span>
+        </div>
+        <div class="col-8 col-7-large col-12-medium">
+          <header>
+            <h1>Hello!</h1>
+          </header>
+          <p>
+            I'm <strong>Eduardo Yukio</strong>, a Brazilian programmer
+            passionate about games. I studied 4 years of Computer Engineering
+            at
+            <a href="https://www.poli.usp.br/" target="_blank" rel="noopener noreferrer">Poli-USP</a>, and then switched
+            to Computer Science at
+            <a href="https://www.ime.usp.br/" target="_blank" rel="noopener noreferrer">IME-USP</a>, finishing my
+            graduation in 2021.
+          </p>
+          <p>
+            I had the opportunity to make several games, in different
+            contexts, such as college courses, game jams and an internship at
+            <a href="http://tappsgames.com/" target="_blank" rel="noopener noreferrer">Tapps Games</a>. You can check
+            out my projects on the following sections!<br /><br />Enjoy!
+          </p>
+        </div>
       </div>
     </div>
-    <div id="overlay"></div>
+  </article>
 
-    <!-- Nav -->
-    <nav id="nav">
-      <ul class="container">
-        <li><a href="#about">About</a></li>
-        <li><a href="#showreel">Showreel</a></li>
-        <li><a href="#games">Games</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Showreel -->
+  <article id="showreel" class="wrapper style4">
+    <div class="container">
+      <header>
+        <h1>Showreel</h1>
+        <h4>A summary of my games<br /><br /></h4>
+      </header>
+      <br />
+      <div class="embed-container-home">
+        <iframe src="https://www.youtube.com/embed//8FtjSLPb1_s" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <br /><br />
+      <br />
+    </div>
+  </article>
 
-    <!-- Home -->
-    <article id="about" class="wrapper style4">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 col-5-large col-12-medium">
-            <span class="image fit"
-              ><img src="images/perfil.png" alt=""
-            /></span>
+  <!-- Games -->
+  <article id="games" class="wrapper style4">
+    <div class="container">
+      <header>
+        <h1>Games</h1>
+        <h4>Click to see details<br /><br /></h4>
+      </header>
+      <div class="row">
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="mechanical-playground" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/mechanical-playground.png" />
+              <h3>Mechanical Playground</h3>
+            </article>
           </div>
-          <div class="col-8 col-7-large col-12-medium">
-            <header>
-              <h1>Hello!</h1>
-            </header>
-            <p>
-              I'm <strong>Eduardo Yukio</strong>, a Brazilian programmer
-              passionate about games. I studied 4 years of Computer Engineering
-              at
-              <a
-                href="https://www.poli.usp.br/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Poli-USP</a
-              >, and then switched to Computer Science at
-              <a
-                href="https://www.ime.usp.br/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >IME-USP</a
-              >, finishing my graduation in 2021.
-            </p>
-            <p>
-              I had the opportunity to make several games, in different
-              contexts, such as college courses, game jams and an internship at
-              <a
-                href="http://tappsgames.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Tapps Games</a
-              >. You can check out my projects on the following sections!<br /><br />Enjoy!
-            </p>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="wedding-salon-dash" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/wedding-salon-dash.png" />
+              <h3>Wedding Salon Dash</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="match-the-emoji" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/match-the-emoji.png" />
+              <h3>Match The Emoji</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="nothing-matters" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/nothing-matters.png" />
+              <h3>Nothing Matters</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="cutting-edge" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/cutting-edge.png" />
+              <h3>Cutting Edge: Screensaver</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="sinner" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/sinner.png" />
+              <h3>Sinner</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="fallen-angel" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/fallen-angel.png" />
+              <h3>Fallen Angel</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="mechamorphosis" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/mechamorphosis.png" />
+              <h3>Mechamorphosis</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="protect-the-walnut" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/protect-the-walnut.png" />
+              <h3>Protect the Walnut</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="tower-of-madness" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/tower-of-madness.png" />
+              <h3>Tower of Madness</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="minimal-td" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/minimal-td.png" />
+              <h3>Minimal TD</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="dentinho-virtual" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/dentinho-virtual.png" />
+              <h3>Dentinho Virtual</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="ring-of-steel" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/ring-of-steel.png" />
+              <h3>Ring of Steel</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="keeping-it-up" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/keeping-it-up.png" />
+              <h3>Keeping it Up</h3>
+            </article>
+          </div>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <div class="game-detail" id="mothers-home" data-modal-target="#modal">
+            <article class="box style1">
+              <img class="image featured" src="images/screenshots/mothers-home.png" />
+              <h3>Mother's Home</h3>
+            </article>
           </div>
         </div>
       </div>
-    </article>
+    </div>
+  </article>
 
-    <!-- Showreel -->
-    <article id="showreel" class="wrapper style4">
-      <div class="container">
-        <header>
-          <h1>Showreel</h1>
-          <h4>A summary of my games<br /><br /></h4>
-        </header>
-        <br />
-        <div class="embed-container-home">
-          <iframe
-            src="https://www.youtube.com/embed//8FtjSLPb1_s"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <br /><br />
-        <br />
-      </div>
-    </article>
+  <!-- Contact -->
+  <article id="contact" class="wrapper style4">
+    <div class="container medium">
+      <header>
+        <h1>Contact</h1>
+      </header>
+      <br />
+      <a href="mailto:eduyukiorodrigues@gmail.com" class="contact-email">EduYukioRodrigues@gmail.com</a>
+      <br />
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-12">
+          <hr />
+          <h3>External links:</h3>
 
-    <!-- Games -->
-    <article id="games" class="wrapper style4">
-      <div class="container">
-        <header>
-          <h1>Games</h1>
-          <h4>Click to see details<br /><br /></h4>
-        </header>
-        <div class="row">
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="mechanical-playground"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/mechanical-playground.png"
-                />
-                <h3>Mechanical Playground</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="wedding-salon-dash"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/wedding-salon-dash.png"
-                />
-                <h3>Wedding Salon Dash</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="match-the-emoji"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/match-the-emoji.png"
-                />
-                <h3>Match The Emoji</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="nothing-matters"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/nothing-matters.png"
-                />
-                <h3>Nothing Matters</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="cutting-edge"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/cutting-edge.png"
-                />
-                <h3>Cutting Edge: Screensaver</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div class="game-detail" id="sinner" data-modal-target="#modal">
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/sinner.png"
-                />
-                <h3>Sinner</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="fallen-angel"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/fallen-angel.png"
-                />
-                <h3>Fallen Angel</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="mechamorphosis"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/mechamorphosis.png"
-                />
-                <h3>Mechamorphosis</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="protect-the-walnut"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/protect-the-walnut.png"
-                />
-                <h3>Protect the Walnut</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="tower-of-madness"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/tower-of-madness.png"
-                />
-                <h3>Tower of Madness</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div class="game-detail" id="minimal-td" data-modal-target="#modal">
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/minimal-td.png"
-                />
-                <h3>Minimal TD</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="dentinho-virtual"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/dentinho-virtual.png"
-                />
-                <h3>Dentinho Virtual</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="ring-of-steel"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/ring-of-steel.png"
-                />
-                <h3>Ring of Steel</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="keeping-it-up"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/keeping-it-up.png"
-                />
-                <h3>Keeping it Up</h3>
-              </article>
-            </div>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <div
-              class="game-detail"
-              id="mothers-home"
-              data-modal-target="#modal"
-            >
-              <article class="box style1">
-                <img
-                  class="image featured"
-                  src="images/screenshots/mothers-home.png"
-                />
-                <h3>Mother's Home</h3>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
+          <a href="Resume_EduardoYukio_EN.pdf" id="resume" class="button" target="_blank"
+            rel="noopener noreferrer">Resume</a>
 
-    <!-- Contact -->
-    <article id="contact" class="wrapper style4">
-      <div class="container medium">
-        <header>
-          <h1>Contact</h1>
-        </header>
-        <br />
-        <a href="mailto:eduyukiorodrigues@gmail.com" class="contact-email"
-          >EduYukioRodrigues@gmail.com</a
-        >
-        <br />
-        <br />
-        <br />
-        <div class="row">
-          <div class="col-12">
-            <hr />
-            <h3>External links:</h3>
-
-            <a
-              href="Resume_EduardoYukio_EN.pdf"
-              id="resume"
-              class="button"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Resume</a
-            >
-
-            <ul class="social">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/eduyukio"
-                  class="icon brands fa-linkedin-in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><span class="label">LinkedIn</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/EduYukio"
-                  class="icon brands fa-github"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><span class="label">Github</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://gitlab.com/EduYukio"
-                  class="icon brands fa-gitlab"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><span class="label">Gitlab</span></a
-                >
-              </li>
-            </ul>
-            <hr />
-          </div>
-        </div>
-        <footer>
-          <ul id="copyright">
+          <ul class="social">
             <li>
-              <a href="mailto:eduyukiorodrigues@gmail.com"
-                >eduyukiorodrigues@gmail.com</a
-              ><br /><br />Made by: Eduardo Yukio<br /><br />Template by:
-              <a
-                href="http://html5up.net"
-                target="_blank"
-                rel="noopener noreferrer"
-                >HTML5 UP</a
-              >
+              <a href="https://www.linkedin.com/in/eduyukio" class="icon brands fa-linkedin-in" target="_blank"
+                rel="noopener noreferrer"><span class="label">LinkedIn</span></a>
+            </li>
+            <li>
+              <a href="https://github.com/EduYukio" class="icon brands fa-github" target="_blank"
+                rel="noopener noreferrer"><span class="label">Github</span></a>
+            </li>
+            <li>
+              <a href="https://gitlab.com/EduYukio" class="icon brands fa-gitlab" target="_blank"
+                rel="noopener noreferrer"><span class="label">Gitlab</span></a>
             </li>
           </ul>
-        </footer>
+          <hr />
+        </div>
       </div>
-    </article>
+      <footer>
+        <ul id="copyright">
+          <li>
+            <a href="mailto:eduyukiorodrigues@gmail.com">eduyukiorodrigues@gmail.com</a><br /><br />Made by: Eduardo
+            Yukio<br /><br />Template by:
+            <a href="http://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </article>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

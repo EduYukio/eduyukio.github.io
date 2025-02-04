@@ -1,0 +1,39 @@
+.image {
+  display: inline-block;
+  position: relative;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+}
+
+.image.fit {
+  display: block;
+  width: 100%;
+  transform: scale(0.75);
+}
+
+.image.left {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+
+.image.centered {
+  display: block;
+  margin: 0 0 2em 0;
+}
+
+.image.centered img {
+  margin: 0 auto;
+  width: auto;
+}
+
+.image.featured {
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  /* box-shadow: 0 0 3pt 2pt #333; */
+  border: 0.25rem solid #333;
+  margin: 0 0 0.8em 0;
+}

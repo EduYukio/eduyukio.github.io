@@ -1,0 +1,14 @@
+#resume {
+  max-width: 9rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.1rem;
+  -moz-transition: top 0.2s ease-in-out;
+  -webkit-transition: top 0.2s ease-in-out;
+  -ms-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  top: 0;
+}
+
+#resume:hover {
+  top: -5px;
+}

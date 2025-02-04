@@ -1,0 +1,12 @@
+#games {
+  background-color: rgb(36, 39, 41);
+  padding: 4em;
+}
+
+#games h1 {
+  margin-bottom: 0.5em;
+}
+
+#games h4 {
+  font-size: 20px;
+}

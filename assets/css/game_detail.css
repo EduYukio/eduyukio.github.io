@@ -1,0 +1,10 @@
+.game-detail {
+  cursor: pointer;
+  border-radius: 10px;
+  height: 100.5%;
+}
+
+.game-detail:hover .box.style1 {
+  box-shadow: 0 0 3pt 2pt #666;
+  top: -7px;
+}

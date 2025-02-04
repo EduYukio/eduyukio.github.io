@@ -1,0 +1,68 @@
+#about {
+  background-color: rgb(36, 39, 41);
+  padding: 2em 0 2em 0;
+  text-align: left;
+}
+
+#about .image {
+  width: 20em;
+  height: 20em;
+  margin: 6.5em 0em 0em 2.3em;
+}
+
+#about .image img {
+  box-shadow: 0 0 8pt 10pt #1d1d1d;
+  border-radius: 100%;
+}
+
+#about h1 {
+  margin-top: 0.35em;
+}
+
+#about p {
+  font-size: 1.5em;
+  line-height: 1.75em;
+}
+
+#about p a {
+  color: inherit;
+}
+
+#about .container .row {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Vertically center the content */
+}
+
+#about .col-left {
+  flex: 1; /* Takes up the left side */
+  padding-right: 20px; /* Space between content and the GIF */
+}
+
+#about .col-right {
+  flex: 1; /* Takes up the right side */
+  display: flex;
+  justify-content: center; /* Centers the GIF horizontally */
+}
+
+#about .col-right img {
+  max-width: 100%; /* Ensures the GIF is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* sugestão do chat gpt*/
+/* @media (max-width: 768px) {
+  #about .container .row {
+    flex-direction: column; /* Stack the content on top of each other 
+    text-align: center; /* Center text for smaller screens
+  }
+
+  #about .col-left, #about .col-right {
+    flex: none; /* Remove flexbox behavior for stacking 
+    width: 100%;
+  }
+
+  #about .col-right img {
+    max-width: 100%; /* Ensure the GIF scales down on small screens 
+  }
+}

@@ -1,0 +1,33 @@
+@media screen and (min-width: 1600px) {
+  .tool {
+    width: 3rem;
+  }
+
+  .modal-description {
+    height: 15.9rem;
+    font-size: 1rem;
+  }
+
+  .modal-year-text {
+    top: 65%;
+    font-size: 1rem;
+  }
+
+  .modal-roles {
+    top: 75%;
+    font-size: 1.1rem;
+  }
+
+  .modal-tools {
+    top: 75%;
+    font-size: 1.1rem;
+  }
+
+  .modal-available-text {
+    font-size: 1rem;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 4.6rem;
+  }
+}

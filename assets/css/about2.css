@@ -1,0 +1,122 @@
+/* General styling for the About section */
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Styling for the row container */
+.row {
+  display: flex;
+  width: 100%;
+  gap: 20px; /* Space between left and right columns */
+}
+
+/* Left column styling */
+.col-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  /* grid-template-rows: 200px 200px; */
+  grid-template-rows: auto auto;
+  gap: 50px; /* Space between grid items */
+  width: 40%; /* Adjust as needed */
+}
+
+/* Right column styling */
+.col-right {
+  width: 30%; /* Adjust as needed */
+}
+
+.col-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners to the GIF */
+}
+
+/* Profile section styling */
+.profile-section {
+  grid-column: 1 / 2; /* First column */
+  grid-row: 1 / 2; /* First row */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  /* align-items: flex-start; */
+  align-items: center;
+  gap: 5px; /* Space between image and text */
+}
+
+.profile-section .image.fit img {
+  width: 15em;
+  height: 15em;
+  box-shadow: 0 0 8pt 10pt #1d1d1d;
+  border-radius: 100%;
+}
+
+.profile-section .text-info {
+  display: flex;
+  flex-direction: column; /* Stack h1 and h3 vertically */
+  gap: 10px; /* Space between name and title */
+}
+
+.profile-section .text-info h1 {
+  margin: 0;
+  font-size: 35px;
+}
+
+.profile-section .text-info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400 !important;
+}
+
+/* Skills section styling */
+.skills-container {
+  grid-column: 1; /* First column */
+  grid-row: 2; /* Second row */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-container img.skill {
+  width: 40px;
+  height: 40px;
+}
+
+/* Work logos section styling */
+.logo-container-work {
+  grid-column: 2; /* Second column */
+  grid-row: 1; /* First row */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo-container-work .logo-item,
+.logo-container-education .logo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container-work img.logo,
+.logo-container-education img.logo {
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+}
+
+/* Education logos section styling */
+.logo-container-education {
+  grid-column: 2; /* Second column */
+  grid-row: 2; /* Second row */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo-item p {
+  margin: 0; /* Remove default margin */
+  font-size: 16px; /* Adjust as needed */
+}

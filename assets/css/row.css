@@ -1,8 +1,15 @@
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  align-items: stretch;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* box-sizing: border-box; */
+  /* align-items: stretch; */
+
+  /* justify-content: space-between; */
+  /* align-items: center; */
+
+  display: flex; /* Using flexbox for the row */
+  justify-content: space-between; /* Space between left and right columns */
+  align-items: flex-start; /* Align top of both sections */
 }
 
 .row > * {
@@ -186,11 +193,6 @@
 
 .row.gtr-50.gtr-uniform > * {
   padding-top: 12.5px;
-}
-
-.row {
-  margin-top: -25px;
-  margin-left: -25px;
 }
 
 .row > * {

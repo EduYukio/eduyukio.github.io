@@ -1,13 +1,15 @@
 #about {
-  background-color: rgb(36, 39, 41);
+  background-color: rgb(29, 31, 32);
   padding: 2em 0 2em 0;
   text-align: left;
 }
 
 #about .image {
-  width: 20em;
-  height: 20em;
-  margin: 6.5em 0em 0em 2.3em;
+  width: 15em;
+  height: 15em;
+  /* margin: 6.5em 0em 0em 2.3em; */
+  margin-left: 2px;
+  margin-bottom: -40px;
 }
 
 #about .image img {
@@ -28,15 +30,27 @@
   color: inherit;
 }
 
-#about .container .row {
+/* #about .container .row {
   display: flex;
-  justify-content: space-between; /* Space between left and right sections */
-  align-items: center; /* Vertically center the content */
-}
+  justify-content: space-between;
+  align-items: center;
+} */
 
-#about .col-left {
-  flex: 1; /* Takes up the left side */
-  padding-right: 20px; /* Space between content and the GIF */
+/* .col-left { */
+/* flex: 1; 
+  padding-right: 20px;  */
+
+/* display: flex;
+  justify-content: space-between;
+  align-items: flex-start; */
+/* } */
+
+.col-left {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Two columns: first for the profile image, second for the logos */
+  grid-template-rows: auto 1fr; /* The first row is for profile content, the second is for logos */
+  grid-gap: 20px; /* Adds space between the profile section and logos */
+  align-items: center;
 }
 
 #about .col-right {
@@ -50,19 +64,58 @@
   height: auto; /* Maintain aspect ratio */
 }
 
-/* sugestão do chat gpt*/
-/* @media (max-width: 768px) {
-  #about .container .row {
-    flex-direction: column; /* Stack the content on top of each other 
-    text-align: center; /* Center text for smaller screens
-  }
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* align-items: flex-start; */
+  align-items: center;
 
-  #about .col-left, #about .col-right {
-    flex: none; /* Remove flexbox behavior for stacking 
-    width: 100%;
-  }
+  /* text-align: center; */
+  /* grid-column: 1 / span 2; */
+}
 
-  #about .col-right img {
-    max-width: 100%; /* Ensure the GIF scales down on small screens 
-  }
+.profile-section h1 {
+  margin-bottom: 0px; /* Reduce space below h1 */
+  font-size: 35px;
+  /* font-size: 100%; */
+  /* font-weight: 100 !important; */
+}
+
+.profile-section h3 {
+  margin-top: 0; /* Remove top margin on h3 */
+  margin-bottom: 3px; /* Add a small bottom margin to h3 (if needed) */
+  font-size: 20px;
+  font-weight: 400 !important;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column; /* Stack the logos vertically */
+  position: fixed; /* Fix the container to the left side of the screen */
+  top: 50%; /* Center vertically on the screen */
+  left: 0; /* Keep the container aligned to the left */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+}
+
+.logo {
+  width: 40px; /* Set the width of the logos */
+  height: auto; /* Maintain aspect ratio of logos */
+}
+
+.logo-item {
+  display: flex;
+  align-items: center; /* Vertically centers the logo and text */
+}
+
+.logo-item img {
+  width: 50px; /* Adjust the size of your logos */
+  height: auto;
+  margin-right: 10px; /* Adds space between the logo and the text */
+}
+
+.logo-item p {
+  margin: 0; /* Remove default margin from <p> */
+  font-size: 16px; /* Adjust the font size for the text */
+  color: white; /* Change to your preferred text color */
 }

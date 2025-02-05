@@ -14,7 +14,8 @@
 
   <!-- css -->
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/about.css" />
+  <!-- <link rel="stylesheet" href="assets/css/about.css" /> -->
+  <link rel="stylesheet" href="assets/css/about2.css" />
   <link rel="stylesheet" href="assets/css/box.css" />
   <link rel="stylesheet" href="assets/css/button.css" />
   <link rel="stylesheet" href="assets/css/contact.css" />
@@ -40,6 +41,12 @@
   <script defer src="assets/js/script.js"></script>
   <script src="https://kit.fontawesome.com/30972455b7.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"> -->
 </head>
 
 <body class="is-preload" id="scrollbar-style-1">
@@ -117,34 +124,88 @@
 
   <!-- Home -->
   <article id="about" class="wrapper style4">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 col-5-large col-12-medium">
-          <span class="image fit"><img src="images/perfil.png" alt="" /></span>
+    <div class="row">
+      <div class="col-left">
+        <div class="profile-section">
+          <span class="image fit">
+            <img src="images/perfil.png" alt="Profile Image" />
+          </span>
+          <div class="text-info">
+            <h1>Eduardo Yukio</h1>
+            <h3>Game Programmer</h3>
+          </div>
         </div>
-        <div class="col-8 col-7-large col-12-medium">
-          <header>
-            <h1>Hello!</h1>
-          </header>
-          <p>
-            I'm <strong>Eduardo Yukio</strong>, a Brazilian programmer
-            passionate about games. I studied 4 years of Computer Engineering
-            at
-            <a href="https://www.poli.usp.br/" target="_blank" rel="noopener noreferrer">Poli-USP</a>, and then switched
-            to Computer Science at
-            <a href="https://www.ime.usp.br/" target="_blank" rel="noopener noreferrer">IME-USP</a>, finishing my
-            graduation in 2021.
-          </p>
-          <p>
-            I had the opportunity to make several games, in different
-            contexts, such as college courses, game jams and at
-            <a href="http://tappsgames.com/" target="_blank" rel="noopener noreferrer">Tapps Games</a>. You can check
-            out my projects on the following sections!<br /><br />Enjoy!
-          </p>
+
+        <div class="skills-container">
+          <div class="skills-item">
+            <img class="skill" id="tool-unity" src="images/tools/unity.png" title="Unity Engine" />
+            <p>Unity</p>
+          </div>
+
+          <div class="skills-item">
+            <img class="skill" id="tool-csharp" src="images/tools/csharp.png" title="C#" />
+            <p>C#</p>
+          </div>
+
+          <div class="skills-item">
+            <img class="skill" id="tool-git" src="images/tools/git.png" title="Git" />
+            <p>Git</p>
+          </div>
+
+          <div class="skills-item">
+            <img class="skill" id="tool-lua" src="images/tools/lua.png" title="Lua (Programming Language)" />
+            <p>Lua</p>
+          </div>
+
+          <div class="skills-item">
+            <img class="skill" id="tool-love2d" src="images/tools/love2d.png" title="Love2D (Framework)" />
+            <p>Love2D</p>
+          </div>
+
+          <div class="skills-item">
+            <img class="skill" id="tool-python" src="images/tools/python.png" title="Python" />
+            <p>Python</p>
+          </div>
+
         </div>
+
+        <div class="logo-container-work">
+          <div class="logo-item">
+            <img class="logo" id="logo-tapps" src="images/logos/tapps-logo-final.png" title="Tapps Games" />
+            <p>Game Programmer (1 year)</p>
+          </div>
+
+          <div class="logo-item">
+            <img class="logo" id="logo-tapps" src="images/logos/tapps-logo-final.png" title="Tapps Games" />
+            <p>Junior Game Programmer (2 year)</p>
+          </div>
+
+          <div class="logo-item">
+            <img class="logo" id="logo-tapps" src="images/logos/tapps-logo-final.png" title="Tapps Games" />
+            <p>Intern Game Programmer (4 months)</p>
+          </div>
+        </div>
+
+        <div class="logo-container-education">
+          <div class="logo-item">
+            <img class="logo" id="logo-usp" src="images/logos/usp-logo-final.png" title="Universidade de São Paulo" />
+            <p>Computer Science (4 years, finished)</p>
+          </div>
+
+          <div class="logo-item">
+            <img class="logo" id="logo-usp" src="images/logos/usp-logo-final.png" title="Universidade de São Paulo" />
+            <p>Computer Engineering (4 years, unfinished)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: GIF -->
+      <div class="col-right">
+        <img src="images/gifs/placeholder.gif" alt="GIF" />
       </div>
     </div>
   </article>
+
 
   <!-- Showreel -->
   <article id="showreel" class="wrapper style4">
@@ -341,6 +402,24 @@
       </footer>
     </div>
   </article>
+
+  <!-- <header>
+        <h1>Hello!</h1>
+        </header> -->
+  <!-- <p>
+      I'm <strong>Eduardo Yukio</strong>, a Brazilian programmer passionate about games.
+      I studied 4 years of Computer Engineering at
+      <a href="https://www.poli.usp.br/" target="_blank" rel="noopener noreferrer">Poli-USP</a>, and then switched
+      to Computer Science at
+      <a href="https://www.ime.usp.br/" target="_blank" rel="noopener noreferrer">IME-USP</a>, finishing my
+      graduation in 2021.
+    </p>
+    <p>
+      I had the opportunity to make several games, in different contexts, such as college courses, game jams, and
+      at
+      <a href="http://tappsgames.com/" target="_blank" rel="noopener noreferrer">Tapps Games</a>. You can check
+      out my projects in the following sections!<br /><br />Enjoy!
+    </p> -->
 
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>

@@ -30,6 +30,22 @@ video {
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+body,
+input,
+textarea,
+select {
+  /* font-family: "Poppins", serif !important; */
+  /* font-weight: 200; */
+  /* font-style: normal; */
+
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 200 !important;
+  font-size: 12pt !important;
+
+  line-height: 1.85em;
+  color: #888;
+}
+
 html,
 body,
 div,
@@ -210,17 +226,6 @@ body.is-preload *:after {
   -webkit-transition: none !important;
   -ms-transition: none !important;
   transition: none !important;
-}
-
-body,
-input,
-textarea,
-select {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.85em;
-  color: #888;
-  font-weight: 300;
-  font-size: 12pt;
 }
 
 a {

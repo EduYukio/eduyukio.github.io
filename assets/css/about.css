@@ -1,121 +1,218 @@
 #about {
-  background-color: rgb(29, 31, 32);
-  padding: 2em 0 2em 0;
-  text-align: left;
-}
-
-#about .image {
-  width: 15em;
-  height: 15em;
-  /* margin: 6.5em 0em 0em 2.3em; */
-  margin-left: 2px;
-  margin-bottom: -40px;
-}
-
-#about .image img {
-  box-shadow: 0 0 8pt 10pt #1d1d1d;
-  border-radius: 100%;
-}
-
-#about h1 {
-  margin-top: 0.35em;
-}
-
-#about p {
-  font-size: 1.5em;
-  line-height: 1.75em;
-}
-
-#about p a {
-  color: inherit;
-}
-
-/* #about .container .row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-} */
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(40, 40, 40);
+}
 
-/* .col-left { */
-/* flex: 1; 
-  padding-right: 20px;  */
-
-/* display: flex;
-  justify-content: space-between;
-  align-items: flex-start; */
-/* } */
+.row {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 100%;
+  height: 800px;
+  gap: 20px;
+}
 
 .col-left {
   display: grid;
-  grid-template-columns: auto 1fr; /* Two columns: first for the profile image, second for the logos */
-  grid-template-rows: auto 1fr; /* The first row is for profile content, the second is for logos */
-  grid-gap: 20px; /* Adds space between the profile section and logos */
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  width: 50%;
+  height: 100%;
 }
 
-#about .col-right {
-  flex: 1; /* Takes up the right side */
-  display: flex;
-  justify-content: center; /* Centers the GIF horizontally */
+.grid-item-title {
+  font-size: 26px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
 }
 
-#about .col-right img {
-  max-width: 100%; /* Ensures the GIF is responsive */
-  height: auto; /* Maintain aspect ratio */
+.grid-item {
+  background: rgba(25, 25, 25);
+  border-radius: 6px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 .profile-section {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.profile-section .image.fit img {
+  width: 14em;
+  height: 14em;
+  box-shadow: 0 0 6pt 8pt rgba(10, 10, 10, 0.7);
+  border-radius: 100%;
+  margin-top: 30px;
+}
+
+.profile-section .text-info {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* align-items: flex-start; */
-  align-items: center;
-
-  /* text-align: center; */
-  /* grid-column: 1 / span 2; */
 }
 
-.profile-section h1 {
-  margin-bottom: 0px; /* Reduce space below h1 */
+.profile-section .text-info h1 {
+  margin: 0;
   font-size: 35px;
-  /* font-size: 100%; */
-  /* font-weight: 100 !important; */
 }
 
-.profile-section h3 {
-  margin-top: 0; /* Remove top margin on h3 */
-  margin-bottom: 3px; /* Add a small bottom margin to h3 (if needed) */
+.profile-section .text-info h3 {
+  margin: 0;
   font-size: 20px;
   font-weight: 400 !important;
 }
 
-.logo-container {
+.skills-container {
+  grid-column: 2;
+  grid-row: 1;
+  flex-wrap: wrap;
+  gap: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: 20px 60px 60px;
+  justify-content: center;
+}
+
+.skills-container .grid-item-title {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.skills-item {
   display: flex;
-  flex-direction: column; /* Stack the logos vertically */
-  position: fixed; /* Fix the container to the left side of the screen */
-  top: 50%; /* Center vertically on the screen */
-  left: 0; /* Keep the container aligned to the left */
-  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: -15px;
 }
 
-.logo {
-  width: 40px; /* Set the width of the logos */
-  height: auto; /* Maintain aspect ratio of logos */
+.skills-container img.skill {
+  width: 80px;
+  height: 80px;
 }
 
-.logo-item {
+.skills-item p {
+  margin: 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.logo-container-work {
+  grid-column: 1;
+  grid-row: 2;
   display: flex;
-  align-items: center; /* Vertically centers the logo and text */
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  justify-content: flex-start;
+  padding-top: 20px;
 }
 
-.logo-item img {
-  width: 50px; /* Adjust the size of your logos */
+.logo-item-work,
+.logo-item-education {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-item-work {
+  margin-left: 65px;
+  margin-bottom: 15px;
+}
+
+.logo-item-education {
+  margin-left: 35px;
+  margin-bottom: 5px;
+}
+
+img.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.logo-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logo-container-education {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.logo-items-container-education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  height: 85%;
+}
+
+.logo-items-container-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.logo-text-top {
+  margin: 0;
+  font-size: 17.55px;
+  font-weight: bold;
+}
+
+.logo-text-bottom {
+  margin: 0;
+  font-size: 15.5px;
+  color: #bbb;
+}
+
+.col-right {
+  width: 50%;
+  height: 97.5%;
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 40px !important;
+  margin-right: 16px;
+}
+
+.col-right video {
+  width: 100%;
   height: auto;
-  margin-right: 10px; /* Adds space between the logo and the text */
+  border-radius: 6px;
+  align-self: center;
+  box-shadow: 0 0 6pt 8pt rgba(10, 10, 10, 0.5);
 }
 
-.logo-item p {
-  margin: 0; /* Remove default margin from <p> */
-  font-size: 16px; /* Adjust the font size for the text */
-  color: white; /* Change to your preferred text color */
+.grid-item-title-right {
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  margin-top: -20px;
 }

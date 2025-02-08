@@ -1,15 +1,15 @@
+/* display: flex;
+/* flex-wrap: wrap; */
+/* box-sizing: border-box; */
+/* align-items: stretch; */
+
+/* justify-content: space-between; */
+/* align-items: center; */
+
 .row {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* box-sizing: border-box; */
-  /* align-items: stretch; */
-
-  /* justify-content: space-between; */
-  /* align-items: center; */
-
-  display: flex; /* Using flexbox for the row */
-  justify-content: space-between; /* Space between left and right columns */
-  align-items: flex-start; /* Align top of both sections */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .row > * {

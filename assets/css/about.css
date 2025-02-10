@@ -1,3 +1,7 @@
+#about p {
+  color: #ddd;
+}
+
 #about {
   display: flex;
   justify-content: space-between;
@@ -108,6 +112,7 @@
 .skills-item p {
   margin: 0;
   font-size: 15px;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -186,7 +191,7 @@ img.logo {
 .logo-text-bottom {
   margin: 0;
   font-size: 15.5px;
-  color: #bbb;
+  color: #bbb !important;
 }
 
 .col-right {

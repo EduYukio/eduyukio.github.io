@@ -12,15 +12,7 @@
   background-color: rgb(40, 40, 40);
 }
 
-.row {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  width: 100%;
-  height: 800px;
-  gap: 20px;
-}
-
-.col-left {
+#about .col-left {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -196,8 +188,7 @@ img.logo {
 
 .col-right {
   width: 50%;
-  height: 97.5%;
-  margin-top: 10px;
+  height: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 10px;

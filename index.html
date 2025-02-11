@@ -108,16 +108,15 @@
     <a href="#" class="nav-name">Eduardo Yukio ⁯⁯⁯⁯⁯⁯– Game Programmer</a>
 
     <ul class="nav-links container">
-      <li><a href="#about">About</a></li>
-      <li><a href="#showreel">Showreel</a></li>
+      <li><a href="#about">Summary</a></li>
       <li><a href="#games">Games</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Home -->
+  <!-- About/Summary -->
   <article id="about" class="wrapper style4">
-    <div class="row">
+    <div class="row-about">
       <div class="col-left">
         <div class="profile-section grid-item">
           <div class="text-info">
@@ -160,7 +159,6 @@
             <p>Python</p>
           </div>
         </div>
-
 
         <div class="logo-container-work grid-item">
           <p class="grid-item-title">Work Experience</p>
@@ -213,19 +211,10 @@
         </div>
       </div>
 
-      <!-- Right side: GIF -->
+      <!-- Right side: Video -->
       <div class="col-right grid-item">
         <p class="grid-item-title-right">Project Summary</p>
-        <!-- <p class="grid-item-title-right">Project Summary</p> -->
-        <!-- <img src="images/gifs/mechanical-playground.gif" alt="GIF" /> -->
-        <!-- <img src="images/gifs/placeholder.gif" alt="GIF" /> -->
-
-        <!-- <video autoplay loop muted playsinline controls> -->
-        <!-- pensar se vou colocar som no vídeo, se sim é bom habilitar o controls-->
-
-
-        <video autoplay loop muted playsinline controls poster="images/screenshots/mechanical-playground.png">
-          <!-- <video autoplay loop muted playsinline poster="images/screenshots/mechanical-playground.png"> -->
+        <video loop muted playsinline controls poster="images/screenshots/mechanical-playground.png">
           <source src="videos/mechanical-playground144.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -233,151 +222,41 @@
     </div>
   </article>
 
-
-  <!-- Showreel -->
-  <article id="showreel" class="wrapper style4">
-    <div class="container">
-      <header>
-        <h1>Showreel</h1>
-        <h4>A summary of my games<br /><br /></h4>
-      </header>
-      <br />
-      <div class="embed-container-home">
-        <iframe src="https://www.youtube.com/embed//8FtjSLPb1_s" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <br /><br />
-      <br />
-    </div>
-  </article>
-
-  <!-- Games -->
+  <!-- Professional Games -->
   <article id="games" class="wrapper style4">
-    <div class="container">
-      <header>
-        <h1>Games</h1>
-        <h4>Click to see details<br /><br /></h4>
-      </header>
-      <div class="row">
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="mechanical-playground" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/mechanical-playground.png" />
-              <h3>Mechanical Playground</h3>
-            </article>
+    <header>
+      <h1>Professional Games<br /><br /></h1>
+    </header>
+    <div class="row-games">
+      <div class="col-left">
+        <div class="contributions grid-item">
+          <p class="contributions-title">Contributions</p>
+          <div class="logo-items-container-education">
+            <div class="logo-item-education">
+              <img class="logo" id="logo-usp" src="images/logos/usp-logo-final.png" title="Universidade de São Paulo" />
+              <div class="logo-text-container">
+                <p class="logo-text-top">Computer Science (4y, Finished)</p>
+                <p class="logo-text-bottom">Universidade de São Paulo</p>
+              </div>
+            </div>
+
+            <div class="logo-item-education">
+              <img class="logo" id="logo-usp" src="images/logos/usp-logo-final.png" title="Universidade de São Paulo" />
+              <div class="logo-text-container">
+                <p class="logo-text-top">Computer Engineering (4y, Unfinished)</p>
+                <p class="logo-text-bottom">Universidade de São Paulo</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="wedding-salon-dash" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/wedding-salon-dash.png" />
-              <h3>Wedding Salon Dash</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="match-the-emoji" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/match-the-emoji.png" />
-              <h3>Match The Emoji</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="nothing-matters" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/nothing-matters.png" />
-              <h3>Nothing Matters</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="cutting-edge" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/cutting-edge.png" />
-              <h3>Cutting Edge: Screensaver</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="sinner" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/sinner.png" />
-              <h3>Sinner</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="fallen-angel" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/fallen-angel.png" />
-              <h3>Fallen Angel</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="mechamorphosis" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/mechamorphosis.png" />
-              <h3>Mechamorphosis</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="protect-the-walnut" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/protect-the-walnut.png" />
-              <h3>Protect the Walnut</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="tower-of-madness" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/tower-of-madness.png" />
-              <h3>Tower of Madness</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="minimal-td" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/minimal-td.png" />
-              <h3>Minimal TD</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="dentinho-virtual" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/dentinho-virtual.png" />
-              <h3>Dentinho Virtual</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="ring-of-steel" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/ring-of-steel.png" />
-              <h3>Ring of Steel</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="keeping-it-up" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/keeping-it-up.png" />
-              <h3>Keeping it Up</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="mothers-home" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/mothers-home.png" />
-              <h3>Mother's Home</h3>
-            </article>
-          </div>
-        </div>
+      </div>
+
+      <div class="col-right grid-item">
+        <p class="grid-item-title-right">Vlogger Go Viral!</p>
+        <video loop muted playsinline controls poster="images/screenshots/mechanical-playground.png">
+          <source src="videos/mechanical-playground144.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </article>

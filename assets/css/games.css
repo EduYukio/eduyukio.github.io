@@ -1,12 +1,47 @@
+#games p {
+  color: #ddd;
+}
+
 #games {
-  background-color: rgb(29, 31, 32);
-  padding: 4em;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(55, 55, 55);
 }
 
-#games h1 {
-  margin-bottom: 0.5em;
+#games .col-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  width: 50%;
+  height: 100%;
 }
 
-#games h4 {
-  font-size: 20px;
+#games .col-right {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 40px !important;
+  margin-right: 16px;
+}
+
+#games .col-right video {
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  align-self: center;
+  box-shadow: 0 0 6pt 8pt rgba(10, 10, 10, 0.5);
+}
+
+.contributions-title {
+  font-size: 26px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
 }

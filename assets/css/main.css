@@ -16,11 +16,11 @@ html.scrollDisabled {
   overflow-y: scroll;
   width: 100%;
 }
-
+/* 
 video {
   width: 75%;
   height: auto;
-}
+} */
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 
@@ -281,7 +281,7 @@ h4,
 h5,
 h6 {
   color: #3e3e3e;
-  margin: 0 0 0.75em 0;
+  margin-top: 40px;
 }
 
 h1 a,

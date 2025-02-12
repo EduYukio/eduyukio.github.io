@@ -194,7 +194,8 @@ img.logo {
   gap: 10px;
   box-sizing: border-box;
   padding: 40px !important;
-  margin-right: 16px;
+  margin-right: 6.5px;
+  margin-left: 10px;
 }
 
 .col-right video {

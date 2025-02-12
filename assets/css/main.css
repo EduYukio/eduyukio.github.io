@@ -280,7 +280,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #3e3e3e;
+  color: #ddd !important;
   margin-top: 40px;
 }
 

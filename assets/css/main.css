@@ -1,3 +1,7 @@
+p {
+  color: #ddd !important;
+}
+
 .tool {
   width: 3rem;
   margin: 0.25rem;

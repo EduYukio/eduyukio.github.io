@@ -1,0 +1,45 @@
+@media screen and (max-width: 450px) {
+  #description-title {
+    padding-top: 4rem;
+  }
+
+  .modal-description {
+    height: 15rem;
+    font-size: 0.9rem;
+  }
+
+  .modal-year-text {
+    padding-top: 4rem;
+    font-size: 1rem;
+    top: 61%;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 2rem;
+  }
+
+  .modal-roles {
+    padding-top: 4rem;
+    top: 74%;
+    width: 50%;
+    left: 25%;
+    font-size: 1rem;
+  }
+
+  .modal-tools {
+    padding-top: 4rem;
+    top: 108%;
+    width: 50%;
+    left: 25%;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .tool {
+    width: 3rem;
+  }
+
+  .modal-available-text {
+    font-size: 1rem;
+  }
+}

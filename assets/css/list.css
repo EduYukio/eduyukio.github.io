@@ -1,0 +1,123 @@
+/* List */
+
+ul {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+ul li {
+  padding-left: 0.5em;
+}
+
+ol {
+  list-style: decimal;
+  padding-left: 1.25em;
+}
+
+ol li {
+  padding-left: 0.25em;
+}
+
+/* Social */
+
+ul.social {
+  cursor: default;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.social li {
+  position: relative;
+  display: inline-block;
+  margin: 0.25em;
+  top: 0;
+  padding-left: 0;
+}
+
+ul.social li a {
+  -moz-transition: top 0.2s ease-in-out;
+  -webkit-transition: top 0.2s ease-in-out;
+  -ms-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  top: 0;
+  position: relative;
+}
+
+ul.social li a:before {
+  background-image: url("images/bg.png"),
+    -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: url("images/bg.png"),
+    -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: url("images/bg.png"),
+    -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: url("images/bg.png"),
+    linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #444;
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 0px 1px #282828,
+    inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+  color: rgb(203, 198, 192) !important;
+  display: block;
+  font-size: 26px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  outline: 0;
+  overflow: hidden;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+  width: 48px;
+}
+
+ul.social li a.fa-twitter {
+  background-color: #2daae4;
+}
+
+ul.social li a.fa-facebook-f {
+  background-color: #3c5a98;
+}
+
+ul.social li a.fa-linkedin-in {
+  background-color: #006599;
+}
+
+ul.social li a.fa-github {
+  background-color: rgb(49, 49, 49);
+}
+
+ul.social li a.fa-gitlab {
+  background-color: #c5520f;
+}
+
+ul.social li a:hover {
+  top: -5px;
+}
+
+ul.social li a:hover:before {
+  background-color: transparent;
+}
+
+/* Actions */
+
+ul.actions {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.actions li {
+  display: inline-block;
+  margin: 0 0 0 1em;
+  padding-left: 0;
+}
+
+ul.actions li:first-child {
+  margin-left: 0;
+}

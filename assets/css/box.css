@@ -1,0 +1,23 @@
+.box {
+  background: #111;
+  text-align: center;
+}
+
+.box.style1 {
+  padding: 1em 1em 1em 1em;
+  /* border: 0.2rem solid #000; */
+  box-shadow: 0 0 3pt 2pt #000;
+  border-radius: 20px;
+
+  -moz-transition: top 0.2s ease-in-out;
+  -webkit-transition: top 0.2s ease-in-out;
+  -ms-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  display: block;
+  top: 0;
+  position: relative;
+}
+
+.box.style1 h3 {
+  font-size: 20px;
+}

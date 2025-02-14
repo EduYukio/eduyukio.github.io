@@ -1,0 +1,14 @@
+.contact-email {
+  position: absolute;
+  transform: translate(-50%);
+  font-size: 3rem;
+}
+
+#contact {
+  background-color: rgb(55, 55, 55);
+  padding: 2em;
+}
+
+#contact footer {
+  font-size: 0.9em;
+}

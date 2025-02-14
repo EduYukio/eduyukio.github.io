@@ -1,0 +1,82 @@
+@media screen and (max-width: 849px) {
+  .contact-email {
+    font-size: 1.5rem;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  .modal {
+    overflow: auto;
+  }
+
+  .modal-header .title {
+    font-size: 1rem;
+  }
+
+  .modal-header .close-button {
+    font-size: 1.5rem;
+    width: 30px;
+    height: 45px;
+  }
+
+  .modal-right {
+    left: 0;
+    width: 100%;
+    top: 75%;
+  }
+
+  .modal-left {
+    left: 0;
+    width: 100%;
+  }
+
+  #description-title {
+    padding-top: 12rem;
+  }
+
+  .modal-description {
+    height: 15rem;
+    font-size: 1.1rem;
+  }
+
+  .modal-year-text {
+    padding-top: 10rem;
+    font-size: 1.1rem;
+    top: 69%;
+  }
+
+  .modal-left .modal-video {
+    margin-left: 5rem;
+  }
+
+  .modal-roles {
+    padding-top: 10rem;
+    top: 82%;
+    width: 28%;
+    left: 36%;
+    font-size: 1.1rem;
+  }
+
+  .modal-tools {
+    padding-top: 10rem;
+    top: 116%;
+    width: 28%;
+    left: 36%;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .tool {
+    width: 3rem;
+  }
+
+  .modal-available-text {
+    font-size: 1.1rem;
+  }
+
+  .modal-button {
+    font-size: 1rem;
+  }
+}

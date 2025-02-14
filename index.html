@@ -11,7 +11,32 @@
   <title>Eduardo Yukio | Game Programmer Portfolio</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <!-- css -->
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/about.css" />
+  <link rel="stylesheet" href="assets/css/box.css" />
+  <link rel="stylesheet" href="assets/css/button.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link rel="stylesheet" href="assets/css/container.css" />
+  <link rel="stylesheet" href="assets/css/copyright.css" />
+  <link rel="stylesheet" href="assets/css/embed.css" />
+  <link rel="stylesheet" href="assets/css/game_detail.css" />
+  <link rel="stylesheet" href="assets/css/games.css" />
+  <link rel="stylesheet" href="assets/css/icon.css" />
+  <link rel="stylesheet" href="assets/css/image.css" />
+  <link rel="stylesheet" href="assets/css/list.css" />
+  <link rel="stylesheet" href="assets/css/modal.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/overlay.css" />
+  <link rel="stylesheet" href="assets/css/resume.css" />
+  <link rel="stylesheet" href="assets/css/row.css" />
+  <link rel="stylesheet" href="assets/css/scrollbar.css" />
+  <link rel="stylesheet" href="assets/css/showreel.css" />
+  <link rel="stylesheet" href="assets/css/table.css" />
+  <link rel="stylesheet" href="assets/css/wrapper.css" />
+  <!-- /css -->
+
   <script defer src="assets/js/script.js"></script>
   <script src="https://kit.fontawesome.com/30972455b7.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -19,7 +44,7 @@
 
 <body class="is-preload" id="scrollbar-style-1">
   <!-- POPUP (Modal) -->
-  <div class="modal" id="modal">
+  <!-- <div class="modal" id="modal">
     <div class="modal-header">
       <div class="title">Sinner</div>
       <button data-close-button class="close-button">&times;</button>
@@ -75,193 +100,672 @@
       </div>
       <div class="vertical"></div>
     </div>
-  </div>
+  </div> -->
+
+
   <div id="overlay"></div>
 
   <!-- Nav -->
   <nav id="nav">
-    <ul class="container">
-      <li><a href="#about">About</a></li>
-      <li><a href="#showreel">Showreel</a></li>
+    <a href="#" class="nav-name">Eduardo Yukio ⁯⁯⁯⁯⁯⁯– Game Programmer</a>
+
+    <ul class="nav-links container">
+      <li><a href="#about">Summary</a></li>
       <li><a href="#games">Games</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Home -->
+  <!-- About/Summary -->
   <article id="about" class="wrapper style4">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 col-5-large col-12-medium">
-          <span class="image fit"><img src="images/perfil.png" alt="" /></span>
+    <div class="row-about">
+      <div class="col-left">
+        <div class="profile-section grid-item">
+          <div class="text-info">
+            <p class="grid-item-title">Eduardo Yukio</p>
+          </div>
+          <span class="image fit">
+            <img src="images/perfil.png" alt="Profile Image" />
+          </span>
         </div>
-        <div class="col-8 col-7-large col-12-medium">
-          <header>
-            <h1>Hello!</h1>
-          </header>
-          <p>
-            I'm <strong>Eduardo Yukio</strong>, a Brazilian programmer
-            passionate about games. I studied 4 years of Computer Engineering
-            at
-            <a href="https://www.poli.usp.br/" target="_blank" rel="noopener noreferrer">Poli-USP</a>, and then switched
-            to Computer Science at
-            <a href="https://www.ime.usp.br/" target="_blank" rel="noopener noreferrer">IME-USP</a>, finishing my
-            graduation in 2021.
-          </p>
-          <p>
-            I had the opportunity to make several games, in different
-            contexts, such as college courses, game jams and at
-            <a href="http://tappsgames.com/" target="_blank" rel="noopener noreferrer">Tapps Games</a>. You can check
-            out my projects on the following sections!<br /><br />Enjoy!
-          </p>
+
+        <div class="skills-container grid-item">
+          <p class="grid-item-title">Skills</p>
+          <div class="skills-item">
+            <img class="skill" id="tool-unity" src="images/tools/unity.png" title="Unity Engine" />
+            <p>Unity</p>
+          </div>
+
+          <div class="skills-item">
+            <img class="skill" id="tool-csharp" src="images/tools/csharp.png" title=" C# (Programming Language)" />
+            <p>C#</p>
+          </div>
+
+          <div class="skills-item">
+            <img class="skill" id="tool-git" src="images/tools/git.png" title="Git" />
+            <p>Git</p>
+          </div>
+
+          <div class="skills-item">
+            <img class="skill" id="tool-lua" src="images/tools/lua.png" title="Lua (Programming Language)" />
+            <p>Lua</p>
+          </div>
+
+          <div class="skills-item">
+            <img class="skill" id="tool-love2d" src="images/tools/love2d.png" title="Love2D (Framework)" />
+            <p>Love2D</p>
+          </div>
+
+          <div class="skills-item">
+            <img class="skill" id="tool-python" src="images/tools/python.png" title="Python" />
+            <p>Python</p>
+          </div>
         </div>
+
+        <div class="logo-container-work grid-item">
+          <p class="grid-item-title">Work Experience</p>
+          <div class="logo-items-container-work">
+            <div class="logo-item-work">
+              <img class="logo" id="logo-tapps" src="images/logos/tapps-logo-final.png" title="Tapps Games" />
+              <div class="logo-text-container">
+                <p class="logo-text-top">Game Programmer (1y)</p>
+                <p class="logo-text-bottom">Tapps Games</p>
+              </div>
+            </div>
+
+            <div class="logo-item-work">
+              <img class="logo" id="logo-tapps" src="images/logos/tapps-logo-final.png" title="Tapps Games" />
+              <div class="logo-text-container">
+                <p class="logo-text-top">Junior Game Programmer (2y)</p>
+                <p class="logo-text-bottom">Tapps Games</p>
+              </div>
+            </div>
+
+            <div class="logo-item-work">
+              <img class="logo" id="logo-tapps" src="images/logos/tapps-logo-final.png" title="Tapps Games" />
+              <div class="logo-text-container">
+                <p class="logo-text-top">Game Programmer Intern (4mo)</p>
+                <p class="logo-text-bottom">Tapps Games</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo-container-education grid-item">
+          <p class="grid-item-title">Education</p>
+          <div class="logo-items-container-education">
+            <div class="logo-item-education">
+              <img class="logo" id="logo-usp" src="images/logos/usp-logo-final.png" title="Universidade de São Paulo" />
+              <div class="logo-text-container">
+                <p class="logo-text-top">Computer Science (4y, Finished)</p>
+                <p class="logo-text-bottom">Universidade de São Paulo</p>
+              </div>
+            </div>
+
+            <div class="logo-item-education">
+              <img class="logo" id="logo-usp" src="images/logos/usp-logo-final.png" title="Universidade de São Paulo" />
+              <div class="logo-text-container">
+                <p class="logo-text-top">Computer Engineering (4y, Unfinished)</p>
+                <p class="logo-text-bottom">Universidade de São Paulo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: Video -->
+      <div class="col-right grid-item">
+        <p class="grid-item-title-right">Project Summary</p>
+        <video class="video-item" loop muted playsinline controls poster="images/screenshots/mechanical-playground.png">
+          <source src="videos/gamesSummary.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </article>
 
-  <!-- Showreel -->
-  <article id="showreel" class="wrapper style4">
-    <div class="container">
-      <header>
-        <h1>Showreel</h1>
-        <h4>A summary of my games<br /><br /></h4>
-      </header>
-      <br />
-      <div class="embed-container-home">
-        <iframe src="https://www.youtube.com/embed//8FtjSLPb1_s" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <br /><br />
-      <br />
-    </div>
-  </article>
-
-  <!-- Games -->
+  <!-- Professional Games -->
   <article id="games" class="wrapper style4">
-    <div class="container">
-      <header>
-        <h1>Games</h1>
-        <h4>Click to see details<br /><br /></h4>
-      </header>
-      <div class="row">
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="mechanical-playground" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/mechanical-playground.png" />
-              <h3>Mechanical Playground</h3>
-            </article>
+    <header>
+      <h1>Professional Games<br /><br /></h1>
+    </header>
+    <div id="games-vlogger">
+      <h2>Vlogger Go Viral</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's an idle clicker Youtuber simulator game.</li>
+              <li>Team: 6 members.</li>
+              <li>Duration: around 1 year.</li>
+              <li>My contributions:
+                <ul>
+                  <li>Many versions of a core gameplay feature, for A/B Testing.</li>
+                  <li>New skins, missions, achievements, and a video theme.</li>
+                  <li>The "Vlogger VIP" IAP offer, which required many gameplay changes and a rework of all popups
+                    containing Rewarded Ads.
+                  </li>
+                  <li>The "Agent" IAP offer, which gathers Soft Currency while offline.</li>
+                  <li>Management of PVE Events.</li>
+                  <li>Cataloged all of the Soft Currency and Hard Currency sources and sinks.</li>
+                  <li>Manipulated player's save files to avoid problems with sensitive updates.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="wedding-salon-dash" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/wedding-salon-dash.png" />
-              <h3>Wedding Salon Dash</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <a href="https://play.google.com/store/apps/details?id=br.com.tapps.vloggergoviral&hl=en" target="_blank"
+              style="display: inline-block; width: 65%;">
+              <img style="width: 100%; height: auto;" class="store-prints" src="images/store/vloggerStore.png"
+                title="Vlogger Go Viral" />
+            </a>
+
+
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: An
+              internal engine
+              (based on Love2D), Lua, Git,
+              Firebase, SQL, Google Cloud Database.
+            </p>
+          </div>
+
+          <video class="video-item" loop muted playsinline controls poster="images/screenshots/vlogger.png">
+            <source src="videos/vloggerTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="games-boo">
+      <h2>My Boo</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's a virtual pet game, with lots of minigames.</li>
+              <li>Team: 6 members.</li>
+              <li>Duration: 6 months.</li>
+              <li>My contributions:
+                <ul>
+                  <li>3 minigames: Wall Jump, Ice Cream and Astro Boo.</li>
+                  <li>Cross promotion button and popup, notifying players of the release of My Boo 2.</li>
+                  <li>Made a Tool with a graphic user interface, using Python with tkinter, to improve the minigame
+                    balancing
+                    process
+                    done by the Game Designer.</li>
+                  <li>Made some art adjustments to background images, to adhere to new aspect ratios.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="match-the-emoji" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/match-the-emoji.png" />
-              <h3>Match The Emoji</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <a href="https://play.google.com/store/apps/details?id=com.tapps.virtual.pet.free.myboo&hl=en"
+              target="_blank" style="display: inline-block; width: 40%;">
+              <img class="store-prints" style="width: 100%; height: auto;" src="images/store/booStore.png"
+                title="My Boo" />
+            </a>
+
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: An internal engine (based
+              on Love2D), Lua, Git, Python,
+              GIMP.
+            </p>
+          </div>
+
+          <video class="video-item" loop muted playsinline controls poster="images/screenshots/myboo.png">
+            <source src="videos/booTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="games-evolutions">
+      <h2>'Evolution' series</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's a series of 60+ idle clicker games where you merge animals to discover new ones.</li>
+              <li>Team: 6 members.</li>
+              <li>Duration: around 1 year.</li>
+              <li>My contributions:
+                <ul>
+                  <li>A minigame based on '2048' with its own screen and popups.</li>
+                  <li>System to easily change animal poop assets for eggs, to resolve Apple complaints.</li>
+                  <li>A comet that falls from time to time, which offers resources to the player.</li>
+                  <li>An animal auto-evolution system, dealing with lots of corner cases.
+                  </li>
+                  <li>Reward after interstitial ad.</li>
+                  <li>Survey button and popup, to collect player data.</li>
+                  <li>Some sound effects for a minigame.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="nothing-matters" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/nothing-matters.png" />
-              <h3>Nothing Matters</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <a href="https://play.google.com/store/apps/details?id=br.com.tapps.cowevolution&hl=en" target="_blank"
+              style="display: inline-block; width: 65%;">
+              <img style="width: 100%; height: auto;" class="store-prints" src="images/store/evolutionsStore.png"
+                title="Evolutions" />
+            </a>
+
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: An internal engine (based
+              on Love2D), Lua, Git,
+              Firebase, Audacity.
+            </p>
+          </div>
+
+          <video class="video-item" loop muted playsinline controls poster="images/screenshots/evos.png">
+            <source src="videos/evosTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div id="games-dnds">
+      <h2>'Do Not Disturb!' series</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's a series of prank simulation games where players (mostly kids) watch fun reactions.</li>
+              <li>Team: 6 members.</li>
+              <li>Duration: around 6 months.</li>
+              <li>My contributions:
+                <ul>
+                  <li>A minigame based on 'Fruit Ninja'.</li>
+                  <li>FTUE (First Time User Experience).</li>
+                  <li>The 'Piggy Bank' feature where players could watch an Ad to earn SC.</li>
+                  <li>Cross promotion button and popups.</li>
+                  <li>Implemented many animations to the DND3 ice scenario, in addition to some adjustments to the
+                    animations themselves, using Spine.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="cutting-edge" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/cutting-edge.png" />
-              <h3>Cutting Edge: Screensaver</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <a href="https://play.google.com/store/apps/details?id=br.com.tapps.donotdisturb&hl=en" target="_blank"
+              style="display: inline-block; width: 70%;">
+              <img style="width: 100%; height: auto;" class="store-prints" src="images/store/dndsStore.png"
+                title="Do Not Disturb!" />
+            </a>
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: An internal engine (based
+              on Love2D), Lua, Git, Spine.
+            </p>
+          </div>
+
+          <video class="video-item" loop muted playsinline controls poster="images/screenshots/dnds.png">
+            <source src="videos/dndsTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div id="games-mygrumpy">
+      <h2>My Grumpy</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's a virtual pet game, spinoff from 'Do Not Disturb'.</li>
+              <li>Team: 6 members.</li>
+              <li>Duration: around 6 months.</li>
+              <li>My contributions:
+                <ul>
+                  <li>Ported 3 minigames from 'My Boo' (Piano, Mix and Fruit Ninja)</li>
+                  <li>A feature where players can watch an Ad to continue playing a minigame, after losing</li>
+                  <li>Many promotional bundles, promoted on the Google Play Store as special events</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="sinner" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/sinner.png" />
-              <h3>Sinner</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <a href="https://play.google.com/store/apps/details?id=br.com.tapps.mygrumpy&hl=en" target="_blank"
+              style="display: inline-block; width: 40%;">
+              <img style="width: 100%; height: auto;" class="store-prints" src="images/store/mygrumpyStore.png"
+                title="My Grumpy" />
+            </a>
+
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: An internal engine (based
+              on Love2D), Lua, Git.
+            </p>
+          </div>
+
+          <video class="video-item" loop muted playsinline controls poster="images/screenshots/mygrumpy.png">
+            <source src="videos/grumpyTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="games-matchtheemoji">
+      <h2>Match The Emoji</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's a Puzzle game where you combine emojis to create new ones.</li>
+              <li>Team: 5 members.</li>
+              <li>Duration: 2 months.</li>
+              <li>My contributions:
+                <ul>
+                  <li>Main screen, settings and shop interfaces.
+                  <li>Energy, hints and emoji progression systems.</li>
+                  <li>All the popups.</li>
+                  <li>Implemented the animations of emojis merging and screens switching.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="fallen-angel" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/fallen-angel.png" />
-              <h3>Fallen Angel</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <a href="https://play.google.com/store/apps/details?id=br.com.tapps.matchtheemoji&hl=en" target="_blank"
+              style="display: inline-block; width: 40%;">
+              <img style="width: 100%; height: auto;" class="store-prints" src="images/store/matchtheemojiStore.png"
+                title="Match The Emoji" />
+            </a>
+
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: An internal engine (based
+              on Love2D), Lua, Git.</p>
+          </div>
+
+          <video class="video-item" loop muted playsinline controls poster="images/screenshots/match-the-emoji.png">
+            <source src="videos/matchtheemojiTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div id="games-weddingsalondash">
+      <h2>Wedding Salon Dash</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's a Simulation game where you manage a wedding salon.</li>
+              <li>Team: 5 members.</li>
+              <li>Duration: 2 months.</li>
+              <li>My contributions:
+                <ul>
+                  <li>Main screen, settings and shop interface.</li>
+                  <li>Slide and pulse minigames.</li>
+                  <li>Sewing machine.</li>
+                  <li>Client feedback balloon.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="mechamorphosis" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/mechamorphosis.png" />
-              <h3>Mechamorphosis</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <a href="https://play.google.com/store/apps/details?id=br.com.tapps.weddingsalondash&hl=en" target="_blank"
+              style="display: inline-block; width: 40%;">
+              <img style="width: 100%; height: auto;" class="store-prints" src="images/store/weddingsalondashStore.png"
+                title="Wedding Salon Dash" />
+            </a>
+
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: An internal engine (based
+              on Love2D), Lua, Git.</p>
+            </p>
+          </div>
+
+          <video class="video-item" loop muted playsinline controls poster="images/screenshots/wedding-salon-dash.png">
+            <source src="videos/weddingsalondashTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Personal Games -->
+  <article style="background-color: rgb(40, 40, 40);" id="games" class="wrapper style4">
+    <header>
+      <h1>Personal Games<br /><br /></h1>
+    </header>
+
+    <div id="games-mechanicalplayground">
+      <h2>Mechanical Playground</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's an Action-platformer game focused on the player's expression through the choice of game
+                mechanics.</li>
+              <li>Solo project, made in University for my final year undergraduate thesis.</li>
+              <li>Duration: 6 months (1 to design, 5 to implement). Art and music are third-party.</li>
+              <li>More than 20 mechanics implemented.</li>
+              <li>Mechanics are managed using finite state machines, implemented using the State Pattern.</li>
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="protect-the-walnut" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/protect-the-walnut.png" />
-              <h3>Protect the Walnut</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px; justify-content: center; gap:50px;">
+            <a href="https://eduyukio.itch.io/mechanical-playground" target="_blank"
+              style="display: inline-block; width: 7%;">
+              <img style="width: 100%; height: auto;" class="store-prints"
+                src="images/personal/mechanicalplaygroundIcon.png" title="Mechanical Playground" />
+              Play!
+            </a>
+
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: Unity, C#, Git.
+            </p>
+          </div>
+
+          <video class="video-item" loop muted playsinline controls
+            poster="images/screenshots/mechanical-playground.png">
+            <source src="videos/mechanicalplaygroundTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div id="games-nothingmatters">
+      <h2>Nothing Matters</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's a Puzzle-platformer where you start with the item named "nothing" and can put it into things,
+                sending them to the
+                nothing realm. You can even use the 'nothing' on yourself!</li>
+              <li>Made in a team of 8 people (<a href="https://uspgamedev.itch.io/">USPGameDev</a>), in 72h, for the
+                <a href="https://ldjam.com/events/ludum-dare/45/nothing-matters">Ludum Dare 45</a> Game Jam, in which
+                the theme
+                was "Start
+                with nothing".
+              </li>
+              <li>🏆 Top 7 Innovation, 63 Theme, 111 Audio, 149 Overall (among 1800+ games).</li>
+              <li>My contributions:
+                <ul>
+                  <li>Player movement.</li>
+                  <li>The system of picking, droping and using items.</li>
+                  <li>Two items: boots and shield.</li>
+                  <li>Polishing and 70+ bugfixes.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="tower-of-madness" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/tower-of-madness.png" />
-              <h3>Tower of Madness</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px; justify-content: center; gap:50px;">
+            <a href="https://usp.game.dev.br/downloads/projects/nothing-matters/v1.0.5/nothing-matters-html5/notthing-matters.html"
+              target="_blank" style="display: inline-block; width: 7%;">
+              <img class="store-prints" style="width: 100%; height: auto; margin-bottom: 5px;"
+                src="images/personal/nothingmattersIcon.png" title="Nothing Matters" />
+              Play!
+            </a>
+
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: Godot, GDScript, Git.
+            </p>
+          </div>
+
+          <video class="video-item" loop muted playsinline controls poster="images/screenshots/nothing-matters.png">
+            <source src="videos/nothingmattersTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="games-fallenangel">
+      <h2>Fallen Angel</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's a Vertical-scrolling shooter game, inspired by Downwell.
+              <li>Solo project. Made everything from scratch, in 48h, for the <a
+                  href="https://ldjam.com/events/ludum-dare/48/fallen-angel">Ludum Dare 48</a> Game Jam, in which the
+                theme was "Deeper and deeper".</li>
+              <li>🏆 Top 282 Fun, 389 Audio and 405 Overall (among 1100+ games).</li>
+              <li>My first time composing music and drawing pixel art.
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="minimal-td" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/minimal-td.png" />
-              <h3>Minimal TD</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px; justify-content: center; gap:50px;">
+            <a href="https://eduyukio.itch.io/fallen-angel" target="_blank" style="display: inline-block; width: 6%;">
+              <img style="width: 100%; height: auto; margin-bottom: 5px;" class="store-prints"
+                src="images/personal/fallenangelIcon.png" title="Fallen Angel" />
+              Play!
+            </a>
+
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: Unity, C#, Git, Aseprite,
+              LMMS, Bfxr.
+            </p>
+          </div>
+
+          <video class="video-item" loop muted playsinline controls poster="images/screenshots/fallen-angel.png">
+            <source src="videos/fallenangelTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div id="games-cuttingedge">
+      <h2>Cutting Edge</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's a Top-Down Action game where the walls are constantly shrinking, so you have to cut the
+                edges of the screen to avoid getting crushed!</li>
+              <ul>
+                <li>Obs: The actual game window is constantly being resized.</li>
+              </ul>
+              <br>
+              <li>Made in a team of 11 people (<a href="https://uspgamedev.itch.io/" target="_blank">USPGameDev</a>), in
+                72h, for the
+                <a href="https://ldjam.com/events/ludum-dare/42/$109072" target="_blank">Ludum Dare 42</a> Game
+                Jam, in which
+                the theme was
+                "Running
+                out of space".
+              </li>
+              <li>🏆 Top 56 Innovation, 141 Theme, 368 Overall (among 2000+ games).</li>
+              <li>My contributions:
+                <ul>
+                  <li>Player movement, dash and attack.</li>
+                  <li>Enemy movement, stun attack and death.</li>
+                  <li>The 'block' obstacle.</li>
+                  <li>Some levels.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="dentinho-virtual" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/dentinho-virtual.png" />
-              <h3>Dentinho Virtual</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px; justify-content: center; gap:50px;">
+            <a href="https://uspgamedev.itch.io/cutting-edge-screensaver" target="_blank"
+              style="display: inline-block; width: 5%;">
+              <img style="width: 100%; height: auto; margin-bottom: 5px; margin-left: 15px;" class="store-prints"
+                src="images/personal/cuttingedgeIcon.png" title="Cutting Edge" />
+              Download!
+            </a>
+
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: Godot, GDScript, Git.
+            </p>
+          </div>
+
+          <video class="video-item" loop muted playsinline controls poster="images/screenshots/cutting-edge.png">
+            <source src="videos/cuttingedgeTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div id="games-dentinhovirtual">
+      <h2>Dentinho Virtual</h2>
+      <div class="row-games">
+        <div class="col-left">
+          <div class="contributions-text grid-item">
+            <ul>
+              <li>It's a Virtual pet simulation game where you take care of a cute little tooth through actions
+                such as brushing,
+                feeding, giving medicine, playing and dressing!</li>
+              <li>Made in a team of 7 people, in 3 months, as an University project.</li>
+              <li>I led the team and taught Unity to most members. The development was done using Mob Programming
+                initially, and
+                pair/trio later.</li>
+              <li>Released on Google Play Store.</li>
+              <li>It was done in conjunction with the School of Dentistry from the University of São Paulo, so that
+                children could learn
+                oral health care in a playful way.</li>
+            </ul>
           </div>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="ring-of-steel" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/ring-of-steel.png" />
-              <h3>Ring of Steel</h3>
-            </article>
+
+        <div class="col-right grid-item">
+          <div style="display: flex; align-items: center; margin-bottom: 10px; justify-content: center; gap: 50px;">
+            <a href="https://web.archive.org/web/20230511013728/https://play.google.com/store/apps/details?id=com.LigadeOdontopediatriaeOdontohebiatria.Dentevirtual"
+              target="_blank" style="display: inline-block; width: 20%;">
+              <img style="width: 100%; height: auto;" class="store-prints" src="images/personal/dentinhoVirtualIcon.png"
+                title="Dentinho Virtual" />
+            </a>
+
+            <p style="margin: 0; margin-left: 20px; font-size: 18px; line-height: 1.2;">Tools: Unity, C#, Git.
+            </p>
           </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="keeping-it-up" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/keeping-it-up.png" />
-              <h3>Keeping it Up</h3>
-            </article>
-          </div>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <div class="game-detail" id="mothers-home" data-modal-target="#modal">
-            <article class="box style1">
-              <img class="image featured" src="images/screenshots/mothers-home.png" />
-              <h3>Mother's Home</h3>
-            </article>
-          </div>
+
+          <video class="video-item" loop muted playsinline controls poster="images/screenshots/dentinho-virtual.png">
+            <source src="videos/dentinhovirtualTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
         </div>
       </div>
     </div>
@@ -282,9 +786,11 @@
         <div class="col-12">
           <hr />
           <h3>External links:</h3>
-
-          <a href="Resume_EduardoYukio_BR.pdf" id="resume" class="button" target="_blank"
-            rel="noopener noreferrer">Resume (pt-br)</a>
+          <br>
+          <a href="Resume_EduardoYukio_BR.pdf" id="resume" class="button" target="_blank" rel="noopener noreferrer"
+            style="padding: 20px; margin: 10px 10px 10px 10px;">Resume (Portuguese)</a>
+          <a href="Resume_EduardoYukio_EN.pdf" id="resume" class="button" target="_blank" rel="noopener noreferrer"
+            style="padding: 20px; margin: 10px 10px 10px 10px;">Resume (English)</a>
 
           <ul class="social">
             <li>
@@ -315,6 +821,24 @@
     </div>
   </article>
 
+  <!-- <header>
+        <h1>Hello!</h1>
+        </header> -->
+  <!-- <p>
+      I'm <strong>Eduardo Yukio</strong>, a Brazilian programmer passionate about games.
+      I studied 4 years of Computer Engineering at
+      <a href="https://www.poli.usp.br/" target="_blank" rel="noopener noreferrer">Poli-USP</a>, and then switched
+      to Computer Science at
+      <a href="https://www.ime.usp.br/" target="_blank" rel="noopener noreferrer">IME-USP</a>, finishing my
+      graduation in 2021.
+    </p>
+    <p>
+      I had the opportunity to make several games, in different contexts, such as college courses, game jams, and
+      at
+      <a href="http://tappsgames.com/" target="_blank" rel="noopener noreferrer">Tapps Games</a>. You can check
+      out my projects in the following sections!<br /><br />Enjoy!
+    </p> -->
+
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -322,6 +846,7 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/videoPlayPause.js"></script>
 </body>
 
 </html>

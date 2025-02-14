@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+
 p {
   color: #ddd !important;
 }
@@ -25,8 +27,6 @@ video {
   width: 75%;
   height: auto;
 } */
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 
 /*
     Miniport by HTML5 UP

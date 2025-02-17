@@ -228,9 +228,17 @@ img.logo {
   .logo-item-education p {
     font-size: 14px;
   }
+
+  .contributions-text li {
+    font-size: 18px !important;
+  }
+
+  #games h2 {
+    margin-left: 34% !important;
+    margin-right: 34% !important;
+  }
 }
 
-/* Media query for screen widths below 1600px */
 @media (max-width: 1600px) {
   .logo-item-work p,
   .logo-item-education p {
@@ -299,8 +307,8 @@ img.logo {
     background: rgba(25, 25, 25);
     border-radius: 6px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
-    margin-left: 30% !important;
-    margin-right: 30% !important;
+    margin-left: 26% !important;
+    margin-right: 26% !important;
     margin-bottom: 20px;
     padding: 20px;
   }
@@ -333,5 +341,120 @@ img.logo {
 
   ul ul {
     margin-left: 15px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  #about .col-left {
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+  }
+
+  #games h2 {
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+  }
+
+  .profile-section {
+    height: 400px !important;
+    padding-bottom: 40px;
+  }
+
+  .skills-container {
+    height: 400px !important;
+    padding-bottom: 80px;
+  }
+
+  .logo-container-work {
+    height: 400px !important;
+  }
+  .logo-container-education {
+    height: 400px !important;
+  }
+
+  .contributions-text li {
+    font-size: 18px !important;
+  }
+
+  .contact-email {
+    font-size: 2rem !important;
+  }
+
+  .nav-name {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .contributions-text li {
+    font-size: 16px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .store-image-link {
+    width: 150% !important;
+  }
+
+  .store-image-link-personal {
+    width: 10% !important;
+  }
+
+  .col-right p {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .contributions-text li {
+    font-size: 14px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .col-right {
+    padding: 10px !important;
+    height: 300px;
+  }
+
+  .grid-item-title-right {
+    margin-top: 0px;
+  }
+
+  img.logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skills-container img.skill {
+    margin-top: 30px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .skills-container {
+    gap: 50px;
+  }
+
+  .contact-email {
+    font-size: 1.5rem !important;
+  }
+
+  .store-image-link {
+    width: 300% !important;
+  }
+
+  .store-image-link-personal {
+    width: 10% !important;
+  }
+  .col-right p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-email {
+    font-size: 1rem !important;
   }
 }

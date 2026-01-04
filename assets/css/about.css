@@ -74,10 +74,10 @@
   grid-column: 2;
   grid-row: 1;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 65px; /* space between icons (both horizontal and vertical) */
   display: grid;
-  grid-template-columns: repeat(3, 40px);
-  grid-template-rows: 20px 60px 60px;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 5px 35px 50px 35px; /* space dedicated to each icon row */
   justify-content: center;
 }
 
@@ -92,18 +92,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  margin-top: -15px;
+  gap: 9px; /* space between each icon and skill name text */
+  margin-top: -5px; /* space between icons and title Skills*/
 }
 
 .skills-container img.skill {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 
 .skills-item p {
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   text-align: center;
 }
@@ -123,7 +123,7 @@
 .logo-item-education {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 13px; /* space between work/education logo and text */
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -177,14 +177,15 @@ img.logo {
 
 .logo-text-top {
   margin: 0;
-  font-size: 17.55px;
+  font-size: 14px !important;
   font-weight: bold;
 }
 
 .logo-text-bottom {
   margin: 0;
-  font-size: 15.5px;
-  color: #aaa !important;
+  font-size: 14px !important;
+  font-weight: 600;
+  color: #999 !important;
 }
 
 .col-right {

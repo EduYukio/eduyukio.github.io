@@ -34,6 +34,8 @@ overlay.addEventListener("click", () => {
   });
 });
 
+updateCurrentWorkDuration();
+
 var $html = $("html"),
   scrollTop;
 
@@ -220,4 +222,30 @@ function cleanList(node) {
 function descriptionScrollReset() {
   document.querySelector(".modal-description").scrollTo(0, 0);
   document.querySelector(".modal").scrollTo(0, 0);
+}
+
+function calculateDuration(startDate) {
+  const currentDate = new Date();
+  let years = currentDate.getFullYear() - startDate.getFullYear();
+  let months = currentDate.getMonth() - startDate.getMonth();
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  let result = [];
+  if (years > 0) result.push(`${years}y`);
+  if (months > 0 || years === 0) result.push(`${months}mo`);
+
+  return result.join(" ");
+}
+
+function updateCurrentWorkDuration() {
+  const startDate = new Date(2025, 8);
+  const durationText = calculateDuration(startDate);
+
+  document.getElementById(
+    "arvore-duration"
+  ).textContent = `Game Programmer (${durationText}) [Ongoing]`;
 }

@@ -217,6 +217,42 @@ img.logo {
   margin-top: -20px;
 }
 
+.section-title {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.contributions-text {
+  font-family: "Arial";
+  display: grid !important;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+.contributions-company-logo-and-text {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.contributions-company-logo-and-text p {
+  margin: 0;
+  font-size: 25px;
+}
+
+.contributions-company-logo-and-text ul {
+  align-self: center;
+}
+
+.tools-text {
+  font-family: "Arial";
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
 @media (max-width: 1940px) {
   .logo-item-work p,
   .logo-item-education p {
